@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a20c431987db1f4dabe9658ee3ea92e, type: 3}
+  m_Name: L1_C1
+  m_EditorClassIdentifier: 
+  <Character1>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+  <Character2>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+  <Dialogue>k__BackingField:
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: Hi Snake. Been a long time.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 174d4da5cc0b0ce40a86133cb38f3817, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: How did you get this number?
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 4311c91c60c9a9447a4963cb46dfa2f3, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: 'A video store? Really? '
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 94fa526b3e3b21a4cb2e82c0b9b841b6, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: Yeah, I wanted long term steady employment. People
+      will always need video stores.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: f16c36650de401d42b100ca833a43c0a, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "Have you even seen a movie that\u2019s not Bloodsport?"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 4302d4a877dc68441813a1bd603c17d4, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "I watch plenty of movies. Timecop, Universal
+      Soldier, Lionheart\u2026"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: c7101d61fa2c65b41b5eaf9716307be1, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "Right\u2026.Anyways. We need you, Snake. "
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: aaccedc64a024a24e9c81f288d8be6b3, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: Not interested.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 6d1dbc67ccc6ca64bb3aab02a0e75ae1, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "Snake, we think we have found Big Boss. You can\u2019t
+      just say no."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: e8fb9448d2eaa4149b919e477b7c1f49, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: You told me to use any tactic that works! Never
+      to commit yourself to one style; to keep an open mind!
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 267c54b756762c04f9757df379a5ced8, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "\u2026are you seriously quoting Bloodsport?"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 5537bfb3ee8b9cf49b8ef857b92814c7, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: Bye, Roy.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: a38f5e93c9c4f3f418276f0320039fc7, type: 3}
+  <RadioFrequencyP1>k__BackingField: 14
+  <RadioFrequencyP2>k__BackingField: 0.85
+  <AbleToSkip>k__BackingField: 0

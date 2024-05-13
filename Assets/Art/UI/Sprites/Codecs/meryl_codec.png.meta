@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: f2e99abbd72f2ad4a87273c953d3bbc9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: meryl_codec_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1046
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99095bba655b9754e89154996f786b4a
+      internalID: 1690593747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1046
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc69dd53665bb1d4fb30aeab528dc709
+      internalID: 2104713123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1046
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee71b1a221adc3e4390324e0debc9911
+      internalID: -1393287914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 951
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c75fd2d6089b13429fe2dc8742c8571
+      internalID: 427414443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 951
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7702f7a2df857f49bb7ff16ece8b342
+      internalID: -1200393398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c74c9cc23b9db4289b6122bb9fd7fc
+      internalID: -1076431243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d40047aff3cc743ba6ef08f54360a0
+      internalID: 1471663462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa82b11f92514d4197423969bfe32c8
+      internalID: -2100974914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0103ed34ddd11114a89bd9559e0918bf
+      internalID: -1723434962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb111971b3fe11e4a8a614e52c7f0222
+      internalID: 1669293496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_10
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4516434ee2428409387ca2c54b81ad
+      internalID: 664124802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 851
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83b81ebdbb184842b1ed56cb7b9046b
+      internalID: 471413411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 757
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0906ad021d9654e807489d25bb8ffa
+      internalID: -240708760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 757
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023d5c2ad5951ab44989396c792b5247
+      internalID: 2123269246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a66db0dea32bd4080a45dd0710629a
+      internalID: -2085727507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9872920238582f4992df3a883f72276
+      internalID: 931341853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bd0596bb5a2c1438797de74f586bf7
+      internalID: 1737594506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_17
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e7cb92caa22a34da8af07df0b58959
+      internalID: 1882788063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed467f5b9272a614ebfb3e2ff5f67e54
+      internalID: -638121946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_19
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 633
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd060d1ed88b274c8ae490486017fb4
+      internalID: -1065717007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 538
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aee19fdf3ab6f646ba1450400ef5846
+      internalID: 933652612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 538
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e21a7bd1fb04d44bae50f835c8e4f2
+      internalID: -1771730831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_22
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 538
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7fe6a255abef54c8a787a504aaebb3
+      internalID: -1950376909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_23
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 538
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b70b25e37af2d47ab4087a405f773a
+      internalID: -195262248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15de6e7e96e664c41a9926b2887c4901
+      internalID: 254973705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e8f79630865104eb80849e31759aaf
+      internalID: 569719463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ccf065bda8c354093e58724e36a81a
+      internalID: -1631088204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_27
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f654f81c0cee744eae73fc5fc685214
+      internalID: 293911216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8743bec64682574d8f64d11e823a41b
+      internalID: 977801373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_29
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 432
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9f5b6c08e43e249aadc1cd5ef555cf
+      internalID: 2079321468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_30
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 337
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ede35da2fdfd9499757cf36d0fd6c2
+      internalID: 1013153048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 337
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5dbe17eb6bd1348b6fef84e4315b48
+      internalID: -1857756191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 337
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5188c1c1b80f4d6428d20e6623d8afa6
+      internalID: 55133858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_33
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 337
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a77e313b50d86943bf0b7345f6d755e
+      internalID: 513145844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_34
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0878395039c2d34b961948a0c7487d2
+      internalID: 881848008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_35
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0c85b28a81d2540b9509b2648e742f
+      internalID: -1148288492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_36
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36acbe0e4c6736f4381229bc45d2480c
+      internalID: 949114176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_37
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33130af11a7d2024781663a796d03e21
+      internalID: -163554420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_38
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4713f407f740db744b9623dd402cf046
+      internalID: -1705212053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_39
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a476aca7c8ecb498662cf616c8f9af
+      internalID: 1395996540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_40
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 228
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95de7ea1e2035a4cb64ceed1d562c0f
+      internalID: 1289467072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 125
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82251d04e38ca749b70cd95c488c9d2
+      internalID: 439668630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_42
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 125
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b07d359abe87c54d8cfae42f2b58831
+      internalID: 1454858345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_43
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 125
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431e1458ca5eebd49847f77746cc0424
+      internalID: 2083242121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_44
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 125
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea2f5173fc314044acbe76827254451
+      internalID: 450614638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_45
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 125
+        width: 52
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae28d1ee975bbf43afb2f4a0a0031a8
+      internalID: -1487490473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_46
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 125
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19bf561f6b70b143b8d500d540a3bef
+      internalID: 1424184679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meryl_codec_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 6
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae1cf55148db4d4584d907e89ee00de
+      internalID: -1146484812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 37a72166f7bac014b9b3bbafdc2fb440
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      meryl_codec_0: 1690593747
+      meryl_codec_1: 2104713123
+      meryl_codec_10: 664124802
+      meryl_codec_11: 471413411
+      meryl_codec_12: -240708760
+      meryl_codec_13: 2123269246
+      meryl_codec_14: -2085727507
+      meryl_codec_15: 931341853
+      meryl_codec_16: 1737594506
+      meryl_codec_17: 1882788063
+      meryl_codec_18: -638121946
+      meryl_codec_19: -1065717007
+      meryl_codec_2: -1393287914
+      meryl_codec_20: 933652612
+      meryl_codec_21: -1771730831
+      meryl_codec_22: -1950376909
+      meryl_codec_23: -195262248
+      meryl_codec_24: 254973705
+      meryl_codec_25: 569719463
+      meryl_codec_26: -1631088204
+      meryl_codec_27: 293911216
+      meryl_codec_28: 977801373
+      meryl_codec_29: 2079321468
+      meryl_codec_3: 427414443
+      meryl_codec_30: 1013153048
+      meryl_codec_31: -1857756191
+      meryl_codec_32: 55133858
+      meryl_codec_33: 513145844
+      meryl_codec_34: 881848008
+      meryl_codec_35: -1148288492
+      meryl_codec_36: 949114176
+      meryl_codec_37: -163554420
+      meryl_codec_38: -1705212053
+      meryl_codec_39: 1395996540
+      meryl_codec_4: -1200393398
+      meryl_codec_40: 1289467072
+      meryl_codec_41: 439668630
+      meryl_codec_42: 1454858345
+      meryl_codec_43: 2083242121
+      meryl_codec_44: 450614638
+      meryl_codec_45: -1487490473
+      meryl_codec_46: 1424184679
+      meryl_codec_47: -1146484812
+      meryl_codec_5: -1076431243
+      meryl_codec_6: 1471663462
+      meryl_codec_7: -2100974914
+      meryl_codec_8: -1723434962
+      meryl_codec_9: 1669293496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

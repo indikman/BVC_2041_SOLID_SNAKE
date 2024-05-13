@@ -1,0 +1,1152 @@
+fileFormatVersion: 2
+guid: 3e26ee0b259b4d544bf930b96729d5ca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Comm Levels-0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3280
+      y: 1066
+      width: 523
+      height: 307
+    spriteID: b7b4361eb3c9b8f44a05572a863aea57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3280, y: 1066}
+    spritePosition: {x: 705, y: 448}
+  - name: Comm Levels-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 1693
+      width: 523
+      height: 307
+    spriteID: 45f6e048504c836438c1831d0530db77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2375, y: 1693}
+    spritePosition: {x: 705, y: 448}
+  - name: Comm Levels-2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2906
+      y: 1693
+      width: 523
+      height: 307
+    spriteID: 38cd6d8604c6b8c419689195a1c78716
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2906, y: 1693}
+    spritePosition: {x: 705, y: 448}
+  - name: Comm Levels-3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3437
+      y: 1693
+      width: 523
+      height: 307
+    spriteID: 43cc5ac3e7e074c40be65ae07c8ed9a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3437, y: 1693}
+    spritePosition: {x: 705, y: 448}
+  - name: Comm Levels-4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1719
+      width: 523
+      height: 307
+    spriteID: 10c95ce95c7aaef4bb95822125e6cef2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1719}
+    spritePosition: {x: 705, y: 448}
+  - name: Comm Levels
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3280
+      y: 1381
+      width: 515
+      height: 299
+    spriteID: 22f202193dbc133418baf8b63f18a0b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3280, y: 1381}
+    spritePosition: {x: 706, y: 452}
+  - name: freq text
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1909
+      width: 336
+      height: 121
+    spriteID: 1b650484503b40442b66a6558cd62b52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1909}
+    spritePosition: {x: 878, y: 456}
+  - name: freq # bg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1777
+      width: 374
+      height: 124
+    spriteID: 3bc6807b029f2a747b545fa952c6305c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 1777}
+    spritePosition: {x: 839, y: 452}
+  - name: Radio Frame Top
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3437
+      y: 2008
+      width: 596
+      height: 9
+    spriteID: 6952d675de9180943b176d64872e3e65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3437, y: 2008}
+    spritePosition: {x: 668, y: 783}
+  - name: Radio Frame Bottom
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3437
+      y: 2025
+      width: 596
+      height: 9
+    spriteID: 8e4607685e40ab74b8656c2228fc8d45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3437, y: 2025}
+    spritePosition: {x: 666, y: 416}
+  - name: Radio BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2734
+      y: 1066
+      width: 538
+      height: 330
+    spriteID: b8c15738c553c1f4e83e91b6a3dcf77d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2734, y: 1066}
+    spritePosition: {x: 702, y: 439}
+  - name: Freq Button Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3160
+      y: 1482
+      width: 62
+      height: 64
+    spriteID: fbf752e1cdf1cd84d868afa9b49440e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3160, y: 1482}
+    spritePosition: {x: 1325, y: 572}
+  - name: Freq Button Right BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3803
+      y: 1464
+      width: 169
+      height: 72
+    spriteID: 4ad960298ae93c54695139cc1573bc8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3803, y: 1464}
+    spritePosition: {x: 1271, y: 567}
+  - name: Freq Button Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3160
+      y: 1404
+      width: 62
+      height: 64
+    spriteID: 2f6b1e19832b96946b80fdf1806769bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3160, y: 1404}
+    spritePosition: {x: 543, y: 572}
+  - name: Freq Button Left BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3803
+      y: 1544
+      width: 169
+      height: 72
+    spriteID: eef3175fcd8aa1446a2b45248fb49c7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3803, y: 1544}
+    spritePosition: {x: 490, y: 567}
+  - name: PTT
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3803
+      y: 1624
+      width: 221
+      height: 44
+    spriteID: c7024e62cd0475644ba42579a98c5601
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3803, y: 1624}
+    spritePosition: {x: 854, y: 849}
+  - name: PTT BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2734
+      y: 1404
+      width: 418
+      height: 70
+    spriteID: 6d4f3a5f74233274fbb6d2937dec70d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2734, y: 1404}
+    spritePosition: {x: 757, y: 835}
+  - name: PTT Frame Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3803
+      y: 1676
+      width: 237
+      height: 6
+    spriteID: 314ba02ef89c1f74c99baab25953b638
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3803, y: 1676}
+    spritePosition: {x: 497, y: 841}
+  - name: PTT Frame Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 2038
+      width: 237
+      height: 6
+    spriteID: d9a2b2abab83d9a4dad07b99d8b93b34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 2038}
+    spritePosition: {x: 1195, y: 841}
+  - name: MEMORY
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 2008
+      width: 393
+      height: 33
+    spriteID: 8086fcef3d3ae7c429ef89efa5c5f700
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2375, y: 2008}
+    spritePosition: {x: 769, y: 308}
+  - name: Memory Frame Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2906
+      y: 2008
+      width: 237
+      height: 6
+    spriteID: 3c133fc50baa0fb4f8b4e04d266b3112
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2906, y: 2008}
+    spritePosition: {x: 1195, y: 344}
+  - name: Memory Frame Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3151
+      y: 2008
+      width: 237
+      height: 6
+    spriteID: 75c81658d01af0e4f8bbb8f5d4dd1943
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3151, y: 2008}
+    spritePosition: {x: 497, y: 344}
+  - name: Memory BG
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2734
+      y: 1482
+      width: 418
+      height: 64
+    spriteID: cbef726d26f1b004682fe9e0d37770af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2734, y: 1482}
+    spritePosition: {x: 755, y: 292}
+  - name: Portrait Panel Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 1066
+      width: 435
+      height: 703
+    spriteID: d7bb516337fede44893cd41ecae32fb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1930, y: 1064}
+    spritePosition: {x: 1445, y: 244}
+  - name: Portrait Panel Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 1066
+      width: 351
+      height: 619
+    spriteID: 4b2922931cb1d2e479d50e44072e4e7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2375, y: 1066}
+    spritePosition: {x: 92, y: 286}
+  - name: Codec Outline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1840
+      height: 619
+    spriteID: e139dc42d6c850f449b808fb04710999
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 45, y: 286}
+  - name: MGS1 Codec
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 4
+      width: 1839
+      height: 1054
+    spriteID: 9b0b6728892cfa947a064cec21c8b3f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 4}
+    spritePosition: {x: 81, y: 0}
+  - name: Color Fill 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: c460c4cbf0710e741bf190ee935559fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: '140.85 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3803
+      y: 1381
+      width: 226
+      height: 75
+    spriteID: e4d7085ce7b9ef54b98edbdf12720e56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3803, y: 1381}
+    spritePosition: {x: 905, y: 699}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Dg6imyOX4AAIz8W copy
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21a0994e4df70f7478c7af69fc66be2a
+    layerID: 83
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Dg6imyOX4AAIz8W
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 995e687c96874d14db7954419db464de
+    layerID: 82
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Renewal
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d1f40a9b9745d5a4b8735d5f282a2046
+    layerID: 16
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Radio
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: 9b17bee7f8fec4443abd0eae7b3a7bde
+    layerID: 68
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Comm Levels
+    spriteName: Comm Levels
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 82b53c9893b15c047bc8ea398bed9b53
+    layerID: 81
+    mosaicPosition: {x: 1852, y: 1092}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Comm Levels-0
+    spriteName: Comm Levels-0
+    isGroup: 0
+    parentIndex: 3
+    spriteID: b7b4361eb3c9b8f44a05572a863aea57
+    layerID: 124
+    mosaicPosition: {x: 3280, y: 1066}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Comm Levels-1
+    spriteName: Comm Levels-1
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 45f6e048504c836438c1831d0530db77
+    layerID: 123
+    mosaicPosition: {x: 2375, y: 1693}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Comm Levels-2
+    spriteName: Comm Levels-2
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 38cd6d8604c6b8c419689195a1c78716
+    layerID: 122
+    mosaicPosition: {x: 2906, y: 1693}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Comm Levels-3
+    spriteName: Comm Levels-3
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 43cc5ac3e7e074c40be65ae07c8ed9a4
+    layerID: 121
+    mosaicPosition: {x: 3437, y: 1693}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Comm Levels-4
+    spriteName: Comm Levels-4
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 10c95ce95c7aaef4bb95822125e6cef2
+    layerID: 109
+    mosaicPosition: {x: 4, y: 1719}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Comm Levels-Full
+    spriteName: 
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 7e8f06e612579d348ad415c6942d1143
+    layerID: 99
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Comm Levels
+    spriteName: Comm Levels
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 22f202193dbc133418baf8b63f18a0b5
+    layerID: 120
+    mosaicPosition: {x: 3280, y: 1381}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: freq text
+    spriteName: freq text
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 1b650484503b40442b66a6558cd62b52
+    layerID: 38
+    mosaicPosition: {x: 1932, y: 1909}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: freq # bg
+    spriteName: freq # bg
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 3bc6807b029f2a747b545fa952c6305c
+    layerID: 37
+    mosaicPosition: {x: 1932, y: 1777}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Radio Frame Top
+    spriteName: Radio Frame Top
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 6952d675de9180943b176d64872e3e65
+    layerID: 67
+    mosaicPosition: {x: 3437, y: 2008}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Radio Frame Bottom
+    spriteName: Radio Frame Bottom
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 8e4607685e40ab74b8656c2228fc8d45
+    layerID: 65
+    mosaicPosition: {x: 3437, y: 2025}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Radio BG
+    spriteName: Radio BG
+    isGroup: 0
+    parentIndex: 3
+    spriteID: b8c15738c553c1f4e83e91b6a3dcf77d
+    layerID: 62
+    mosaicPosition: {x: 2734, y: 1066}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Buttons
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: cd5c3d20f0c5f844fa0a24b6e1ab78d7
+    layerID: 70
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Freq Button Right
+    spriteName: Freq Button Right
+    isGroup: 0
+    parentIndex: 17
+    spriteID: fbf752e1cdf1cd84d868afa9b49440e7
+    layerID: 78
+    mosaicPosition: {x: 3160, y: 1482}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Freq Button Right BG
+    spriteName: Freq Button Right BG
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 4ad960298ae93c54695139cc1573bc8d
+    layerID: 77
+    mosaicPosition: {x: 3803, y: 1464}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Freq Button Left
+    spriteName: Freq Button Left
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 2f6b1e19832b96946b80fdf1806769bf
+    layerID: 47
+    mosaicPosition: {x: 3160, y: 1404}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Freq Button Left BG
+    spriteName: Freq Button Left BG
+    isGroup: 0
+    parentIndex: 17
+    spriteID: eef3175fcd8aa1446a2b45248fb49c7f
+    layerID: 42
+    mosaicPosition: {x: 3803, y: 1544}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PTT
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: 9cf2d002c53973d4e8cc8fe975ab6e35
+    layerID: 74
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: PTT
+    spriteName: PTT
+    isGroup: 0
+    parentIndex: 22
+    spriteID: c7024e62cd0475644ba42579a98c5601
+    layerID: 63
+    mosaicPosition: {x: 3803, y: 1624}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PTT BG
+    spriteName: PTT BG
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 6d4f3a5f74233274fbb6d2937dec70d0
+    layerID: 27
+    mosaicPosition: {x: 2734, y: 1404}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PTT Frame Left
+    spriteName: PTT Frame Left
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 314ba02ef89c1f74c99baab25953b638
+    layerID: 33
+    mosaicPosition: {x: 3803, y: 1676}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PTT Frame Right
+    spriteName: PTT Frame Right
+    isGroup: 0
+    parentIndex: 22
+    spriteID: d9a2b2abab83d9a4dad07b99d8b93b34
+    layerID: 24
+    mosaicPosition: {x: 1932, y: 2038}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Memory
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: f37c56f70bab8944db2e242413d349c2
+    layerID: 72
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: MEMORY
+    spriteName: MEMORY
+    isGroup: 0
+    parentIndex: 27
+    spriteID: 8086fcef3d3ae7c429ef89efa5c5f700
+    layerID: 64
+    mosaicPosition: {x: 2375, y: 2008}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Memory Frame Right
+    spriteName: Memory Frame Right
+    isGroup: 0
+    parentIndex: 27
+    spriteID: 3c133fc50baa0fb4f8b4e04d266b3112
+    layerID: 21
+    mosaicPosition: {x: 2906, y: 2008}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Memory Frame Left
+    spriteName: Memory Frame Left
+    isGroup: 0
+    parentIndex: 27
+    spriteID: 75c81658d01af0e4f8bbb8f5d4dd1943
+    layerID: 20
+    mosaicPosition: {x: 3151, y: 2008}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Memory BG
+    spriteName: Memory BG
+    isGroup: 0
+    parentIndex: 27
+    spriteID: cbef726d26f1b004682fe9e0d37770af
+    layerID: 31
+    mosaicPosition: {x: 2734, y: 1482}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Portrait BG
+    spriteName: 
+    isGroup: 1
+    parentIndex: 2
+    spriteID: e26ad2bc09edfb045b150784baa41fe6
+    layerID: 79
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Portrait Panel Left
+    spriteName: Portrait Panel Left
+    isGroup: 0
+    parentIndex: 32
+    spriteID: d7bb516337fede44893cd41ecae32fb0
+    layerID: 127
+    mosaicPosition: {x: 1932, y: 1066}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Portrait Panel Left
+    spriteName: Portrait Panel Left
+    isGroup: 0
+    parentIndex: 32
+    spriteID: 4b2922931cb1d2e479d50e44072e4e7c
+    layerID: 28
+    mosaicPosition: {x: 2375, y: 1066}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Codec Outline
+    spriteName: Codec Outline
+    isGroup: 0
+    parentIndex: 2
+    spriteID: e139dc42d6c850f449b808fb04710999
+    layerID: 22
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MGS1 Codec
+    spriteName: MGS1 Codec
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9b0b6728892cfa947a064cec21c8b3f9
+    layerID: 2
+    mosaicPosition: {x: 1932, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MGS1 Codec Full Menu
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0e5ca05da215a304aa682fc192e17075
+    layerID: 15
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Color Fill 2
+    spriteName: Color Fill 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c460c4cbf0710e741bf190ee935559fd
+    layerID: 39
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: '140.85 '
+    spriteName: '140.85 '
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e4d7085ce7b9ef54b98edbdf12720e56
+    layerID: 14
+    mosaicPosition: {x: 3803, y: 1381}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

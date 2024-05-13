@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a20c431987db1f4dabe9658ee3ea92e, type: 3}
+  m_Name: L1_C3
+  m_EditorClassIdentifier: 
+  <Character1>k__BackingField: {fileID: 11400000, guid: 4c06447418a168045b0695b813bcb2a0, type: 2}
+  <Character2>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+  <Dialogue>k__BackingField:
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 4c06447418a168045b0695b813bcb2a0, type: 2}
+    <DialogueText>k__BackingField: This place is disgusting
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 311e1686585188440b235994bf7c7590, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "Can you stop it? I just want to make a meal,
+      or\u2026maybe watch TV. I don\u2019t know."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 1ad602f258232614591044ead103a320, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 4c06447418a168045b0695b813bcb2a0, type: 2}
+    <DialogueText>k__BackingField: "Like you\u2019re covered in mud, but it\u2019s
+      not for camouflage."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 1a5b0ff07f1acdd40a4fb5e85c3c3ef3, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "I just need a break. To relax. Then I\u2019ll
+      work."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: b8264dc7fa2f1194d8e122e101893ffb, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 4c06447418a168045b0695b813bcb2a0, type: 2}
+    <DialogueText>k__BackingField: " Sometimes life is\u2026is..ugly. And stupid.
+      And mean"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 9b41936d4e7485745aae20ec5bfee6ce, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "\u2026I need to eat and get out of this place."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: acb371bf048e9774984c05a539f3de28, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 4c06447418a168045b0695b813bcb2a0, type: 2}
+    <DialogueText>k__BackingField: Smoking is bad for your health, Snake.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: bb17c1f40650bc5409b5312e75e68c89, type: 3}
+  <RadioFrequencyP1>k__BackingField: 88
+  <RadioFrequencyP2>k__BackingField: 8.88
+  <AbleToSkip>k__BackingField: 0

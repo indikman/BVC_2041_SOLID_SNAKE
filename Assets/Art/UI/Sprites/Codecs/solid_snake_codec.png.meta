@@ -1,0 +1,1104 @@
+fileFormatVersion: 2
+guid: 4b8e9ead2e9a7ef4593482e78bd6d112
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: solid_snake_codec_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f6f0d7fb7ac434ead945386287de62
+      internalID: -76874702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e600dff2be2b8c41bece9edf0a13996
+      internalID: 1331971087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92d0b439f520ba4ca14a0d0c9df4835
+      internalID: 875774981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb5be7b2b5764548829e4ac8477bb72
+      internalID: -1452029602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_4
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea1a44f96f8271458b1b3f6ebce7f86
+      internalID: -98050191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_5
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 896
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23509cfb36773c042ab4967ca50a582d
+      internalID: 1923817553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 801
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5bba81945fc6548abb866ad574ab15
+      internalID: 1847089648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 801
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255b779269b20064bb31a08dba7568e2
+      internalID: 1963845088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_8
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 801
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4cb920cf5a1334895c3994e9c88891
+      internalID: -813657005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 801
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853d021926859854c88482755a94b6a9
+      internalID: -1587327261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_10
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 801
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c517959a14bf6724a8cf13c0052e56d6
+      internalID: 1818208759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_11
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780d3122bceff1b4d90d018a03db7d8f
+      internalID: 1928579801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab941a431f48336499ce4876dcd8d424
+      internalID: -629745813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2331f8898473fb343a689d88b4ef9d9c
+      internalID: 403374830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_14
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf287efb1f63e3469de8d9a04980e91
+      internalID: -2012091705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_15
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c385363388e772b43a039e8a878603cf
+      internalID: 2061671123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_16
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 695
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bca17df08d8fa47a776553d2fef4fc
+      internalID: -398061622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_17
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 600
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d749972cf71b779429c92b508b33d107
+      internalID: 862558324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 600
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c289361ae770242489f934d2d830e365
+      internalID: 296164695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_19
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 600
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b352ca3f4d0eb834094bba0070b7d07d
+      internalID: 1036373556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_20
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 600
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e941e0dd4975284e9011568d03df1df
+      internalID: -1109662766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19db2bfa6e567ff4fa81ee81d74013be
+      internalID: 1274647021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065cf39f9410c9d4093dc8d872fa58f4
+      internalID: 1828977766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c83255d30b1b14e9ee6db9b9e5274b
+      internalID: 291806557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_24
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de4d7ea340263a4aa13c2d6a7dc4aee
+      internalID: -758678869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_25
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a051280748cda9a42818140163ac88f8
+      internalID: -1224750486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_26
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 496
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5145bf2868bcbc5439721106284520c9
+      internalID: 1031296858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 401
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb59804cedfaee4da9d473fa56d8e2a
+      internalID: 1725698643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_28
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 401
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3374934755d097f4a984b6d05ce136cf
+      internalID: -1772363771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_29
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 401
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e73ca265bcfbb44beb655984cf04ae
+      internalID: 528925126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_30
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 401
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd007bb9ca1e9241b0d2fa5a22a75cb
+      internalID: 1574409606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_31
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 401
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb1c88e4ed2b134f8878353e8a32a72
+      internalID: -692660335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_32
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76c81ebf728be7418038e0e25ecf69b
+      internalID: 1748678187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_33
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ec6d83b7099c1448d39d622e4b6ff0
+      internalID: -2060001739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_34
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fa838a537497e43849d8998d4d72ec
+      internalID: 1476514660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_35
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fc0a0d6d1adb5429a744dedc3095b6
+      internalID: -1730642238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_36
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b347121fb84a0449d14e0e696b0042
+      internalID: -1461507598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_37
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 302
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d76e71d0e72f64093aa4036af0eb0b
+      internalID: 179294661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_38
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 207
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9af03a8a16b36847af0ba615a1369ee
+      internalID: -1826165728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_39
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 207
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45feec52d0830744a09e1ed9df03024
+      internalID: -1160717005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_40
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 207
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce1b5e6afde52e469a6185c65bdccef
+      internalID: -1963175743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_41
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 207
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b152ce08148c69945b8c10404c422a35
+      internalID: 1175934035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_42
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 91
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbc0e7050369434ab38557c47ecc4c8
+      internalID: -421543995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_43
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 91
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507805960cf3f2646a4d786133325510
+      internalID: 590052252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solid_snake_codec_44
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 52
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8a318206ffb9f40b3dec315d7e0bcc
+      internalID: 980276749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: abc2387375564d44bb938c2f9e4df8b3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      solid_snake_codec_0: -76874702
+      solid_snake_codec_1: 1331971087
+      solid_snake_codec_10: 1818208759
+      solid_snake_codec_11: 1928579801
+      solid_snake_codec_12: -629745813
+      solid_snake_codec_13: 403374830
+      solid_snake_codec_14: -2012091705
+      solid_snake_codec_15: 2061671123
+      solid_snake_codec_16: -398061622
+      solid_snake_codec_17: 862558324
+      solid_snake_codec_18: 296164695
+      solid_snake_codec_19: 1036373556
+      solid_snake_codec_2: 875774981
+      solid_snake_codec_20: -1109662766
+      solid_snake_codec_21: 1274647021
+      solid_snake_codec_22: 1828977766
+      solid_snake_codec_23: 291806557
+      solid_snake_codec_24: -758678869
+      solid_snake_codec_25: -1224750486
+      solid_snake_codec_26: 1031296858
+      solid_snake_codec_27: 1725698643
+      solid_snake_codec_28: -1772363771
+      solid_snake_codec_29: 528925126
+      solid_snake_codec_3: -1452029602
+      solid_snake_codec_30: 1574409606
+      solid_snake_codec_31: -692660335
+      solid_snake_codec_32: 1748678187
+      solid_snake_codec_33: -2060001739
+      solid_snake_codec_34: 1476514660
+      solid_snake_codec_35: -1730642238
+      solid_snake_codec_36: -1461507598
+      solid_snake_codec_37: 179294661
+      solid_snake_codec_38: -1826165728
+      solid_snake_codec_39: -1160717005
+      solid_snake_codec_4: -98050191
+      solid_snake_codec_40: -1963175743
+      solid_snake_codec_41: 1175934035
+      solid_snake_codec_42: -421543995
+      solid_snake_codec_43: 590052252
+      solid_snake_codec_44: 980276749
+      solid_snake_codec_5: 1923817553
+      solid_snake_codec_6: 1847089648
+      solid_snake_codec_7: 1963845088
+      solid_snake_codec_8: -813657005
+      solid_snake_codec_9: -1587327261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

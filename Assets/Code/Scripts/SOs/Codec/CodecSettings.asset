@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985a821fdf114e44ba502e1457cc62ca, type: 3}
+  m_Name: CodecSettings
+  m_EditorClassIdentifier: 
+  <OpeningSFX>k__BackingField: {fileID: 8300000, guid: 92f5577c040471648a19852563cff409, type: 3}
+  <RingingSFX>k__BackingField: {fileID: 8300000, guid: f209754a0ed48cc46bd3e4c5d9cbb796, type: 3}
+  <ClosingSFX>k__BackingField: {fileID: 8300000, guid: ad286e0773db5d84e9af900ebaee145a, type: 3}
+  <PauseBeforeTalking>k__BackingField: 2
+  <PauseBetweenSpeakers>k__BackingField: 0.25
+  waveSprites:
+  - {fileID: 6640776632680469723, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  - {fileID: -583895013860524218, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  - {fileID: 3027890722513048512, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  - {fileID: -9003006982089650393, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  - {fileID: 1612891777977815079, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  <CodecPrefab>k__BackingField: {fileID: 2668161080704207404, guid: 32775cf62da982b49a7ba01691dc51b0, type: 3}
+  <CodecCallSo>k__BackingField: {fileID: 11400000, guid: 20f68c08b3b1509468ed1f622b66f16e, type: 2}
+  <WaveSpeed>k__BackingField: 0.1
+  <OpeningWait>k__BackingField: 0.5
+  <CharacterAppearWait>k__BackingField: 0.5
+  <ClosingWait>k__BackingField: 2
+  <CharacterDiscussionWait>k__BackingField: 0.5

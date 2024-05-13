@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a20c431987db1f4dabe9658ee3ea92e, type: 3}
+  m_Name: DemoCodec
+  m_EditorClassIdentifier: 
+  <Character1>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+  <Character2>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+  <Dialogue>k__BackingField:
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: I told you. Even if I do owe you, I don't owe
+      anything to this army or this country!
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 3f236f53db02aa74da68de3fbe70ea35, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: You will accept this assignment.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 3fa9b8e3a59ab1143a642f607e1b1799, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "Why should I be stupid enough to do that? I\u2019m
+      no patriot."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 49bfef553b257bc48b534011f511687c, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: Snake, there's enough dirt in your file from your
+      days as an agent, to keep you in the stockade until you're a very old man
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: de7513545361f0b4a9e4059d14dba2fb, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: Oh. I see... blackmail.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 2657c077ac9199a469a3c61f8e0dccde, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: No, Snake. I prefer to look at it as helping you
+      come to a decision more easily.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 0dce7f9a009fb3047a805a510b896188, type: 3}
+  <RadioFrequencyP1>k__BackingField: 42
+  <RadioFrequencyP2>k__BackingField: 0.69
+  <AbleToSkip>k__BackingField: 0

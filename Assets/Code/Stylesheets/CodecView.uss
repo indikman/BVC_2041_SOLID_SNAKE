@@ -1,0 +1,26 @@
+.characterShow
+{
+    scale: 1.0 1.0!important;   
+}
+
+.characterHide
+{
+    scale: 1.0 0.0;
+}
+.characterView
+{
+    transition-property: scale;
+    transition-duration: .5s;
+}
+
+.mainDisplay
+{
+    transition-property: opacity, scale;
+    transition-duration: .5s;
+}
+
+.displayHide
+{
+    opacity: 0;
+    scale: 0 0;
+}

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a20c431987db1f4dabe9658ee3ea92e, type: 3}
+  m_Name: L1_C2
+  m_EditorClassIdentifier: 
+  <Character1>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+  <Character2>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+  <Dialogue>k__BackingField:
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: Employee of the month, S.O.L.I.D. Snake. Bravo.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: f7aa5abfdea47f14faf719dd565a78bd, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "I am done with your \u201Cprinciples\u201D. I
+      am getting by."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 73a82776b2d12bd4e9392968a58e5165, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "Are you? You look disheveled, disorganized. I
+      bet you can\u2019t plan anything."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 791b58ad25fcd91409ab4d80d8c020a9, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: I just want to eat.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 17bf2b185dd7f644b8372ef87f2b9c33, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "\u2026that\u2019s Universal Soldier. More avoidance
+      tactics, Snake."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: bb6a5e378417a4b4780e78ad3442fd1d, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: I am doing fine without your plans. My shop is
+      running smoothly.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 3b07b1e3c03081144bf8d039f53b20dc, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: Oh, really, Snake? Can you even get into the back
+      room?
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 0d79d765222c70c49a8aad793dceb23d, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "I\u2019ll just reuse what I\u2019ve used before
+      and\u2026"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 6d81f4e058c4a6942b98d97797cb165e, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: "But this is a different situation, isn\u2019t
+      it? You can\u2019t even see the entrance."
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: bb5ba8d7f7f743041ac15006433b8e05, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: 'I can figure it out. '
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: e452de0957c264f45bca557f638b2b13, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: b9fe7fc756e24824199df2dce3b61805, type: 2}
+    <DialogueText>k__BackingField: You were built to have a Single Responsibility,
+      S.O.L.I.D. Snake.
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: d4ea308e7fdbf704dbe30c93730414e5, type: 3}
+  - <Position>k__BackingField: 0
+    <Talker>k__BackingField: {fileID: 11400000, guid: 948831531791cdc4a931001c8587d225, type: 2}
+    <DialogueText>k__BackingField: "I\u2019m The Parking Attendant. And You\u2019re
+      Bothering My Customers"
+    <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 389dc49704d00fc45b85a97bf46a861c, type: 3}
+  <RadioFrequencyP1>k__BackingField: 14
+  <RadioFrequencyP2>k__BackingField: 0.85
+  <AbleToSkip>k__BackingField: 0

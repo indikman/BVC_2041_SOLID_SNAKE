@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fbfd42526a6622445a5d7862b01c1d8c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - codecPrefab: {instanceID: 0}
+  - codecData: {instanceID: 0}
+  - codecSound: {fileID: 8300000, guid: 3f236f53db02aa74da68de3fbe70ea35, type: 3}
+  - tabText: {instanceID: 0}
+  - itemToOpen: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

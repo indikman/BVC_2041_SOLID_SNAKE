@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0bf20dbb52dece469e9232db0baa712, type: 3}
+  m_Name: SolidSnakeSO
+  m_EditorClassIdentifier: 
+  <CharacterRef>k__BackingField: solid_snake
+  <CharacterName>k__BackingField: Solid Snake
+  <CharacterImage>k__BackingField: {fileID: -76874702, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+  <CharacterAnimations>k__BackingField:
+  - <AnimationType>k__BackingField: 0
+    <AnimationFrames>k__BackingField:
+    - <Animation>k__BackingField: {fileID: -1452029602, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+      <Delay>k__BackingField: 0.5
+    - <Animation>k__BackingField: {fileID: -98050191, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+      <Delay>k__BackingField: 0.25
+    - <Animation>k__BackingField: {fileID: 1923817553, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+      <Delay>k__BackingField: 0.25
+    <AnimationSpeed>k__BackingField: 1
+  - <AnimationType>k__BackingField: 1
+    <AnimationFrames>k__BackingField:
+    - <Animation>k__BackingField: {fileID: 1963845088, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+      <Delay>k__BackingField: 0.5
+    - <Animation>k__BackingField: {fileID: 1847089648, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+      <Delay>k__BackingField: 0.5
+    <AnimationSpeed>k__BackingField: 2
