@@ -64,6 +64,42 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""OpenItems"",
+                    ""type"": ""Button"",
+                    ""id"": ""a0d34a80-cded-4a19-ab04-42f1cfdd8fab"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenWeapons"",
+                    ""type"": ""Button"",
+                    ""id"": ""36d4020c-c34f-4cb0-884b-5a5a1a55b720"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""423d8b4a-be89-4f8f-b8e7-2b642c7b97e5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CodecAnswer"",
+                    ""type"": ""Button"",
+                    ""id"": ""7f18491b-a6b5-456c-95be-ba3c9b346d24"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""UnequipItem"",
                     ""type"": ""Button"",
                     ""id"": ""fdb04415-502a-42fd-aca5-011348c46366"",
@@ -283,6 +319,94 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""1e22263d-c775-4f09-bf61-e27c482dd980"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""OpenItems"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8d549370-393f-4259-82cc-9a181465eb7f"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""OpenItems"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c8dde2df-0975-4be1-8749-ca0bb56063a7"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""OpenWeapons"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70139798-202b-4ad7-a57e-6c4541f42c1f"",
+                    ""path"": ""<Keyboard>/0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""OpenWeapons"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d4bb5f8-21dd-4af2-90d8-7972f5293fae"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3a947698-cde6-485c-9570-b6e37a04e3b5"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""145bb7eb-750a-4b60-a309-4c37709c8585"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""CodecAnswer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8990226e-0605-4657-8b48-e23b0a5abacc"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""CodecAnswer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fe799095-0ed1-4a1e-a2ac-78ca950b9bdf"",
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
@@ -356,22 +480,22 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""CodecCall"",
+            ""name"": ""PhoneCall"",
             ""id"": ""8f45bccc-01e0-4e48-b1c2-2f3c9ae5bd2a"",
             ""actions"": [
                 {
-                    ""name"": ""Next"",
+                    ""name"": ""Pause"",
                     ""type"": ""Button"",
-                    ""id"": ""b7e22783-0c66-41b8-9792-61ac391fe6b9"",
+                    ""id"": ""55d85068-b922-44bc-a4ba-4675fa413c2b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Open"",
+                    ""name"": ""Next"",
                     ""type"": ""Button"",
-                    ""id"": ""81d0555b-8b44-4877-bd64-7231f83f7c97"",
+                    ""id"": ""b7e22783-0c66-41b8-9792-61ac391fe6b9"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -381,23 +505,34 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
+                    ""id"": ""ce7111c5-a59c-42fb-b9e1-928ac19aba7c"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d440b703-d48d-4cd0-b21e-df6fe4427ad8"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""aed72ae4-0fbf-4f15-83a3-dbf48d995391"",
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mouse and Key"",
                     ""action"": ""Next"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ea223de9-d9e3-43e3-a094-fd93e6b0843d"",
-                    ""path"": ""<Keyboard>/tab"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Mouse and Key"",
-                    ""action"": ""Open"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -440,15 +575,19 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         m_PlayerControl_Crouch = m_PlayerControl.FindAction("Crouch", throwIfNotFound: true);
         m_PlayerControl_Interact = m_PlayerControl.FindAction("Interact", throwIfNotFound: true);
         m_PlayerControl_Interact2 = m_PlayerControl.FindAction("Interact2", throwIfNotFound: true);
+        m_PlayerControl_OpenItems = m_PlayerControl.FindAction("OpenItems", throwIfNotFound: true);
+        m_PlayerControl_OpenWeapons = m_PlayerControl.FindAction("OpenWeapons", throwIfNotFound: true);
+        m_PlayerControl_Pause = m_PlayerControl.FindAction("Pause", throwIfNotFound: true);
+        m_PlayerControl_CodecAnswer = m_PlayerControl.FindAction("CodecAnswer", throwIfNotFound: true);
         m_PlayerControl_UnequipItem = m_PlayerControl.FindAction("UnequipItem", throwIfNotFound: true);
         m_PlayerControl_UnequipWeapon = m_PlayerControl.FindAction("UnequipWeapon", throwIfNotFound: true);
         // MenuControl
         m_MenuControl = asset.FindActionMap("MenuControl", throwIfNotFound: true);
         m_MenuControl_Newaction = m_MenuControl.FindAction("New action", throwIfNotFound: true);
-        // CodecCall
-        m_CodecCall = asset.FindActionMap("CodecCall", throwIfNotFound: true);
-        m_CodecCall_Next = m_CodecCall.FindAction("Next", throwIfNotFound: true);
-        m_CodecCall_Open = m_CodecCall.FindAction("Open", throwIfNotFound: true);
+        // PhoneCall
+        m_PhoneCall = asset.FindActionMap("PhoneCall", throwIfNotFound: true);
+        m_PhoneCall_Pause = m_PhoneCall.FindAction("Pause", throwIfNotFound: true);
+        m_PhoneCall_Next = m_PhoneCall.FindAction("Next", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -514,6 +653,10 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerControl_Crouch;
     private readonly InputAction m_PlayerControl_Interact;
     private readonly InputAction m_PlayerControl_Interact2;
+    private readonly InputAction m_PlayerControl_OpenItems;
+    private readonly InputAction m_PlayerControl_OpenWeapons;
+    private readonly InputAction m_PlayerControl_Pause;
+    private readonly InputAction m_PlayerControl_CodecAnswer;
     private readonly InputAction m_PlayerControl_UnequipItem;
     private readonly InputAction m_PlayerControl_UnequipWeapon;
     public struct PlayerControlActions
@@ -524,6 +667,10 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         public InputAction @Crouch => m_Wrapper.m_PlayerControl_Crouch;
         public InputAction @Interact => m_Wrapper.m_PlayerControl_Interact;
         public InputAction @Interact2 => m_Wrapper.m_PlayerControl_Interact2;
+        public InputAction @OpenItems => m_Wrapper.m_PlayerControl_OpenItems;
+        public InputAction @OpenWeapons => m_Wrapper.m_PlayerControl_OpenWeapons;
+        public InputAction @Pause => m_Wrapper.m_PlayerControl_Pause;
+        public InputAction @CodecAnswer => m_Wrapper.m_PlayerControl_CodecAnswer;
         public InputAction @UnequipItem => m_Wrapper.m_PlayerControl_UnequipItem;
         public InputAction @UnequipWeapon => m_Wrapper.m_PlayerControl_UnequipWeapon;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControl; }
@@ -547,6 +694,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             @Interact2.started += instance.OnInteract2;
             @Interact2.performed += instance.OnInteract2;
             @Interact2.canceled += instance.OnInteract2;
+            @OpenItems.started += instance.OnOpenItems;
+            @OpenItems.performed += instance.OnOpenItems;
+            @OpenItems.canceled += instance.OnOpenItems;
+            @OpenWeapons.started += instance.OnOpenWeapons;
+            @OpenWeapons.performed += instance.OnOpenWeapons;
+            @OpenWeapons.canceled += instance.OnOpenWeapons;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @CodecAnswer.started += instance.OnCodecAnswer;
+            @CodecAnswer.performed += instance.OnCodecAnswer;
+            @CodecAnswer.canceled += instance.OnCodecAnswer;
             @UnequipItem.started += instance.OnUnequipItem;
             @UnequipItem.performed += instance.OnUnequipItem;
             @UnequipItem.canceled += instance.OnUnequipItem;
@@ -569,6 +728,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             @Interact2.started -= instance.OnInteract2;
             @Interact2.performed -= instance.OnInteract2;
             @Interact2.canceled -= instance.OnInteract2;
+            @OpenItems.started -= instance.OnOpenItems;
+            @OpenItems.performed -= instance.OnOpenItems;
+            @OpenItems.canceled -= instance.OnOpenItems;
+            @OpenWeapons.started -= instance.OnOpenWeapons;
+            @OpenWeapons.performed -= instance.OnOpenWeapons;
+            @OpenWeapons.canceled -= instance.OnOpenWeapons;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @CodecAnswer.started -= instance.OnCodecAnswer;
+            @CodecAnswer.performed -= instance.OnCodecAnswer;
+            @CodecAnswer.canceled -= instance.OnCodecAnswer;
             @UnequipItem.started -= instance.OnUnequipItem;
             @UnequipItem.performed -= instance.OnUnequipItem;
             @UnequipItem.canceled -= instance.OnUnequipItem;
@@ -639,59 +810,59 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     }
     public MenuControlActions @MenuControl => new MenuControlActions(this);
 
-    // CodecCall
-    private readonly InputActionMap m_CodecCall;
-    private List<ICodecCallActions> m_CodecCallActionsCallbackInterfaces = new List<ICodecCallActions>();
-    private readonly InputAction m_CodecCall_Next;
-    private readonly InputAction m_CodecCall_Open;
-    public struct CodecCallActions
+    // PhoneCall
+    private readonly InputActionMap m_PhoneCall;
+    private List<IPhoneCallActions> m_PhoneCallActionsCallbackInterfaces = new List<IPhoneCallActions>();
+    private readonly InputAction m_PhoneCall_Pause;
+    private readonly InputAction m_PhoneCall_Next;
+    public struct PhoneCallActions
     {
         private @GameInput m_Wrapper;
-        public CodecCallActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Next => m_Wrapper.m_CodecCall_Next;
-        public InputAction @Open => m_Wrapper.m_CodecCall_Open;
-        public InputActionMap Get() { return m_Wrapper.m_CodecCall; }
+        public PhoneCallActions(@GameInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Pause => m_Wrapper.m_PhoneCall_Pause;
+        public InputAction @Next => m_Wrapper.m_PhoneCall_Next;
+        public InputActionMap Get() { return m_Wrapper.m_PhoneCall; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(CodecCallActions set) { return set.Get(); }
-        public void AddCallbacks(ICodecCallActions instance)
+        public static implicit operator InputActionMap(PhoneCallActions set) { return set.Get(); }
+        public void AddCallbacks(IPhoneCallActions instance)
         {
-            if (instance == null || m_Wrapper.m_CodecCallActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_CodecCallActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_PhoneCallActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PhoneCallActionsCallbackInterfaces.Add(instance);
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
             @Next.started += instance.OnNext;
             @Next.performed += instance.OnNext;
             @Next.canceled += instance.OnNext;
-            @Open.started += instance.OnOpen;
-            @Open.performed += instance.OnOpen;
-            @Open.canceled += instance.OnOpen;
         }
 
-        private void UnregisterCallbacks(ICodecCallActions instance)
+        private void UnregisterCallbacks(IPhoneCallActions instance)
         {
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
             @Next.started -= instance.OnNext;
             @Next.performed -= instance.OnNext;
             @Next.canceled -= instance.OnNext;
-            @Open.started -= instance.OnOpen;
-            @Open.performed -= instance.OnOpen;
-            @Open.canceled -= instance.OnOpen;
         }
 
-        public void RemoveCallbacks(ICodecCallActions instance)
+        public void RemoveCallbacks(IPhoneCallActions instance)
         {
-            if (m_Wrapper.m_CodecCallActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_PhoneCallActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(ICodecCallActions instance)
+        public void SetCallbacks(IPhoneCallActions instance)
         {
-            foreach (var item in m_Wrapper.m_CodecCallActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_PhoneCallActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_CodecCallActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_PhoneCallActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public CodecCallActions @CodecCall => new CodecCallActions(this);
+    public PhoneCallActions @PhoneCall => new PhoneCallActions(this);
     private int m_GamepadSchemeIndex = -1;
     public InputControlScheme GamepadScheme
     {
@@ -716,6 +887,10 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         void OnCrouch(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnInteract2(InputAction.CallbackContext context);
+        void OnOpenItems(InputAction.CallbackContext context);
+        void OnOpenWeapons(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnCodecAnswer(InputAction.CallbackContext context);
         void OnUnequipItem(InputAction.CallbackContext context);
         void OnUnequipWeapon(InputAction.CallbackContext context);
     }
@@ -723,9 +898,9 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     {
         void OnNewaction(InputAction.CallbackContext context);
     }
-    public interface ICodecCallActions
+    public interface IPhoneCallActions
     {
+        void OnPause(InputAction.CallbackContext context);
         void OnNext(InputAction.CallbackContext context);
-        void OnOpen(InputAction.CallbackContext context);
     }
 }

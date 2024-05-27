@@ -8,9 +8,10 @@ using UnityEngine.Serialization;
 public class TriggerCodecEvent : CodecEvent
 {
     // Start is called before the first frame update
-    protected override void Awake()
+    void Start()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = codecSound;
     }
 
     // Update is called once per frame
@@ -19,18 +20,27 @@ public class TriggerCodecEvent : CodecEvent
         
     }
 
+    protected override void Activate()
+    {
+        Active = true;
+    }
 
-
+    public override void OpenCall()
+    {
+        if (!_active)
+            return;
+        base.OpenCall();
+        
+        itemToOpen.gameObject.SetActive(!itemToOpen.gameObject.activeInHierarchy);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerController>())
         {
-            GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
-            prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
-            EventTrigerred?.Invoke();
-            prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
+            CameraManager.Instance.EnableCamera(cameraName);
+            itemToOpen.gameObject.SetActive(!itemToOpen.gameObject.activeInHierarchy);
+            Invoke("Activate", 5f);
             Destroy(this.GetComponent<Collider>());
         }
-
     }
 }

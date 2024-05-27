@@ -42,6 +42,42 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "OpenItems",
+                    "type": "Button",
+                    "id": "a0d34a80-cded-4a19-ab04-42f1cfdd8fab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OpenWeapons",
+                    "type": "Button",
+                    "id": "36d4020c-c34f-4cb0-884b-5a5a1a55b720",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "423d8b4a-be89-4f8f-b8e7-2b642c7b97e5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CodecAnswer",
+                    "type": "Button",
+                    "id": "7f18491b-a6b5-456c-95be-ba3c9b346d24",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "UnequipItem",
                     "type": "Button",
                     "id": "fdb04415-502a-42fd-aca5-011348c46366",
@@ -261,6 +297,94 @@
                 },
                 {
                     "name": "",
+                    "id": "1e22263d-c775-4f09-bf61-e27c482dd980",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "OpenItems",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d549370-393f-4259-82cc-9a181465eb7f",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse and Key",
+                    "action": "OpenItems",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8dde2df-0975-4be1-8749-ca0bb56063a7",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "OpenWeapons",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70139798-202b-4ad7-a57e-6c4541f42c1f",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse and Key",
+                    "action": "OpenWeapons",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d4bb5f8-21dd-4af2-90d8-7972f5293fae",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a947698-cde6-485c-9570-b6e37a04e3b5",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse and Key",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "145bb7eb-750a-4b60-a309-4c37709c8585",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "CodecAnswer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8990226e-0605-4657-8b48-e23b0a5abacc",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse and Key",
+                    "action": "CodecAnswer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fe799095-0ed1-4a1e-a2ac-78ca950b9bdf",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
@@ -334,22 +458,22 @@
             ]
         },
         {
-            "name": "CodecCall",
+            "name": "PhoneCall",
             "id": "8f45bccc-01e0-4e48-b1c2-2f3c9ae5bd2a",
             "actions": [
                 {
-                    "name": "Next",
+                    "name": "Pause",
                     "type": "Button",
-                    "id": "b7e22783-0c66-41b8-9792-61ac391fe6b9",
+                    "id": "55d85068-b922-44bc-a4ba-4675fa413c2b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Open",
+                    "name": "Next",
                     "type": "Button",
-                    "id": "81d0555b-8b44-4877-bd64-7231f83f7c97",
+                    "id": "b7e22783-0c66-41b8-9792-61ac391fe6b9",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -359,23 +483,34 @@
             "bindings": [
                 {
                     "name": "",
+                    "id": "ce7111c5-a59c-42fb-b9e1-928ac19aba7c",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mouse and Key",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d440b703-d48d-4cd0-b21e-df6fe4427ad8",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "aed72ae4-0fbf-4f15-83a3-dbf48d995391",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "Mouse and Key",
                     "action": "Next",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ea223de9-d9e3-43e3-a094-fd93e6b0843d",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Mouse and Key",
-                    "action": "Open",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

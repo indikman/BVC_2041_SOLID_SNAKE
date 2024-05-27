@@ -1,45 +1,70 @@
 using System.Collections;
 using System.Collections.Generic;
-using Code.Scripts.Inputs;
 using Code.Scripts.Managers;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using UnityEngine.Events;
 
 /// <summary>
 /// Yes, this is going to be a bad way to do things; no, I do not think we should use this. Yes, you will fix it.
 /// </summary>
-/// 
 public class CodecEvent : MonoBehaviour
 {
+    protected bool _active = false;
     [Header("Codec Parts"), SerializeField]
+    protected GameObject codecPrefab;
+    [SerializeField]
     protected CodecSO codecData;
-    [SerializeField] protected CodecSettingsSO codecSettings;
-    public UnityEvent EventTrigerred;
-    public UnityEvent CodecComplete;
-
-    protected virtual void Awake()
+    [SerializeField]
+    protected AudioClip codecSound;
+    [SerializeField] private GameObject tabText;
+    [SerializeField] protected GameObject itemToOpen;  
+    [SerializeField] protected string cameraName;
+    protected AudioSource _audioSource;
+    
+    public bool Active
     {
-        Invoke("Trigger", 5.0f);
+        get
+        {
+            return _active;
+        }
+        set
+        {
+            _active = value;
+            if(_active)
+                _audioSource.Play();
+            else
+                _audioSource.Stop();
+        }
     }
-    public virtual void Trigger()
+    
+
+    public virtual void OpenCall()
     {
-        GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
-        prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
-        EventTrigerred?.Invoke();
-        prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
-        
+        if (!_active)
+            return;
+        Active = false;
+        GameObject prefabObject = Instantiate(codecPrefab);
+        prefabObject.GetComponent<CodecView>().Initialize(codecData);
+        if(itemToOpen!= null)
+            itemToOpen.gameObject.SetActive(!itemToOpen.gameObject.activeInHierarchy); //let's swap the door.
+        Destroy(this.gameObject, 1f);
     }
     
     // Start is called before the first frame update
     void Start()
     {
-        // _audioSource = GetComponent<AudioSource>();
-        // _audioSource.clip = codecSettings.RingingSFX;
-        // Invoke("Activate", 5f);
-        // CameraManager.Instance.EnableCamera(cameraName);
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = codecSound;
+        Invoke("Activate", 5f);
+        CameraManager.Instance.EnableCamera(cameraName);
     }
-    
+
+    protected virtual void Activate()
+    {
+        if(tabText != null)
+            tabText.SetActive(true);
+        Active = true;
+    }
 
     // Update is called once per frame
 
