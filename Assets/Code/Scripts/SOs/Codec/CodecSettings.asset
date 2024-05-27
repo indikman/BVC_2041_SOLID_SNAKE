@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: CodecSettings
   m_EditorClassIdentifier: 
   <OpeningSFX>k__BackingField: {fileID: 8300000, guid: 92f5577c040471648a19852563cff409, type: 3}
+  <RingingSFX>k__BackingField: {fileID: 8300000, guid: f209754a0ed48cc46bd3e4c5d9cbb796, type: 3}
   <ClosingSFX>k__BackingField: {fileID: 8300000, guid: ad286e0773db5d84e9af900ebaee145a, type: 3}
   <PauseBeforeTalking>k__BackingField: 2
   <PauseBetweenSpeakers>k__BackingField: 0.25
@@ -22,6 +23,8 @@ MonoBehaviour:
   - {fileID: 3027890722513048512, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
   - {fileID: -9003006982089650393, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
   - {fileID: 1612891777977815079, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  <CodecPrefab>k__BackingField: {fileID: 2668161080704207404, guid: 32775cf62da982b49a7ba01691dc51b0, type: 3}
+  <CodecControlChannelSo>k__BackingField: {fileID: 11400000, guid: 20f68c08b3b1509468ed1f622b66f16e, type: 2}
   <WaveSpeed>k__BackingField: 0.1
   <OpeningWait>k__BackingField: 0.5
   <CharacterAppearWait>k__BackingField: 0.5

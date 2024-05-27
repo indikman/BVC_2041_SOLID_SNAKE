@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Code.Scripts.Inputs;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
-public class CodecView : MonoBehaviour
+public class CodecView : MonoBehaviour, ICodecListener
 {
-    [SerializeField] private CodecSettingsSO codecSettings;
+    
     private CodecSO _codecInfo;
+    private CodecSettingsSO _codecSettings;
+    public UnityEvent CodecComplete;
     #region Document references
     
     private VisualElement _root, _mainDisplay, _leftSprite, _rightSprite, _radioWaves;
@@ -22,12 +26,26 @@ public class CodecView : MonoBehaviour
     void Awake()
     {
         _sfxSource = GetComponent<AudioSource>();
+
         GetElements();
     }
 
+    void RegisterListeners()
+    {
+        _codecSettings.CodecControlChannelSo.Next.AddListener(Next);
+        _codecSettings.CodecControlChannelSo.Open.AddListener(Open);
+    }
+
+    void RemoveListeners()
+    {
+        _codecSettings.CodecControlChannelSo.Next.RemoveListener(Next);
+        _codecSettings.CodecControlChannelSo.Open.RemoveListener(Open);
+    }
+    
     private void GetElements()
     {
         _root = GetComponent<UIDocument>().rootVisualElement;
+        _root.style.visibility = Visibility.Hidden;
         _mainDisplay = _root.Q<VisualElement>(CodecReference.MainDisplay);
         _leftSprite = _root.Q<VisualElement>(CodecReference.LeftCharacter);
         _rightSprite = _root.Q<VisualElement>(CodecReference.RightCharacter);
@@ -37,17 +55,47 @@ public class CodecView : MonoBehaviour
         _dialogueText = _root.Q<Label>(CodecReference.DialogueText);
         _dialogueText.text = "";
     }
-    public void Initialize(CodecSO cInfo)
+    
+    public void Initialize(CodecSO cInfo, CodecSettingsSO cSettingsSo)
     {
         _codecInfo = cInfo;
+        _codecSettings = cSettingsSo;
         _radioNumberP1.text = _codecInfo.RadioFrequencyP1;
         _radioNumberP2.text = _codecInfo.RadioFrequencyP2;
-        _sfxSource.clip = codecSettings.OpeningSFX;
+        _sfxSource.clip = _codecSettings.RingingSFX;
+        _sfxSource.Play();
+        _sfxSource.loop = true;
         _leftCharacter = _codecInfo.Character1;
         _rightCharacter = _codecInfo.Character2;
         _leftSprite.style.backgroundImage = new StyleBackground(_leftCharacter.CharacterImage);
         _rightSprite.style.backgroundImage = new StyleBackground(_rightCharacter.CharacterImage);
+        RegisterListeners();
+    }
+    
+
+    public void Open()
+    {
+        if (_codecRunning)
+            return;
+        _sfxSource.loop = false;
+        _codecRunning = true;
+        _sfxSource.clip = _codecSettings.OpeningSFX;
+        _root.style.visibility = Visibility.Visible;
         StartCoroutine(ExecuteCodecCall());
+    }
+
+    public void Next()
+    {
+        if (_codecInfo.AbleToSkip && _codecRunning)
+        {
+            StopAllCoroutines();
+            CodecComplete?.Invoke();
+            _sfxSource.clip = _codecSettings.ClosingSFX;
+            _sfxSource.Play();
+            _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
+            _codecInfo.AbleToSkip = true;
+            Destroy(this.gameObject, 2f);
+        }
     }
 
     /// <summary>
@@ -62,31 +110,32 @@ public class CodecView : MonoBehaviour
     IEnumerator ExecuteCodecCall()
     {
         //Step 1: make display appear
-        yield return new WaitForSeconds(codecSettings.OpeningWait);
+        yield return new WaitForSeconds(_codecSettings.OpeningWait);
         _mainDisplay.RemoveFromClassList(CodecReference.HideDisplayClass);
-        yield return new WaitForSeconds(codecSettings.OpeningWait);
+        yield return new WaitForSeconds(_codecSettings.OpeningWait);
         //Step 2 play audio make characters appear
         _codecRunning = true; //do this so we actually keep track of the codec running so it can be tabbed out of
         var WaveAnimation = StartCoroutine(AnimateWaves());
         _sfxSource.Play();
         _leftSprite.RemoveFromClassList(CodecReference.HideCharacterClass);
         _rightSprite.RemoveFromClassList(CodecReference.HideCharacterClass);
-        yield return new WaitForSeconds(codecSettings.CharacterAppearWait);
+        yield return new WaitForSeconds(_codecSettings.CharacterAppearWait);
         
         //Step 2.5: pause before people start talking
-        yield return new WaitForSeconds(codecSettings.PauseBeforeTalking);
+        yield return new WaitForSeconds(_codecSettings.PauseBeforeTalking);
         
         //step 3: play audio and display text
         yield return StartCoroutine(DialogueScenes());
         StartCoroutine(AnimateSprites(_leftSprite, _leftCharacter.GetAnimation(CharacterAnimationType.Idle)));
         StartCoroutine(AnimateSprites(_rightSprite, _rightCharacter.GetAnimation(CharacterAnimationType.Idle)));
         //step 4: wait a couple of seconds
-        yield return new WaitForSeconds(codecSettings.ClosingWait);
-        _sfxSource.clip = codecSettings.ClosingSFX;
+        yield return new WaitForSeconds(_codecSettings.ClosingWait);
+        _sfxSource.clip = _codecSettings.ClosingSFX;
         _sfxSource.Play();
         _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
-        yield return new WaitForSeconds(codecSettings.ClosingWait);
+        yield return new WaitForSeconds(_codecSettings.ClosingWait);
         _codecInfo.AbleToSkip = true;
+        CodecComplete?.Invoke();
         Destroy(this.gameObject);
 
     }
@@ -94,17 +143,17 @@ public class CodecView : MonoBehaviour
     { 
         while (true)
         {
-            var waveRange = Random.Range(0, codecSettings.WaveFrames.Length);
+            var waveRange = Random.Range(0, _codecSettings.WaveFrames.Length);
             for (int i = 0; i <= waveRange; i++)
             {
-                _radioWaves.style.backgroundImage = codecSettings.WaveFrames[i];
-                yield return new WaitForSeconds(codecSettings.WaveSpeed);
+                _radioWaves.style.backgroundImage = _codecSettings.WaveFrames[i];
+                yield return new WaitForSeconds(_codecSettings.WaveSpeed);
             }
 
             for (int i = waveRange; i >= 0; i--)
             {
-                _radioWaves.style.backgroundImage = codecSettings.WaveFrames[i];
-                yield return new WaitForSeconds(codecSettings.WaveSpeed);
+                _radioWaves.style.backgroundImage = _codecSettings.WaveFrames[i];
+                yield return new WaitForSeconds(_codecSettings.WaveSpeed);
             }
         }
         
@@ -155,7 +204,7 @@ public class CodecView : MonoBehaviour
             yield return new WaitForSeconds(_sfxSource.clip.length);
             StopCoroutine(talkingAnimation);
             StopCoroutine(idleAnimation);
-            yield return new WaitForSeconds(codecSettings.PauseBetweenSpeakers);//wait before next person starts talking
+            yield return new WaitForSeconds(_codecSettings.PauseBetweenSpeakers);//wait before next person starts talking
         }
         _dialogueText.text = "";
 
@@ -177,18 +226,6 @@ public class CodecView : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            if (_codecInfo.AbleToSkip && _codecRunning)
-            {
-                StopAllCoroutines();
-                _sfxSource.clip = codecSettings.ClosingSFX;
-                _sfxSource.Play();
-                _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
-                _codecInfo.AbleToSkip = true;
-                Destroy(this.gameObject, 2f);
-            }
-        }
     }
 }
 

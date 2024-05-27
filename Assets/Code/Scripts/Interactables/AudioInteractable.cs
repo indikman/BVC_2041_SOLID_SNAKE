@@ -2,17 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioInteractable : MonoBehaviour
+public class AudioInteractable : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
+    private AudioSource _audioSource;
+
+    protected override void Awake()
     {
+        base.Awake();
+        _audioSource = GetComponent<AudioSource>();
+    }
+    public override void Trigger()
+    {
+        _playing = !_playing;
         
+        if (_playing)
+        {
+            StartCoroutine(PlayAudioUntilEnd());
+        }
+        else
+        {
+            StopAllCoroutines();
+            _playing = false;
+            _audioSource.Stop();
+            InteractEnded?.Invoke();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator PlayAudioUntilEnd()
     {
-        
+        _audioSource.Play();
+        InteractBegan.Invoke();
+        yield return new WaitForSeconds(_audioSource.clip.length);
+        _playing = false;
+        InteractEnded?.Invoke();
+
     }
 }

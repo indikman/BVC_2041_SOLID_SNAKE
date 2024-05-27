@@ -10,11 +10,15 @@ public class CodecSettingsSO : ScriptableObject
 
     #endregion
     [field: SerializeField,Header("Audio")] public AudioClip OpeningSFX { get; private set; }
+    [field: SerializeField] public AudioClip RingingSFX { get; private set; }
     [field: SerializeField] public AudioClip ClosingSFX { get; private set; }
     [field: SerializeField, Range(.25f, 10f)] public float PauseBeforeTalking { get; private set; }
     [field: SerializeField, Range(.25f, 10f)] public float PauseBetweenSpeakers { get; private set; }
     
     [field: SerializeField, Header("Radio Waves")] private Sprite[] waveSprites;
+    [field: SerializeField] public GameObject CodecPrefab { get; private set; }
+    [field: SerializeField] public CodecControlChannelSO CodecControlChannelSo { get; private set; }
+    
     
     /// <summary>
     /// Unity needs StyleBackgrounds for the backgrounds in UIToolkit, and not sprites, so we create them the first time they are referenced, rather than constantly create them for animations

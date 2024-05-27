@@ -74,4 +74,4 @@ MonoBehaviour:
     <DialogueAudio>k__BackingField: {fileID: 8300000, guid: 389dc49704d00fc45b85a97bf46a861c, type: 3}
   <RadioFrequencyP1>k__BackingField: 14
   <RadioFrequencyP2>k__BackingField: 0.85
-  <AbleToSkip>k__BackingField: 0
+  <AbleToSkip>k__BackingField: 1
