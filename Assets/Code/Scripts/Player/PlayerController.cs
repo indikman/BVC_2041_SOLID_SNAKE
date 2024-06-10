@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using Code.Scripts.Inputs;
 using Code.Scripts.SOs.Inputs;
 using Code.Scripts.SOs.Player;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour, IPlayerControlListener
 {
