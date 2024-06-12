@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
-using Unity.VisualScripting;
+using Code.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -26,7 +26,7 @@ public class CodecView : MonoBehaviour, ICodecListener
     void Awake()
     {
         _sfxSource = GetComponent<AudioSource>();
-
+        
         GetElements();
     }
 
@@ -34,6 +34,14 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         _codecSettings.CodecControlChannelSo.Next.AddListener(Next);
         _codecSettings.CodecControlChannelSo.Open.AddListener(Open);
+        _codecSettings.CodecControlChannelSo?.Next.AddListener(delegate
+        {
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
+        });
+        _codecSettings.CodecControlChannelSo?.Open.AddListener(delegate
+        {
+            InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
+        });
     }
 
     void RemoveListeners()
@@ -220,13 +228,9 @@ public class CodecView : MonoBehaviour, ICodecListener
                 element.style.backgroundImage = new StyleBackground(frame.Animation);
                 yield return new WaitForSeconds(frame.Delay / animation.AnimationSpeed);
             }
-            
         }
     }
 
-    void Update()
-    {
-    }
 }
 
 

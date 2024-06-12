@@ -101,6 +101,5 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         if(_movementDirection != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newMoveDirection),
             playerData.Acceleration * Time.fixedDeltaTime);
-
     }
 }

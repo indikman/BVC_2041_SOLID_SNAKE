@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
 using Code.Scripts.Managers;
-using UnityEditor.Timeline.Actions;
+// using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -39,8 +39,4 @@ public class CodecEvent : MonoBehaviour
         // Invoke("Activate", 5f);
         // CameraManager.Instance.EnableCamera(cameraName);
     }
-    
-
-    // Update is called once per frame
-
 }

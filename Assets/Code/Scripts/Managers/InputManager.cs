@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Code.Scripts.SOs.Inputs;
 using UnityEngine;
@@ -12,26 +13,27 @@ namespace Code.Scripts.Managers
         private GameInput _gameInput;
         private GameInputType _gameInputType;
         private Dictionary<GameInputType, InputActionMap> _actionMaps;
+
         protected override void Initialize()
-        {
+        { 
             if (_actionMaps == null)
                 _actionMaps = new Dictionary<GameInputType, InputActionMap>();
             if (_gameInput == null)
             {
                 _gameInput = new GameInput();
                 //player control 
-                _gameInput.PlayerControl.Movement.performed +=
-                    (val) => playerControlChannel.HandleMovement(val.ReadValue<Vector2>());
+                _gameInput.PlayerControl.Movement.started += (val) => playerControlChannel?.HandleMovement(val.ReadValue<Vector2>());
+                _gameInput.PlayerControl.Movement.canceled += (val) => playerControlChannel?.HandleMovement(val.ReadValue<Vector2>());
                 _gameInput.PlayerControl.Crouch.performed += (val) => playerControlChannel?.HandleCrouch();
                 _gameInput.PlayerControl.Interact.performed += (val) => playerControlChannel?.HandleInteract();
                 _gameInput.PlayerControl.Interact2.performed += (val) => playerControlChannel?.HandleInteract2();
                 _gameInput.PlayerControl.UnequipItem.performed += (val) => playerControlChannel?.HandleUnequipItem();
                 _gameInput.PlayerControl.UnequipWeapon.performed += (val) => playerControlChannel?.HandleUnequipWeapon();
                 _actionMaps.Add(GameInputType.PlayerControl, _gameInput.PlayerControl);
+                _actionMaps.Add(GameInputType.CodecCall, _gameInput.CodecCall);
                 //codec control
                 _gameInput.CodecCall.Open.performed += (val) => codecControlChannel?.HandleOpen();
                 _gameInput.CodecCall.Next.performed += (val) => codecControlChannel?.HandleNext();
-                _actionMaps.Add(GameInputType.CodecCall, _gameInput.CodecCall);
             }
             _gameInput.Enable();
         }
@@ -45,8 +47,6 @@ namespace Code.Scripts.Managers
         {
             _actionMaps[inputType].Disable();
         }
-        
-
     }
     
     public enum GameInputType { PlayerControl, MenuControl, CodecCall}

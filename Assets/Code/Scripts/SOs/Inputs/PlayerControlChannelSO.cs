@@ -1,8 +1,8 @@
 using System;
 using Code.Scripts.Inputs;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.Events;
+// using UnityEditor.Timeline.Actions;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
@@ -17,7 +17,7 @@ namespace Code.Scripts.SOs.Inputs
         public void HandleMovement(Vector2 movement) => Movement?.Invoke(movement);
         public void HandleCrouch() => Crouch?.Invoke();
         public void HandleInteract() => Interact?.Invoke();
-        public void HandleInteract2() => Interact2.Invoke();
+        public void HandleInteract2() => Interact2?.Invoke();
 
         public void HandleUnequipItem() => UnequipItem?.Invoke();
 
