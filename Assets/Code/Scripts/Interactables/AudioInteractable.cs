@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AudioInteractable : Interactable
 {
     private AudioSource _audioSource;
-
+    public UnityEvent checkEvent;
     protected override void Awake()
     {
         base.Awake();
@@ -18,6 +19,7 @@ public class AudioInteractable : Interactable
         if (_playing)
         {
             StartCoroutine(PlayAudioUntilEnd());
+            checkEvent.Invoke();
         }
         else
         {

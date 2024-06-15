@@ -4,16 +4,22 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameEvent : ScriptableObject
 {
+ private List<GameEventListener> listeners = new List<GameEventListener>(); 
     
-    // Start is called before the first frame update
-    void Start()
+ public void RegisterListener(GameEventListener listener)
     {
-        
+        listeners.Add(listener);
+    } 
+  
+  public void UnRegisterListener(GameEventListener listener)
+    {
+        listeners.Remove(listener);
     }
-
-    // Update is called once per frame
-    void Update()
+   public void Raise()
     {
-        
+      for (int i = listeners.Count - 1; i >= 0; i--)
+        {
+            listeners[i].OnEventRaised();
+        }
     }
 }
