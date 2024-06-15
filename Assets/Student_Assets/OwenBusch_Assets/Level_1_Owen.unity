@@ -1085,53 +1085,9 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_Name
       value: BackDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7613307297128705769, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70928705
-      objectReference: {fileID: 0}
-    - target: {fileID: 7613307297128705769, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7049198
-      objectReference: {fileID: 0}
-    - target: {fileID: 7613307297128705769, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7613307297128705769, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.647
       objectReference: {fileID: 0}
     - target: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_Name
@@ -1180,15 +1136,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948967328}
-    - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1948967330}
     - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1309162654}
-    - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1309162655}
     - targetCorrespondingSourceObject: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 933821655}
@@ -1201,9 +1151,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2072289062}
-    - targetCorrespondingSourceObject: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2072289066}
     - targetCorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2047318566}
@@ -1364,8 +1311,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454651009}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.99999523, z: -0.0030881162, w: 0}
-  m_LocalPosition: {x: 44.921303, y: 1.176328, z: 34.074467}
+  m_LocalRotation: {x: 0.064041056, y: 0.915336, z: -0.16140765, w: 0.36332676}
+  m_LocalPosition: {x: 42.9, y: 3.3, z: 32.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1385,7 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 319, y: 179}
+  customRes: {x: 960, y: 540}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -2081,10 +2028,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1309162655}
-        m_TargetAssemblyTypeName: DoorOpener, Assembly-CSharp
-        m_MethodName: CloseDoor
-        m_Mode: 1
+      - m_Target: {fileID: 1309162650}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3457,21 +3404,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 978912613816088730, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
---- !u!114 &1309162655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309162650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1bda834199d55240a268e781b9a3a54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  closedRotation: {x: 90, y: 0, z: 0}
-  openRotation: {x: 0, y: 90, z: 90}
-  openSpeed: 2
 --- !u!1 &1438046385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3679,10 +3611,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1948967330}
-        m_TargetAssemblyTypeName: DoorOpener, Assembly-CSharp
-        m_MethodName: CloseDoor
-        m_Mode: 1
+      - m_Target: {fileID: 1948967324}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3706,10 +3638,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1309162655}
-        m_TargetAssemblyTypeName: DoorOpener, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
+      - m_Target: {fileID: 1309162650}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4036,18 +3968,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2072289066}
-        m_TargetAssemblyTypeName: DoorOpener, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!65 &1778712183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4178,10 +4098,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1948967330}
-        m_TargetAssemblyTypeName: DoorOpener, Assembly-CSharp
-        m_MethodName: OpenDoor
-        m_Mode: 1
+      - m_Target: {fileID: 1948967324}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4365,21 +4285,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
---- !u!114 &1948967330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948967324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1bda834199d55240a268e781b9a3a54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  closedRotation: {x: -90, y: 0, z: 0}
-  openRotation: {x: -90, y: 0, z: 130}
-  openSpeed: 1
 --- !u!1 &2047318562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
@@ -4433,21 +4338,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1660369411494178256, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
---- !u!114 &2072289066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072289058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1bda834199d55240a268e781b9a3a54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  closedRotation: {x: -90, y: 0, z: 0}
-  openRotation: {x: -90, y: 0, z: 130}
-  openSpeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
