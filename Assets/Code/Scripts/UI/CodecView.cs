@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
+using Code.Scripts.Managers;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -20,13 +21,14 @@ public class CodecView : MonoBehaviour, ICodecListener
     #region Private Variables
     private AudioSource _sfxSource;
     private CharacterSO _leftCharacter, _rightCharacter;
+    private InputManager _inputManager;
     private bool _codecRunning;
     #endregion
     // Start is called before the first frame update
     void Awake()
     {
         _sfxSource = GetComponent<AudioSource>();
-
+        _inputManager = FindObjectOfType<InputManager>();
         GetElements();
     }
 
@@ -34,6 +36,8 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         _codecSettings.CodecControlChannelSo.Next.AddListener(Next);
         _codecSettings.CodecControlChannelSo.Open.AddListener(Open);
+        _codecSettings.CodecControlChannelSo.Open.AddListener(delegate{_inputManager.DisableInputType(GameInputType.PlayerControl);});
+        _codecSettings.CodecControlChannelSo.Next.AddListener(delegate{_inputManager.EnableInputType(GameInputType.PlayerControl);});
     }
 
     void RemoveListeners()
