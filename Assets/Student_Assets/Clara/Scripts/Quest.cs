@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System;
 
+[CreateAssetMenu(fileName = "Quest", menuName = "SOs/Clara/Quest", order = 1)]
 public class Quest : ScriptableObject
 {
     public bool isActive;
