@@ -96,10 +96,10 @@ public class CodecView : MonoBehaviour, ICodecListener
             _sfxSource.Play();
             _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
             _codecInfo.AbleToSkip = true;
-            // Enable player controls when the codec view is closed
-            InputManager.Instance.IsPlayerControlDisabled = false;
             Destroy(this.gameObject, 2f);
         }
+        // Enable player controls when the codec view is closed
+        InputManager.Instance.IsPlayerControlDisabled = false;
     }
 
     /// <summary>
