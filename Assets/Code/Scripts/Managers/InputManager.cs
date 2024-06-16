@@ -12,21 +12,45 @@ namespace Code.Scripts.Managers
         private GameInput _gameInput;
         private GameInputType _gameInputType;
         private Dictionary<GameInputType, InputActionMap> _actionMaps;
+        public bool IsPlayerControlDisabled { get; set; }
         protected override void Initialize()
         {
-            if (_actionMaps == null)
+           if (_actionMaps == null)
                 _actionMaps = new Dictionary<GameInputType, InputActionMap>();
             if (_gameInput == null)
             {
                 _gameInput = new GameInput();
-                //player control 
+                //player control
                 _gameInput.PlayerControl.Movement.performed +=
-                    (val) => playerControlChannel.HandleMovement(val.ReadValue<Vector2>());
-                _gameInput.PlayerControl.Crouch.performed += (val) => playerControlChannel?.HandleCrouch();
-                _gameInput.PlayerControl.Interact.performed += (val) => playerControlChannel?.HandleInteract();
-                _gameInput.PlayerControl.Interact2.performed += (val) => playerControlChannel?.HandleInteract2();
-                _gameInput.PlayerControl.UnequipItem.performed += (val) => playerControlChannel?.HandleUnequipItem();
-                _gameInput.PlayerControl.UnequipWeapon.performed += (val) => playerControlChannel?.HandleUnequipWeapon();
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel.HandleMovement(val.ReadValue<Vector2>());
+                    };
+                _gameInput.PlayerControl.Crouch.performed +=
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel?.HandleCrouch();
+                    };
+                _gameInput.PlayerControl.Interact.performed +=
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel?.HandleInteract();
+                    };
+                _gameInput.PlayerControl.Interact2.performed +=
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel?.HandleInteract2();
+                    };
+                _gameInput.PlayerControl.UnequipItem.performed +=
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel?.HandleUnequipItem();
+                    };
+                _gameInput.PlayerControl.UnequipWeapon.performed +=
+                    (val) =>
+                    {
+                        if (!IsPlayerControlDisabled) playerControlChannel?.HandleUnequipWeapon();
+                    };
                 _actionMaps.Add(GameInputType.PlayerControl, _gameInput.PlayerControl);
                 //codec control
                 _gameInput.CodecCall.Open.performed += (val) => codecControlChannel?.HandleOpen();
@@ -45,10 +69,7 @@ namespace Code.Scripts.Managers
         {
             _actionMaps[inputType].Disable();
         }
-        
-
     }
     
     public enum GameInputType { PlayerControl, MenuControl, CodecCall}
-    
 }

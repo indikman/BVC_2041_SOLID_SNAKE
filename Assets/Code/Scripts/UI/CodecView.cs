@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
-
+using Code.Scripts.Managers;
 public class CodecView : MonoBehaviour, ICodecListener
 {
     
@@ -81,6 +81,8 @@ public class CodecView : MonoBehaviour, ICodecListener
         _codecRunning = true;
         _sfxSource.clip = _codecSettings.OpeningSFX;
         _root.style.visibility = Visibility.Visible;
+        // Disable player controls when the codec view is opened
+        InputManager.Instance.IsPlayerControlDisabled = true;
         StartCoroutine(ExecuteCodecCall());
     }
 
@@ -94,6 +96,8 @@ public class CodecView : MonoBehaviour, ICodecListener
             _sfxSource.Play();
             _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
             _codecInfo.AbleToSkip = true;
+            // Enable player controls when the codec view is closed
+            InputManager.Instance.IsPlayerControlDisabled = false;
             Destroy(this.gameObject, 2f);
         }
     }
