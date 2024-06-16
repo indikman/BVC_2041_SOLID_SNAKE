@@ -8,22 +8,10 @@ using System;
 [CreateAssetMenu(fileName = "Quest", menuName = "SOs/Clara/Quest", order = 1)]
 public class Quest : ScriptableObject
 {
-    public bool isActive;
-    public bool completed;
-    public UnityAction EventTrigger;
+    public List<IndividualTasks> tasks = new List<IndividualTasks>();
 
-    [System.Serializable]
-    public struct Information
-    {
-        public string name;
-        public Sprite icon;
-        public string description;
-    }
+    // Could add the sound clip here as an audio clip
 
-    [Header("Information")] public Information info;
-
-    public void StartTask()
-    {
-        EventTrigger.Invoke();
-    }    
+    //[Header("Information")] public TaskInformation info;
 }
+    

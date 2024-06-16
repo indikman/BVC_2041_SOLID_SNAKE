@@ -5,14 +5,12 @@ using UnityEngine.UI;
 
 public class TaskManager : MonoBehaviour
 {
-    public Quest quest;
-    public PlayerController player;
-    public Text questName;
-    public Text questDescription;
-
-    public void QuestWindow()
-    {
-        questName.text = quest.name;
-        questDescription.text = quest.info.description;
-    }
+  
+}
+[System.Serializable]
+public class IndividualTasks
+{
+    public string taskName;
+    public string taskDescription;
+    public bool isCompleted;
 }
