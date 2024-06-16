@@ -464,10 +464,10 @@ MonoBehaviour:
   InteractEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2072289058}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1269004821}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: RotateDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1085,6 +1085,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_Name
       value: BackDoor
@@ -1133,9 +1137,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3223915320484425037, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1778712184}
+    - targetCorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 764818625}
     - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948967328}
+    - targetCorrespondingSourceObject: {fileID: 7776286653020880029, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 935582239}
     - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1309162654}
@@ -1148,6 +1158,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 933821653}
+    - targetCorrespondingSourceObject: {fileID: 2217191671140302761, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269004821}
     - targetCorrespondingSourceObject: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2072289062}
@@ -1311,8 +1324,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454651009}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.064041056, y: 0.915336, z: -0.16140765, w: 0.36332676}
-  m_LocalPosition: {x: 42.9, y: 3.3, z: 32.4}
+  m_LocalRotation: {x: 0, y: -1, z: 0.00000008940697, w: 0}
+  m_LocalPosition: {x: 44.921303, y: 1.1806512, z: 34.074482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2028,10 +2041,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1309162650}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 935582239}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: RotateDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2194,6 +2207,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -64.43, z: 0}
+--- !u!1 &764818623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+  m_PrefabInstance: {fileID: 356271070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &764818625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764818623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a007c7486f25414ba20690c4eef9b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatesVertically: 0
+  doorMovementAngle: 90
 --- !u!1 &817954266
 GameObject:
   m_ObjectHideFlags: 3
@@ -2690,6 +2722,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &935582237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7776286653020880029, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+  m_PrefabInstance: {fileID: 356271070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &935582239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935582237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a007c7486f25414ba20690c4eef9b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatesVertically: 1
+  doorMovementAngle: 90
 --- !u!1 &969203114
 GameObject:
   m_ObjectHideFlags: 3
@@ -3377,6 +3428,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1269004819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2217191671140302761, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+  m_PrefabInstance: {fileID: 356271070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269004821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269004819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a007c7486f25414ba20690c4eef9b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatesVertically: 0
+  doorMovementAngle: 90
 --- !u!1 &1309162650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
@@ -3611,10 +3681,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1948967324}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 764818625}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: RotateDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3638,10 +3708,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1309162650}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 935582239}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: RotateDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4098,10 +4168,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1948967324}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 764818625}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: RotateDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
