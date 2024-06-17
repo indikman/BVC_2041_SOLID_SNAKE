@@ -17,17 +17,17 @@ public class DoorController : MonoBehaviour
         closeRotation = Quaternion.Euler(0, closeAngle, 0);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-           OpenDoor();
-        }
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            CloseDoor();
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //        OpenDoor();
+    //     }
+    //     if(Input.GetKeyUp(KeyCode.Space))
+    //     {
+    //         CloseDoor();
+    //     }
+    // }
 
     public void OpenDoor()
     {
