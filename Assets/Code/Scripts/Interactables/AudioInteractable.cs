@@ -13,6 +13,7 @@ public class AudioInteractable : Interactable
     }
     public override void Trigger()
     {
+        Debug.Log("Triggered");
         _playing = !_playing;
         
         if (_playing)

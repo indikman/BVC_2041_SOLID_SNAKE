@@ -26,6 +26,10 @@ namespace Code.Scripts.Managers
                 _gameInput.PlayerControl.Interact.performed += (val) => playerControlChannel?.HandleInteract();
                 _gameInput.PlayerControl.Interact2.performed += (val) => playerControlChannel?.HandleInteract2();
                 _gameInput.PlayerControl.UnequipItem.performed += (val) => playerControlChannel?.HandleUnequipItem();
+
+                //_gameInput.CodecCall.Open.performed += (val) => DisableInputType(GameInputType.PlayerControl);
+                //_gameInput.CodecCall.Next.performed += (val) => EnableInputType(GameInputType.PlayerControl);
+
                 _gameInput.PlayerControl.UnequipWeapon.performed += (val) => playerControlChannel?.HandleUnequipWeapon();
                 _actionMaps.Add(GameInputType.PlayerControl, _gameInput.PlayerControl);
                 //codec control
