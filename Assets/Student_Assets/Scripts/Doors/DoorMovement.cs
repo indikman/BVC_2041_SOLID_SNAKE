@@ -6,7 +6,7 @@ public class DoorMovement : MonoBehaviour
 {
     [Header ("Rotation Angles")]
     [SerializeField]
-    private float rotationAmount = 90f;
+    private float rotationAmount = 90f; //Variable controlling how much you wanna rotate the door
     [SerializeField]
     private float forwardDirection = 0f;
 
@@ -66,7 +66,7 @@ public class DoorMovement : MonoBehaviour
 
         float time = 0;
 
-        while(time < 1)
+        while(time < 1) //Lerping the door's rotation over "time" 
         {
             transform.rotation = Quaternion.Slerp(startRotation, endRotation, time);
             yield return null;
@@ -79,10 +79,9 @@ public class DoorMovement : MonoBehaviour
         Quaternion startRotation = transform.rotation;
         Quaternion endRotation = Quaternion.Euler(_startRotation);  
 
-
         float time = 0;
 
-        while(time < 1)
+        while(time < 1) //Lerping the door's rotation over "time" 
         {
             transform.rotation = Quaternion.Slerp(startRotation, endRotation, time);
             yield return null;
