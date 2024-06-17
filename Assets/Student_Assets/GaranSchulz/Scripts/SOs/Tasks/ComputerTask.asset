@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cd68e315858504aadc9c89c1a66081, type: 3}
   m_Name: ComputerTask
   m_EditorClassIdentifier: 
-  IsComplete:
-    m_PersistentCalls:
-      m_Calls: []
+  Completed: 1

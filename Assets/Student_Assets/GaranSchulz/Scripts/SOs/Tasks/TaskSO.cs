@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class TaskSO : ScriptableObject
 {
     public event Action IsComplete;
-    
+    public bool Completed = false;
+
     public void TaskComplete() => IsComplete?.Invoke();
 }
