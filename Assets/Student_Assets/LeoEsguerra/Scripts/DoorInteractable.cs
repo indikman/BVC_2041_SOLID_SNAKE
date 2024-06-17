@@ -17,6 +17,7 @@ public class DoorInteractable : Interactable
     {
         base.Awake();
 
+        // check the initial state of the door and rotation
         if(!_isOpen)
         {
             _closedRotation = transform.localEulerAngles;
@@ -27,6 +28,7 @@ public class DoorInteractable : Interactable
         }
     }
     
+    // Swing the door open or closed using DoTween
     public override void Trigger()
     {
         _playing = !_playing;

@@ -8,8 +8,10 @@ public class TaskSO : ScriptableObject
     public int taskID;
     public bool isComplete = false;
     public string taskName;
-
     public AudioClip taskCompleteSound;
+
+    // Mark task as complete
+    // Use the AudioSource from TaskTracker to play the sound
     public void CompleteTask(AudioSource soundPlayer)
     {
         isComplete = true;
