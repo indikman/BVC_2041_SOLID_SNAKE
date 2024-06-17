@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c995f80e05375644b5b902366fede61, type: 3}
   m_Name: Quest
   m_EditorClassIdentifier: 
-  isActive: 0
-  completed: 0
-  taskName: []
-  description: []
+  tasks:
+  - taskName: Watch TV
+    taskDescription: Make Snake watch a video
+    isCompleted: 0
+  - taskName: 
+    taskDescription: 
+    isCompleted: 0
