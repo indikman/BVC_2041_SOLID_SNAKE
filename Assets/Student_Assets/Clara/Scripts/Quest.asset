@@ -16,6 +16,3 @@ MonoBehaviour:
   - taskName: Watch TV
     taskDescription: Make Snake watch a video
     isCompleted: 0
-  - taskName: 
-    taskDescription: 
-    isCompleted: 0
