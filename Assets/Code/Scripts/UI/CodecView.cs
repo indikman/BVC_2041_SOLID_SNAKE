@@ -34,13 +34,13 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         _codecSettings.CodecControlChannelSo.Next.AddListener(Next);
         _codecSettings.CodecControlChannelSo.Open.AddListener(Open);
-        _codecSettings.CodecControlChannelSo?.Next.AddListener(delegate
-        {
-            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
-        });
-        _codecSettings.CodecControlChannelSo?.Open.AddListener(delegate
+        _codecSettings.CodecControlChannelSo.Open.AddListener(delegate
         {
             InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
+        });
+        _codecSettings.CodecControlChannelSo.Next.AddListener(delegate
+        {
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
         });
     }
 
