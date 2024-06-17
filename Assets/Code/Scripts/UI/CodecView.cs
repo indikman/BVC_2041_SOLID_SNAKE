@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 
 public class CodecView : MonoBehaviour, ICodecListener
 {
-    
+    private PlayerController _pc; //reference to playercontroller to disable input
     private CodecSO _codecInfo;
     private CodecSettingsSO _codecSettings;
     public UnityEvent CodecComplete;
@@ -44,6 +44,7 @@ public class CodecView : MonoBehaviour, ICodecListener
     
     private void GetElements()
     {
+        _pc = GameObject.Find("SolidSnake").GetComponent<PlayerController>(); //is there a better way to handle this? 
         _root = GetComponent<UIDocument>().rootVisualElement;
         _root.style.visibility = Visibility.Hidden;
         _mainDisplay = _root.Q<VisualElement>(CodecReference.MainDisplay);
@@ -81,6 +82,7 @@ public class CodecView : MonoBehaviour, ICodecListener
         _codecRunning = true;
         _sfxSource.clip = _codecSettings.OpeningSFX;
         _root.style.visibility = Visibility.Visible;
+        _pc.RemoveListeners(); //disable player input
         StartCoroutine(ExecuteCodecCall());
     }
 
@@ -94,6 +96,7 @@ public class CodecView : MonoBehaviour, ICodecListener
             _sfxSource.Play();
             _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
             _codecInfo.AbleToSkip = true;
+            _pc.Invoke("RegisterListeners", 1.9f); //a little hacky, but ensures input isn't re-enabled too early
             Destroy(this.gameObject, 2f);
         }
     }
