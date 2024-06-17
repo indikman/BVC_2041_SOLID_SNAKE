@@ -11,7 +11,7 @@ public class Task
 }
 public class TaskManager : MonoBehaviour
 {
-    [SerializeField] private List<Task> Tasks = new List<Task>();
+    public List<Task> Tasks = new List<Task>();
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip taskCompleteSound;
 
@@ -24,7 +24,7 @@ public class TaskManager : MonoBehaviour
             audioSource.PlayOneShot(taskCompleteSound);
             hasPlayedSound = true;
         }
-        DebugTasks();
+        //DebugTasks();
     }
    
    private bool AreAllTasksComplete()
