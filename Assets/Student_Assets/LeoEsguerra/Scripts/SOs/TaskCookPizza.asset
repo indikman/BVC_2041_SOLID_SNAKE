@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2c824938de847049509a6663a2e826, type: 3}
   m_Name: TaskCookPizza
   m_EditorClassIdentifier: 
+  taskID: 0
   isComplete: 0
   taskName: Cook Pizza
+  taskCompleteSound: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}

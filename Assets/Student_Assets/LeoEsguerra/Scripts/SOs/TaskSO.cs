@@ -9,8 +9,14 @@ public class TaskSO : ScriptableObject
     public bool isComplete = false;
     public string taskName;
 
-    public void CompleteTask()
+    public AudioClip taskCompleteSound;
+    public void CompleteTask(AudioSource soundPlayer)
     {
         isComplete = true;
+        if(taskCompleteSound != null)
+        {
+            soundPlayer.clip = taskCompleteSound;
+            soundPlayer.Play();
+        }
     }
 }

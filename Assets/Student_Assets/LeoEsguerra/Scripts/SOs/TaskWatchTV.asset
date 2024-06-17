@@ -15,3 +15,4 @@ MonoBehaviour:
   taskID: 1
   isComplete: 0
   taskName: Watch TV
+  taskCompleteSound: {fileID: 8300000, guid: 52320e590bf774734a288886eba557ba, type: 3}
