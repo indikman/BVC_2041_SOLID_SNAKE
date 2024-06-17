@@ -42,10 +42,9 @@ public class TaskTracker : MonoBehaviour
             taskToggle.label = "";
             taskToggle.value = false;
             taskToggle.text = " " + task.taskName;
-            taskToggle.style.fontSize = 20;
-            taskToggle.style.color = Color.white;
             taskToggle.focusable = false;
             taskToggle.name = "Task" + task.taskID;
+            
             panel.Add(taskToggle);
         }
     }

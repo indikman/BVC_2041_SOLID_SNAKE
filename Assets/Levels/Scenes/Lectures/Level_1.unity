@@ -464,7 +464,7 @@ MonoBehaviour:
   InteractEnded:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2072289066}
+      - m_Target: {fileID: 2072289071}
         m_TargetAssemblyTypeName: DoorInteractable, Assembly-CSharp
         m_MethodName: Trigger
         m_Mode: 1
@@ -1117,6 +1117,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4859422197106666816, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.435
+      objectReference: {fileID: 0}
     - target: {fileID: 5539288493096270015, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -1127,19 +1131,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1147,7 +1151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6968200451010429338, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1243,10 +1247,10 @@ PrefabInstance:
       addedObject: {fileID: 2072289062}
     - targetCorrespondingSourceObject: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2072289067}
+      addedObject: {fileID: 2072289072}
     - targetCorrespondingSourceObject: {fileID: 5978927183115636970, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2072289066}
+      addedObject: {fileID: 2072289071}
     - targetCorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2047318566}
@@ -1407,8 +1411,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454651009}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.064041056, y: 0.915336, z: -0.16140765, w: 0.36332676}
-  m_LocalPosition: {x: 42.9, y: 3.3, z: 32.4}
+  m_LocalRotation: {x: 0.1177403, y: -0.7239577, z: 0.12763704, w: 0.6676311}
+  m_LocalPosition: {x: 48.4, y: 3, z: 34.100002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4667,7 +4671,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1660369411494178256, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
---- !u!114 &2072289066
+--- !u!114 &2072289071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4689,7 +4693,7 @@ MonoBehaviour:
   _rotationDuration: 1
   _closedRotation: {x: -90, y: 0, z: 0}
   _openRotation: {x: -90, y: 0, z: 90}
---- !u!65 &2072289067
+--- !u!65 &2072289072
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4706,10 +4710,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.02, z: 0.022512032}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0051152864, y: 0.000000029802322, z: 0.0009162293}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
