@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu (menuName = "Scriptable Objects/ Player Tasks")]
-public class TaskTrackerScriptableObject : ScriptableObject
+[CreateAssetMenu (menuName = "Scriptable Objects/ Task List")]
+public class TaskTrackerSO : ScriptableObject
 {
     public bool task_doorentered = false;
     public bool task_completefirstcodec = false;
