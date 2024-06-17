@@ -29,7 +29,7 @@ public class TaskManager : MonoBehaviour
     {
         source.PlayOneShot(clip);
         ui.UpdateUI();
-        // play the audio clip, UI thingz, whatever else you may need
+        // play the audio clip, UI thingz
     }
 }
 [System.Serializable]
