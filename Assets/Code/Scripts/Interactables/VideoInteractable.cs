@@ -8,6 +8,7 @@ using UnityEngine.Video;
 public class VideoInteractable : Interactable
 {
     private VideoPlayer _video;
+    TaskManager _taskManager;
     
     protected override void Awake()
     {
@@ -33,6 +34,7 @@ public class VideoInteractable : Interactable
                 
             };
             InteractBegan?.Invoke();
+            _taskManager.Interacted = true;
         }
         else
         {

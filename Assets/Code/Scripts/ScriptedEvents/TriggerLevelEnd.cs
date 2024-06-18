@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 public class TriggerLevelEnd : MonoBehaviour
 {
     [SerializeField] private PlayableDirector _director;
     [SerializeField] private string _nextScene;
+    public UnityEvent EndEvent;
     private void Awake()
     {
         _director = GetComponent<PlayableDirector>();

@@ -26,7 +26,6 @@ public class CodecView : MonoBehaviour, ICodecListener
     void Awake()
     {
         _sfxSource = GetComponent<AudioSource>();
-
         GetElements();
     }
 

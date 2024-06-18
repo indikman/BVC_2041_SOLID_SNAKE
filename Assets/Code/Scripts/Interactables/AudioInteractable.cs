@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioInteractable : Interactable
 {
     private AudioSource _audioSource;
+    TaskManager _taskManager;
 
     protected override void Awake()
     {
@@ -34,6 +35,7 @@ public class AudioInteractable : Interactable
         InteractBegan.Invoke();
         yield return new WaitForSeconds(_audioSource.clip.length);
         _playing = false;
+        _taskManager.Interacted = true;
         InteractEnded?.Invoke();
 
     }

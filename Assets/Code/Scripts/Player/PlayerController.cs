@@ -30,8 +30,12 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
        RegisterListeners();
 
     }
-
-    void RegisterListeners()
+    IEnumerator DisableListeners(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        Debug.Log("Delay finished");
+    }
+    public void RegisterListeners()
     {
         controlChannelSo.Movement += Movement;
         controlChannelSo.UnequipWeapon += UnequipWeapon;
@@ -40,7 +44,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact2 += Interact2;
     }
 
-    void RemoveListeners()
+    public void RemoveListeners()
     {
         controlChannelSo.Movement -= Movement;
         controlChannelSo.UnequipWeapon -= UnequipWeapon;
@@ -49,7 +53,6 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact2 -= Interact2;
     }
     
-
     public void Movement(Vector2 movement)
     {
         _movementDirection = new Vector3(movement.x, 0, movement.y);
