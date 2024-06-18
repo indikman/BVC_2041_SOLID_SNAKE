@@ -2,31 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class TextVisability : MonoBehaviour
 {
-    private TextMeshProUGUI textElement; // Reference to the TextMeshPro component
-    public bool isTextVisible = false; // Boolean flag to control visibility
-
+    private TextMeshProUGUI textElement; 
+    public bool isTextVisible = false;
+    public UnityEvent checkEvent;
     void Awake()
     {
-        // Get the TextMeshPro component attached to this GameObject
+    
         textElement = GetComponent<TextMeshProUGUI>();
 
-        // Ensure the text starts as inactive
+ 
         SetTextVisibility(isTextVisible);
     }
 
-    // Method to set text visibility
+   
     public void SetTextVisibility(bool isVisible)
     {
         textElement.gameObject.SetActive(isVisible);
     }
 
-    // Example method to toggle visibility
+    
     public void ToggleTextVisibility()
     {
         isTextVisible = !isTextVisible;
         SetTextVisibility(isTextVisible);
+        checkEvent.Invoke();
     }
 }

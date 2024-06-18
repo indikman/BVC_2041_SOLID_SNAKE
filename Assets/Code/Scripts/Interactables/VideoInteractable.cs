@@ -4,11 +4,12 @@ using Cinemachine;
 using Code.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Events;
 
 public class VideoInteractable : Interactable
 {
     private VideoPlayer _video;
-    
+    public UnityEvent checkEvent;
     protected override void Awake()
     {
         base.Awake();
@@ -23,6 +24,7 @@ public class VideoInteractable : Interactable
         
         if (_playing)
         {
+            checkEvent.Invoke();
             _video.Play();
             _video.seekCompleted += (eventHandler) =>
             {
