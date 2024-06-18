@@ -8,6 +8,9 @@ public class DoorOpener : MonoBehaviour
 {
     [SerializeField] private Animator frontDoor = null;
     [SerializeField] private bool openFrontDoor = false;
+
+    [SerializeField] private Animator middleDoor = null;
+    [SerializeField] private bool openMiddleDoor = false;
     public UnityEvent OpenDoor;
 
     public void OpenFrontDoor()
@@ -17,5 +20,11 @@ public class DoorOpener : MonoBehaviour
         OpenDoor.Invoke();
       
     }
+    public void OpenMiddleDoor()
+    {
+        openFrontDoor = !openMiddleDoor;
+        frontDoor.SetBool("OpenMiddleDoor", openMiddleDoor);
+        OpenDoor.Invoke();
 
+    }
 }
