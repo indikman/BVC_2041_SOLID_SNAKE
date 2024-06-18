@@ -10,10 +10,14 @@ public class TaskSo : ScriptableObject
     public string description;
     public bool isCompleted;
     public UnityEvent onTaskCompleted;
+    public AudioSource _sfx;
 
     public void CompleteTask()
     {
         isCompleted = true;
         onTaskCompleted?.Invoke();
+        _sfx.Play();
+
     }
+
 }

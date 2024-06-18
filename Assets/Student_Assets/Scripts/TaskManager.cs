@@ -9,8 +9,12 @@ public class TaskManager : MonoBehaviour
 {
 
     public List<TaskSo> tasks;
+    private AudioSource _sfx;
 
-
+    private void Start()
+    {
+        _sfx = GetComponent<AudioSource>();
+    }
     public void AddTask(TaskSo task)
     {
         tasks.Add(task);
@@ -19,6 +23,7 @@ public class TaskManager : MonoBehaviour
     public void CompleteTask(TaskSo task)
     {
         task.CompleteTask();
+        _sfx.Play();
     }
 
     public void CheckTasks()
