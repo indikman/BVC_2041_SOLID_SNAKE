@@ -14,6 +14,11 @@ public class TaskManager : MonoBehaviour
 
     [HideInInspector]
     public bool playerDoneTask = false; //This bool value is called and influenced by the "Single_Task" script
+
+    [HideInInspector]
+    public bool playerHasCompletedTask = false; 
+    //"playerHasCompletedTask" is called and will pass its value to scripts that move doors based on the "TaskListComplete" event
+    //These scripts will be "CounterTop_OpenDoor", "Open_Door" and "Close_Door"
     
     public AudioSource taskCompletionSound;
 
@@ -25,6 +30,7 @@ public class TaskManager : MonoBehaviour
 
             if(playerDoneTask == true)
             {
+                playerHasCompletedTask = true;
                 TaskListComplete?.Invoke();
                 playerDoneTask = false; //Resetting the bool to false because of an issue with the sound effect being buggy.
                 individualTask.isTaskComplete = playerDoneTask;
