@@ -24,6 +24,7 @@ public class AudioInteractable : Interactable
             StopAllCoroutines();
             _playing = false;
             _audioSource.Stop();
+            enablePlayerControl.Invoke();
             InteractEnded?.Invoke();
         }
     }
@@ -31,9 +32,11 @@ public class AudioInteractable : Interactable
     IEnumerator PlayAudioUntilEnd()
     {
         _audioSource.Play();
+        disablePlayerControl.Invoke();
         InteractBegan.Invoke();
         yield return new WaitForSeconds(_audioSource.clip.length);
         _playing = false;
+        enablePlayerControl.Invoke();
         InteractEnded?.Invoke();
 
     }
