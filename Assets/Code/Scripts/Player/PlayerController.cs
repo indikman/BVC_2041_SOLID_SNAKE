@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
 
     }
 
-    void RegisterListeners()
+    public void RegisterListeners()
     {
         controlChannelSo.Movement += Movement;
         controlChannelSo.UnequipWeapon += UnequipWeapon;
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact2 += Interact2;
     }
 
-    void RemoveListeners()
+    public void RemoveListeners()
     {
         controlChannelSo.Movement -= Movement;
         controlChannelSo.UnequipWeapon -= UnequipWeapon;
@@ -48,6 +48,14 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact -= Interact;
         controlChannelSo.Interact2 -= Interact2;
     }
+    
+    public void PlayerMoveNot()
+    {
+        Invoke("RemoveListeners",2.0f);
+        _movementDirection = Vector3.zero;
+    }
+    
+    
     
 
     public void Movement(Vector2 movement)
@@ -103,6 +111,6 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         if(_movementDirection != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newMoveDirection),
             playerData.Acceleration * Time.fixedDeltaTime);
-
+        
     }
 }
