@@ -1133,6 +1133,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3223915320484425037, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1778712184}
+    - targetCorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1984038549}
     - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948967328}
@@ -1332,7 +1335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 960, y: 540}
+  customRes: {x: 858, y: 432}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -3611,10 +3614,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1948967324}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1984038549}
+        m_TargetAssemblyTypeName: DoorEvent, Assembly-CSharp
+        m_MethodName: CloseEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3648,13 +3651,24 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &1646806649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3582298610480460035, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
   m_PrefabInstance: {fileID: 757443054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1646806653 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1214982145111749261, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
+  m_PrefabInstance: {fileID: 757443054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0456a79003cdd744b91ab5cef5ec1dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652317524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,6 +4097,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1646806653}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: RemoveListeners
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   CodecComplete:
     m_PersistentCalls:
       m_Calls:
@@ -4098,10 +4124,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1948967324}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1984038549}
+        m_TargetAssemblyTypeName: DoorEvent, Assembly-CSharp
+        m_MethodName: OpenEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1646806653}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: RegisterListeners
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4285,6 +4323,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
+--- !u!1 &1984038547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+  m_PrefabInstance: {fileID: 356271070}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1984038549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984038547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65b7ec97b3b4c04b82bf1ac409fdd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2047318562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
