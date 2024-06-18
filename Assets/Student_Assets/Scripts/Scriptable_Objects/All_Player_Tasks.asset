@@ -10,6 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91193938970dfc4984b255b22336e0d, type: 3}
-  m_Name: Create_A_Task_For_The_Player
+  m_Name: All_Player_Tasks
   m_EditorClassIdentifier: 
-  task: []
+  task:
+  - taskName: Entering Store
+    isTaskComplete: 1
+  - taskName: Look At TV
+    isTaskComplete: 1
+  - taskName: '"Use" Vending Machine Outside'
+    isTaskComplete: 1
