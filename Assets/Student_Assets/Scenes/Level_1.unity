@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inital: {x: 0, y: 0, z: 0}
   Target: {x: 0, y: -90, z: 0}
-  speed: 0.1
+  speed: 0.25
   rotate: 1
 --- !u!1 &514225256
 GameObject:
@@ -2134,7 +2134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &658296608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2607,10 +2607,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DoorRotateEvent, Assembly-CSharp
-        m_MethodName: RotateDoor
-        m_Mode: 1
+      - m_Target: {fileID: 658296607}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2633,42 +2633,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 891755482}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1473266303}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1457098972}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &757443054
 PrefabInstance:
@@ -3153,6 +3117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   task: {fileID: 11400000, guid: 053202088a6fdda45b5410cce40fc6f3, type: 2}
   text: {fileID: 891755484}
+  descriptor: WatchTv
 --- !u!1 &910623153
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,7 +4154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inital: {x: 0, y: 0, z: 0}
   Target: {x: 0, y: -90, z: 0}
-  speed: 0.1
+  speed: 0.25
   rotate: 1
 --- !u!1 &1403369899
 GameObject:
@@ -4423,7 +4388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -139}
+  m_AnchoredPosition: {x: 100, y: -175}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457098974
@@ -4446,7 +4411,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MMMMMMicrowave
+  m_text: Microwave
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4537,6 +4502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   task: {fileID: 11400000, guid: d693b620dce1b1a4d9878c87b4fa3bf6, type: 2}
   text: {fileID: 1457098974}
+  descriptor: MMMMMMicrowave
 --- !u!1 &1473266303
 GameObject:
   m_ObjectHideFlags: 0
@@ -4572,7 +4538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -82}
+  m_AnchoredPosition: {x: 100, y: -100}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473266305
@@ -4686,6 +4652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   task: {fileID: 11400000, guid: 926ef05eb63b189428b3801a24ff4f3a, type: 2}
   text: {fileID: 1473266305}
+  descriptor: PlayDoom
 --- !u!1 &1567338459
 GameObject:
   m_ObjectHideFlags: 0

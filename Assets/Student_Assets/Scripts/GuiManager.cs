@@ -7,10 +7,12 @@ public class GuiManager : MonoBehaviour
 {
     public TaskSo task;
     public TextMeshProUGUI text;
+    public string descriptor;
 
     void Start()
     {
         text.text = task.description;
+        text.text = descriptor;
         task.onTaskCompleted.AddListener(UpdateUI);
     }
 
