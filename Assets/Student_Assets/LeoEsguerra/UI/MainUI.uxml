@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/Student_Assets/LeoEsguerra/UI/MainUIUSS.uss?fileID=7433441132597879392&amp;guid=e2b31b288b93b49379a0fdac07445926&amp;type=3#MainUIUSS" />
-    <ui:VisualElement name="Panel" style="flex-grow: 1; opacity: 1; background-color: rgba(0, 0, 0, 0.5);">
+    <Style src="project://database/Assets/Student_Assets/LeoEsguerra/UI/MainUI.uss?fileID=7433441132597879392&amp;guid=e2b31b288b93b49379a0fdac07445926&amp;type=3#MainUI" />
+    <ui:VisualElement name="Panel" picking-mode="Ignore" style="flex-grow: 1; opacity: 1; background-color: rgba(0, 0, 0, 0.5);">
         <ui:Label tabindex="-1" text="Tasks" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="font-size: 50px; color: rgb(255, 255, 255);" />
     </ui:VisualElement>
 </ui:UXML>

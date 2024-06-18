@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class TaskTracker : MonoBehaviour
@@ -38,7 +39,7 @@ public class TaskTracker : MonoBehaviour
         _label = panel.Q<Label>("Label");
         _label.text = "Tasks " + _remainingTasks + "/" + _totalTasks;
 
-        // Task Toggles
+        // Task Toggle for each Task
         foreach (TaskSO task in _tasks)
         {
             Toggle taskToggle = new Toggle();
@@ -47,13 +48,13 @@ public class TaskTracker : MonoBehaviour
             taskToggle.text = " " + task.taskName;
             taskToggle.focusable = false;
             taskToggle.name = "Task" + task.taskID;
-            
+            taskToggle.SetEnabled(false);
+
             panel.Add(taskToggle);
 
             task.OnTaskComplete += () => OnTaskComplete(task);
         }
     }
-
 
     // Called when a task is completed
     // Checks if all tasks are completed
