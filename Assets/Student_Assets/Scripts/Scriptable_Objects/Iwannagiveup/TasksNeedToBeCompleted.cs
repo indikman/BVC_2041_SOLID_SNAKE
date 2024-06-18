@@ -7,26 +7,18 @@ public class TasksNeedToBeCompleted : ScriptableObject
     //[field:SerializeField]
     //public bool hasTaskBeenCompleted { get; private set; }
     //[field:SerializeField]
-    //public BoxCollider colliderForTaskCompletion { get; private set; }
-    //[field:SerializeField]
     //public AudioSource taskCompleteSoundEffect;
 
     public delegate void CompletedTask();
     public static event CompletedTask taskCompleted;
+    public bool taskIsOver = false; //This bool can change its value from true to false being called on by other scripts
 
     void OnTaskCompletion()
     {
-        if(taskCompleted != null)
+        if(taskCompleted != null && taskIsOver == true) 
         {
-            //taskCompleteSoundEffect.Play();
             Debug.Log("Task has been completed");
             taskCompleted(); 
-            //TaskHasBeenCompleted();
         }
     }
-
-    /*void TaskHasBeenCompleted()
-    {
-        taskCompleteSoundEffect.Play();
-    }*/
 }

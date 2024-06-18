@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf4c691661ccd4449d6a75a93e8cbc8, type: 3}
   m_Name: TaskForPlayerSO
   m_EditorClassIdentifier: 
-  <taskCompleteSoundEffect>k__BackingField: {fileID: 0}
+  taskIsOver: 0

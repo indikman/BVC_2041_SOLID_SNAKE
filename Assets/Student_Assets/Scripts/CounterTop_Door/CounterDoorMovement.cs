@@ -6,7 +6,7 @@ public class CounterDoorMovement : MonoBehaviour
 {
    [Header ("Rotation Angles")]
     [SerializeField]
-    private float rotationAmount = -270f;
+    private float rotationAmount = 270f;
     [SerializeField]
     private float forwardDirection = 0f;
 
