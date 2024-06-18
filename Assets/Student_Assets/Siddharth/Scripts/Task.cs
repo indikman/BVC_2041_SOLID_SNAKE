@@ -6,15 +6,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Task", menuName="SOs/Task")]
 public class Task : ScriptableObject
 {
-    public bool _isComplete = false;
-    public string _name;
-    public string _description;
+    public bool isComplete = false;
+    public string name;
+    public string description;
 
     public Action OnCompleteTask;
 
     public void OnComplete()
     {
-        _isComplete = true;
+        isComplete = true;
         OnCompleteTask?.Invoke();
     }
 }

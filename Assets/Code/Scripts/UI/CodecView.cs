@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
+using Code.Scripts.Managers;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -82,6 +83,8 @@ public class CodecView : MonoBehaviour, ICodecListener
         _sfxSource.clip = _codecSettings.OpeningSFX;
         _root.style.visibility = Visibility.Visible;
         StartCoroutine(ExecuteCodecCall());
+
+        InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
     }
 
     public void Next()
@@ -95,6 +98,8 @@ public class CodecView : MonoBehaviour, ICodecListener
             _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
             _codecInfo.AbleToSkip = true;
             Destroy(this.gameObject, 2f);
+
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
         }
     }
 
@@ -138,6 +143,7 @@ public class CodecView : MonoBehaviour, ICodecListener
         CodecComplete?.Invoke();
         Destroy(this.gameObject);
 
+        InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
     }
     IEnumerator AnimateWaves()
     { 

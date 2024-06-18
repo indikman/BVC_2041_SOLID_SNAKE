@@ -21,6 +21,8 @@ public class TaskListing : MonoBehaviour
             toggle.isOn = false;
             Text text = toggle.GetComponentInChildren<Text>();
             text.text = task.name;
+
+            task.OnCompleteTask += () => SetTaskComplete(toggle);
             i++;
         }
 
@@ -38,10 +40,8 @@ public class TaskListing : MonoBehaviour
         
     }
 
-    void SetTaskComplete(Task task)
-    { 
-        
-        //set toggle.isOn = true;
-        
+    public void SetTaskComplete(Toggle toggle)
+    {
+        toggle.isOn = true;
     }
 }

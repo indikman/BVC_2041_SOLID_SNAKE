@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3715f2708a7f11448cd0f5c934a85ee, type: 3}
-  m_Name: TaskDoSomething2
+  m_Name: TaskTurnOnComputer
   m_EditorClassIdentifier: 
-  _isComplete: 0
-  _name: Watch TV
-  _description: Do Something
+  isComplete: 0
+  name: Turn On Computerr
+  description: Turn On Computerr
