@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class TaskUpdater : MonoBehaviour
 {
+    [Header("Task")]
     [SerializeField] private Task customTask;
-    [SerializeField] private float _taskTimer;
+
+    [Header("Timer for Timed Tasks")] [SerializeField]
+    private float _taskTimer;
     private float _taskTimeStop;
 
     private void Start()
@@ -58,5 +61,10 @@ public class TaskUpdater : MonoBehaviour
     void StopTimer()
     {
         _taskTimer = _taskTimeStop;
+    }
+
+    void AdvanceToNextArea()
+    {
+        
     }
 }
