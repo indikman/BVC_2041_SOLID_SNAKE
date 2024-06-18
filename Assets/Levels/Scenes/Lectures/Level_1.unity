@@ -1739,7 +1739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 683, y: 384}
+  customRes: {x: 1280, y: 720}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -4036,7 +4036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _director: {fileID: 0}
-  _nextScene: 
+  _nextScene: Level_2
 --- !u!320 &1438046389
 PlayableDirector:
   m_ObjectHideFlags: 0
