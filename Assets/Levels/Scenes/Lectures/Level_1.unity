@@ -461,6 +461,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: DisablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   InteractEnded:
     m_PersistentCalls:
       m_Calls:
@@ -488,13 +500,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 811348395}
-        m_TargetAssemblyTypeName: TaskTracker, Assembly-CSharp
-        m_MethodName: OnTaskComplete
-        m_Mode: 2
+      - m_Target: {fileID: 11400000, guid: 20c5410f314884337b3c8b905554f05c, type: 2}
+        m_TargetAssemblyTypeName: TaskSO, Assembly-CSharp
+        m_MethodName: CompleteTask
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 20c5410f314884337b3c8b905554f05c, type: 2}
-          m_ObjectArgumentAssemblyTypeName: TaskSO, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: EnablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1432,7 +1456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 713, y: 401}
+  customRes: {x: 368, y: 207}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -2360,6 +2384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _taskListCompleteSound: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
+  _taskListCompleteSoundDelay: 2
   _tasks:
   - {fileID: 11400000, guid: 084bb7a6f17284ce2bce026585876469, type: 2}
   - {fileID: 11400000, guid: 20c5410f314884337b3c8b905554f05c, type: 2}
@@ -2941,6 +2966,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: DisablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DisableInputType( GameInputType.PlayerControl)
+          m_BoolArgument: 1
+        m_CallState: 2
   InteractEnded:
     m_PersistentCalls:
       m_Calls:
@@ -2956,13 +2993,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 811348395}
-        m_TargetAssemblyTypeName: TaskTracker, Assembly-CSharp
-        m_MethodName: OnTaskComplete
-        m_Mode: 2
+      - m_Target: {fileID: 11400000, guid: 084bb7a6f17284ce2bce026585876469, type: 2}
+        m_TargetAssemblyTypeName: TaskSO, Assembly-CSharp
+        m_MethodName: CompleteTask
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 084bb7a6f17284ce2bce026585876469, type: 2}
-          m_ObjectArgumentAssemblyTypeName: TaskSO, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: EnablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4231,6 +4280,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: DisablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   InteractEnded:
     m_PersistentCalls:
       m_Calls:
@@ -4246,13 +4307,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 811348395}
-        m_TargetAssemblyTypeName: TaskTracker, Assembly-CSharp
-        m_MethodName: OnTaskComplete
-        m_Mode: 2
+      - m_Target: {fileID: 11400000, guid: a755d1b46019b41c6932d091514a2ffb, type: 2}
+        m_TargetAssemblyTypeName: TaskSO, Assembly-CSharp
+        m_MethodName: CompleteTask
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a755d1b46019b41c6932d091514a2ffb, type: 2}
-          m_ObjectArgumentAssemblyTypeName: TaskSO, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1034662632}
+        m_TargetAssemblyTypeName: Code.Scripts.Managers.InputManager, Assembly-CSharp
+        m_MethodName: EnablePlayerInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,15 +11,29 @@ public class TaskSO : ScriptableObject
     public string taskName;
     public AudioClip taskCompleteSound;
 
+    public Action OnTaskComplete;
+
+    private void OnEnable()
+    {
+        isComplete = false;
+    }
+
     // Mark task as complete
     // Use the AudioSource from TaskTracker to play the sound
-    public void CompleteTask(AudioSource soundPlayer)
+    public void CompleteTask()
     {
+        if(isComplete)
+        {
+            return;
+        }
+
         isComplete = true;
+
         if(taskCompleteSound != null)
         {
-            soundPlayer.clip = taskCompleteSound;
-            soundPlayer.Play();
+            AudioSource.PlayClipAtPoint(taskCompleteSound, Camera.main.transform.position);
         }
+
+        OnTaskComplete?.Invoke();
     }
 }

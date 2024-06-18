@@ -49,6 +49,24 @@ public class TaskTracker : MonoBehaviour
             taskToggle.name = "Task" + task.taskID;
             
             panel.Add(taskToggle);
+
+            task.OnTaskComplete += () => OnTaskComplete(task);
+        }
+    }
+
+
+    // Called when a task is completed
+    // Checks if all tasks are completed
+    public void OnTaskComplete(TaskSO task)
+    {
+        //task.CompleteTask(_soundPlayer);
+        _remainingTasks++;
+
+        UpdateUI(task.taskID);
+
+        if(_remainingTasks >= _totalTasks)
+        {
+            Invoke("OnTaskListComplete", _taskListCompleteSoundDelay);
         }
     }
 
@@ -61,21 +79,6 @@ public class TaskTracker : MonoBehaviour
     
         Toggle taskToggle = panel.Q<Toggle>("Task" + id);
         taskToggle.value = true;
-    }
-
-    // Called when a task is completed
-    // Checks if all tasks are completed
-    public void OnTaskComplete(TaskSO task)
-    {
-        task.CompleteTask(_soundPlayer);
-        _remainingTasks++;
-
-        UpdateUI(task.taskID);
-
-        if(_remainingTasks >= _totalTasks)
-        {
-            Invoke("OnTaskListComplete", _taskListCompleteSoundDelay);
-        }
     }
 
     // Called when all tasks are completed

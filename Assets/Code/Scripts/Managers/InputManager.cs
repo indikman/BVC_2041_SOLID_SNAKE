@@ -46,7 +46,21 @@ namespace Code.Scripts.Managers
             _actionMaps[inputType].Disable();
         }
         
+        public void EnablePlayerInput()
+        {
+            _gameInput.PlayerControl.Movement.Enable();
+            _gameInput.PlayerControl.Crouch.Enable();
+            _gameInput.PlayerControl.UnequipItem.Enable();
+            _gameInput.PlayerControl.UnequipWeapon.Enable();
+        }
 
+        public void DisablePlayerInput()
+        {
+            _gameInput.PlayerControl.Movement.Disable();
+            _gameInput.PlayerControl.Crouch.Disable();
+            _gameInput.PlayerControl.UnequipItem.Disable();
+            _gameInput.PlayerControl.UnequipWeapon.Disable();
+        }
     }
     
     public enum GameInputType { PlayerControl, MenuControl, CodecCall}

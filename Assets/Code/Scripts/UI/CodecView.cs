@@ -6,11 +6,14 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
 
+using Code.Scripts.Managers;
+
 public class CodecView : MonoBehaviour, ICodecListener
 {
     
     private CodecSO _codecInfo;
     private CodecSettingsSO _codecSettings;
+    public UnityEvent CodecOpen;
     public UnityEvent CodecComplete;
     #region Document references
     
@@ -28,6 +31,9 @@ public class CodecView : MonoBehaviour, ICodecListener
         _sfxSource = GetComponent<AudioSource>();
 
         GetElements();
+
+        CodecOpen.AddListener(()=>InputManager.Instance.DisableInputType(GameInputType.PlayerControl));
+        CodecComplete.AddListener(()=>InputManager.Instance.EnableInputType(GameInputType.PlayerControl));
     }
 
     void RegisterListeners()
@@ -77,6 +83,8 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         if (_codecRunning)
             return;
+        
+        CodecOpen?.Invoke();
         _sfxSource.loop = false;
         _codecRunning = true;
         _sfxSource.clip = _codecSettings.OpeningSFX;
