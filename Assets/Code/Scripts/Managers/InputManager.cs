@@ -46,7 +46,14 @@ namespace Code.Scripts.Managers
             _actionMaps[inputType].Disable();
         }
         
-
+        public void DisablePlayerMOvement()
+        {
+            _gameInput.PlayerControl.Movement.Disable();
+        } 
+        public void EnablePlayerMovement()
+        {
+            _gameInput.PlayerControl.Movement.Enable();
+        }
     }
     
     public enum GameInputType { PlayerControl, MenuControl, CodecCall}
