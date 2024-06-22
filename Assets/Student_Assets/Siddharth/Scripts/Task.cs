@@ -12,9 +12,16 @@ public class Task : ScriptableObject
 
     public Action OnCompleteTask;
 
+    public void OnEnable()
+    {
+        isComplete = false;
+    }
     public void OnComplete()
     {
-        isComplete = true;
-        OnCompleteTask?.Invoke();
+        if (!isComplete)
+        {
+            isComplete = true;
+            OnCompleteTask?.Invoke();
+        }
     }
 }

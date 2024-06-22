@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class TaskListing : MonoBehaviour
 {
+
     [SerializeField] private Toggle _toggle;
     public List<Task> tasks;
+
+    public UnityEvent AllTaskComplete;
+    private int totalTask;
 
     private void Awake()
     {
@@ -24,7 +30,9 @@ public class TaskListing : MonoBehaviour
 
             task.OnCompleteTask += () => SetTaskComplete(toggle);
             i++;
+
         }
+        totalTask = tasks.Count();
 
         _toggle.gameObject.SetActive(false);
     }
@@ -43,5 +51,10 @@ public class TaskListing : MonoBehaviour
     public void SetTaskComplete(Toggle toggle)
     {
         toggle.isOn = true;
+        if (--totalTask == 0)
+        {
+            AllTaskComplete?.Invoke();
+
+        }
     }
 }
