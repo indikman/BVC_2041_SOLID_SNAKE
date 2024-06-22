@@ -13,8 +13,7 @@ public class TaskTracker : MonoBehaviour
     private UIDocument _uiDocument;
     private Label _label;
     public UnityEvent TaskListComplete;
-    [SerializeField] private AudioClip _taskListCompleteSound;
-    [SerializeField] private float _taskListCompleteSoundDelay = 2.0f;
+    [SerializeField] private float _taskListCompleteDelay = 2.0f;
     [SerializeField] private List<TaskSO> _tasks;
     private void Awake()
     {
@@ -67,7 +66,7 @@ public class TaskTracker : MonoBehaviour
 
         if(_remainingTasks >= _totalTasks)
         {
-            Invoke("OnTaskListComplete", _taskListCompleteSoundDelay);
+            Invoke("OnTaskListComplete", _taskListCompleteDelay);
         }
     }
 
@@ -87,9 +86,6 @@ public class TaskTracker : MonoBehaviour
     // Call any listener to TaskListComplete event
     public void OnTaskListComplete()
     {
-        _soundPlayer.clip = _taskListCompleteSound;
-        _soundPlayer.Play();
-
         _label.text = "Tasks Complete!";
         
         TaskListComplete?.Invoke();
