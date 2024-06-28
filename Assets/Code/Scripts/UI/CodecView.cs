@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
+using Code.Scripts.Managers;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -88,6 +89,7 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         if (_codecInfo.AbleToSkip && _codecRunning)
         {
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
             StopAllCoroutines();
             CodecComplete?.Invoke();
             _sfxSource.clip = _codecSettings.ClosingSFX;
@@ -109,6 +111,8 @@ public class CodecView : MonoBehaviour, ICodecListener
     /// </summary>
     IEnumerator ExecuteCodecCall()
     {
+        InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
+
         //Step 1: make display appear
         yield return new WaitForSeconds(_codecSettings.OpeningWait);
         _mainDisplay.RemoveFromClassList(CodecReference.HideDisplayClass);

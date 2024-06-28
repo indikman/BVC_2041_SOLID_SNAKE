@@ -27,6 +27,8 @@ public class CodecEvent : MonoBehaviour
         GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
         prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
         EventTrigerred?.Invoke();
+        InputManager.Instance._gameInput.PlayerControl.Movement.Disable();
+        InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
         prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
         
     }

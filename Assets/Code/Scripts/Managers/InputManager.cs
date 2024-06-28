@@ -9,7 +9,7 @@ namespace Code.Scripts.Managers
     {
         [SerializeField] private PlayerControlChannelSO playerControlChannel;
         [SerializeField] private CodecControlChannelSO codecControlChannel;
-        private GameInput _gameInput;
+        public GameInput _gameInput;
         private GameInputType _gameInputType;
         private Dictionary<GameInputType, InputActionMap> _actionMaps;
         protected override void Initialize()
