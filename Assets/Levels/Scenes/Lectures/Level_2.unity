@@ -1323,6 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3316f022bf5554ba9b581d05cd0d721c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _slotCount: 30
 --- !u!1 &1855071087
 GameObject:
   m_ObjectHideFlags: 0
@@ -6940,6 +6941,8 @@ GameObject:
   - component: {fileID: 8103695659800662514}
   - component: {fileID: 8918280151301497679}
   - component: {fileID: 431980586431688453}
+  - component: {fileID: 8918280151301497681}
+  - component: {fileID: 8918280151301497680}
   m_Layer: 0
   m_Name: FrontDoor
   m_TagString: Untagged
@@ -35123,13 +35126,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155298510542566270}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -4.6572595, y: 1.3159795, z: -22.17205}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849076334}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &7276377792035844625
 GameObject:
   m_ObjectHideFlags: 0
@@ -41454,6 +41457,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8918280151301497680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155298510542566270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6783d4115bf4f438dff92034f2cd67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractBegan:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  _isOpen: 0
+  _openRotation: {x: -90, y: 90, z: 0}
+  _closedRotation: {x: -90, y: 0, z: 0}
+--- !u!65 &8918280151301497681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155298510542566270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.015, y: 0.012, z: 0.026}
+  m_Center: {x: 0, y: 0.005, z: 0}
 --- !u!33 &8919077072089445037
 MeshFilter:
   m_ObjectHideFlags: 0
