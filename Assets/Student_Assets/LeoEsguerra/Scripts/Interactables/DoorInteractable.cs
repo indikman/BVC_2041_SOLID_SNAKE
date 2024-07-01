@@ -7,8 +7,9 @@ public class DoorInteractable : Interactable
 {
     [SerializeField] private bool _isOpen = false;
     [SerializeField] private Vector3 _openRotation = new Vector3(0, 90, 0);
-    [SerializeField] private Vector3 _closedRotation = new Vector3(0, 0, 0);
+    [SerializeField] private Vector3 _closedRotation;
 
+    private bool isMoving = false;
     protected override void Awake()
     {
         base.Awake();
@@ -35,14 +36,19 @@ public class DoorInteractable : Interactable
 
     public override void Trigger()
     {
+        Debug.Log("Triggered");
         base.Trigger();
-        if(_isOpen)
+
+        if(isMoving)
         {
-            transform.DOLocalRotate(_closedRotation, 1);
+            return;
         }
-        else
+
+        isMoving = true;
+        transform.DOLocalRotate(_isOpen ? _closedRotation : _openRotation, 1).onComplete += () =>
         {
-            transform.DOLocalRotate(_openRotation, 1);
-        }
+            isMoving = false;
+            _isOpen = !_isOpen;
+        };
     }
 }
