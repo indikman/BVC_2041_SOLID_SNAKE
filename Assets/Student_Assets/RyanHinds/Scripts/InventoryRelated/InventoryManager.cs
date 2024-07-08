@@ -6,7 +6,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     [SerializeField] private GameObject slotPrefab;
-    public List<InventorySlot> InventorySlots = new List<InventorySlot>(5);
+    [SerializeField] private List<InventorySlot> inventorySlots = new List<InventorySlot>(5);
 
     private void OnEnable()
     {
@@ -25,21 +25,21 @@ public class InventoryManager : MonoBehaviour
             Destroy(childTransform.gameObject);
         }
 
-        InventorySlots = new List<InventorySlot>(5);
+        inventorySlots = new List<InventorySlot>(5);
     }
 
     void DrawInventory(List<InventoryItem> inventory)
     {
         ResetInventory();
 
-        for (int i = 0; i < InventorySlots.Capacity; i++)
+        for (int i = 0; i < inventorySlots.Capacity; i++)
         {
             CreateInventorySlot();
         }
 
         for (int i = 0; i < inventory.Count; i++)
         {
-            InventorySlots[i].DrawSlot(inventory[i]);
+            inventorySlots[i].DrawSlot(inventory[i]);
         }
     }
 
@@ -51,6 +51,6 @@ public class InventoryManager : MonoBehaviour
         InventorySlot newSlotComponent = newSlot.GetComponent<InventorySlot>();
         newSlotComponent.ClearSlot();
         
-        InventorySlots.Add(newSlotComponent);
+        inventorySlots.Add(newSlotComponent);
     }
 }

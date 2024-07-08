@@ -13,11 +13,13 @@ public class Inventory : MonoBehaviour
     private void OnEnable()
     {
         Key.OnKeyCollected += Add;
+        Coin.OnCoinCollected += Add;
     }
 
     private void OnDisable()
     {
         Key.OnKeyCollected -= Add;
+        Coin.OnCoinCollected -= Add;
     }
 
     public void Add(ItemData itemData)

@@ -10,11 +10,11 @@ public class Key : MonoBehaviour, ICollectible
 
     [SerializeField] public ItemData keyData;
 
-    [SerializeField] private AudioClip keyPickup;
+    [SerializeField] private AudioClip keyPickupSound;
     
     public void Collect()
     {
-        AudioManager.Instance.PlaySoundEffect(keyPickup);
+        AudioManager.Instance.PlaySoundEffect(keyPickupSound);
         Destroy(this.gameObject);
         OnKeyCollected?.Invoke(keyData);
     }
