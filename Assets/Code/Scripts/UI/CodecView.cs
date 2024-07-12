@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Code.Scripts.Inputs;
+using Code.Scripts.Managers;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,19 +13,31 @@ public class CodecView : MonoBehaviour, ICodecListener
     private CodecSO _codecInfo;
     private CodecSettingsSO _codecSettings;
     public UnityEvent CodecComplete;
+
+    UnityEvent enablePlayerControl;
+    UnityEvent disablePlayerControl;
+
     #region Document references
-    
+
     private VisualElement _root, _mainDisplay, _leftSprite, _rightSprite, _radioWaves;
     private Label _radioNumberP1, _radioNumberP2, _dialogueText;
     #endregion
     #region Private Variables
     private AudioSource _sfxSource;
     private CharacterSO _leftCharacter, _rightCharacter;
+    private HandlePlayerControl handlePlayerControl;
     private bool _codecRunning;
     #endregion
     // Start is called before the first frame update
     void Awake()
     {
+        handlePlayerControl = FindObjectOfType<HandlePlayerControl>();
+        enablePlayerControl = new UnityEvent();
+        disablePlayerControl = new UnityEvent();
+
+        enablePlayerControl.AddListener(handlePlayerControl.EnablePlayerControl);
+        disablePlayerControl.AddListener(handlePlayerControl.DisablePlayerControl);
+
         _sfxSource = GetComponent<AudioSource>();
 
         GetElements();
@@ -81,6 +94,7 @@ public class CodecView : MonoBehaviour, ICodecListener
         _codecRunning = true;
         _sfxSource.clip = _codecSettings.OpeningSFX;
         _root.style.visibility = Visibility.Visible;
+        disablePlayerControl.Invoke();
         StartCoroutine(ExecuteCodecCall());
     }
 
@@ -89,6 +103,7 @@ public class CodecView : MonoBehaviour, ICodecListener
         if (_codecInfo.AbleToSkip && _codecRunning)
         {
             StopAllCoroutines();
+            enablePlayerControl.Invoke();
             CodecComplete?.Invoke();
             _sfxSource.clip = _codecSettings.ClosingSFX;
             _sfxSource.Play();
