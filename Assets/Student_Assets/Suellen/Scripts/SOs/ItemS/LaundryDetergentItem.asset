@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e701f0413a6dcf4b956c450e51c379e, type: 3}
   m_Name: LaundryDetergentItem
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  sprite: {fileID: 0}
+  name: Laundry Detergent
+  description: Use this detergent to do your laundry.
+  texture: {fileID: 2800000, guid: 91ee3e46b2899424b8dd3864ba96368e, type: 3}
