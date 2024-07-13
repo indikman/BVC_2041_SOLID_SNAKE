@@ -17,9 +17,15 @@ public class CodecEvent : MonoBehaviour
     [SerializeField] protected CodecSettingsSO codecSettings;
     public UnityEvent EventTrigerred;
     public UnityEvent CodecComplete;
+    public PlayerController pC;
+    public GameObject mainDoor;
+    public GameObject altDoor;
+    public float doorspeed;
+
 
     protected virtual void Awake()
     {
+
         Invoke("Trigger", 5.0f);
     }
     public virtual void Trigger()
@@ -27,10 +33,46 @@ public class CodecEvent : MonoBehaviour
         GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
         prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
         EventTrigerred?.Invoke();
+        pC.RemoveListeners();
         prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
-        
+        CodecComplete.AddListener(moveReEnable);
+
+
     }
-    
+   
+    public IEnumerator doorChange()
+    {
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+
+        yield return new WaitForSeconds(doorspeed);
+        mainDoor.transform.Rotate(0, 0, 15);
+        altDoor.transform.Rotate(0, 0, 15);
+
+        yield return null;
+    }
+    void moveReEnable()
+    {
+        pC.RegisterListeners();
+        StartCoroutine(doorChange());
+    }
+
     // Start is called before the first frame update
     void Start()
     {

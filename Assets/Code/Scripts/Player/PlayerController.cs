@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
     private Vector3 _movementDirection;
     private Rigidbody _rb;
     private CharacterController _characterController;
+    // non optimal way to disable movement hopfully better fix to come
+    public bool canMove;
 
     private PlayerAnimationController _animationController;
     // Start is called before the first frame update
@@ -28,10 +30,11 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
        _characterController = GetComponent<CharacterController>();
        _animationController = GetComponent<PlayerAnimationController>();
        RegisterListeners();
-
+        canMove = true;
+        
     }
 
-    void RegisterListeners()
+    public void RegisterListeners()
     {
         controlChannelSo.Movement += Movement;
         controlChannelSo.UnequipWeapon += UnequipWeapon;
@@ -40,21 +43,28 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact2 += Interact2;
     }
 
-    void RemoveListeners()
+    public void RemoveListeners()
     {
         controlChannelSo.Movement -= Movement;
         controlChannelSo.UnequipWeapon -= UnequipWeapon;
         controlChannelSo.Crouch -= Crouch;
         controlChannelSo.Interact -= Interact;
         controlChannelSo.Interact2 -= Interact2;
+        Debug.Log("removed listeners");
+        _movementDirection = new Vector3(0, 0, 0);
+        _animationController.SetMovement(_movementDirection);
+
     }
-    
+
 
     public void Movement(Vector2 movement)
     {
-        _movementDirection = new Vector3(movement.x, 0, movement.y);
-        _movementDirection.Normalize();
-        _animationController.SetMovement(_movementDirection);
+        if (canMove)
+        {
+            _movementDirection = new Vector3(movement.x, 0, movement.y);
+            _movementDirection.Normalize();
+            _animationController.SetMovement(_movementDirection);
+        }
     }
 
     public void Crouch()

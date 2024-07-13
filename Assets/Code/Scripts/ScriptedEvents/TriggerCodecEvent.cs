@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 
 public class TriggerCodecEvent : CodecEvent
 {
+
     // Start is called before the first frame update
     protected override void Awake()
     {
@@ -28,9 +29,19 @@ public class TriggerCodecEvent : CodecEvent
             GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
             prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
             EventTrigerred?.Invoke();
+            pC.RemoveListeners();
+
             prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
             Destroy(this.GetComponent<Collider>());
+            CodecComplete.AddListener(moveReEnable);
         }
 
+
+    }
+    
+    void moveReEnable()
+    {
+        pC.RegisterListeners();
+        StartCoroutine(doorChange());
     }
 }
