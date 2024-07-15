@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
 
     }
 
-    void RegisterListeners()
+    public void RegisterListeners()
     {
         controlChannelSo.Movement += Movement;
         controlChannelSo.UnequipWeapon += UnequipWeapon;
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         controlChannelSo.Interact2 += Interact2;
     }
 
-    void RemoveListeners()
+    public void RemoveListeners()
     {
         controlChannelSo.Movement -= Movement;
         controlChannelSo.UnequipWeapon -= UnequipWeapon;

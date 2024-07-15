@@ -25,10 +25,17 @@ public class CodecEvent : MonoBehaviour
     public virtual void Trigger()
     {
         GameObject prefabObject = Instantiate(codecSettings.CodecPrefab);
+        InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
         prefabObject.GetComponent<CodecView>().Initialize(codecData, codecSettings);
         EventTrigerred?.Invoke();
-        prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(()=>CodecComplete?.Invoke());
-        
+        prefabObject.GetComponent<CodecView>().CodecComplete.AddListener(() =>
+        {
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
+            CodecComplete?.Invoke();
+        });
+
+
+
     }
     
     // Start is called before the first frame update
