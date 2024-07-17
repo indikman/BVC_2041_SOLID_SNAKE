@@ -34,6 +34,13 @@ public class TaskManager : MonoBehaviour
         ui.UpdateUI();
         // play the audio clip, UI thingz
     }
+    public void EndTask()
+    {
+        foreach (var task in _quest.tasks)
+        {
+            task.isCompleted = true;
+        }
+    }
 }
 [System.Serializable]
 public class IndividualTasks
