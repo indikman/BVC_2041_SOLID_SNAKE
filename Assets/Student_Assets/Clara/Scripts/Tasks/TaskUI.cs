@@ -19,7 +19,7 @@ public class TaskUI : MonoBehaviour
     }
     public void UpdateUI()
     {
-        foreach (var task in quest.tasks)
+        /*foreach (var task in quest.tasks)
         {
             taskNameText.text = task.taskName;
             taskDescriptionText.text = task.taskDescription;
@@ -28,7 +28,8 @@ public class TaskUI : MonoBehaviour
             {
                 Destroy(taskNameText);
                 Destroy(taskDescriptionText);
+                Debug.Log("Destroy text");
             }
-        }
+        }*/
     }
 }

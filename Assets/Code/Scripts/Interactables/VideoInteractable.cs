@@ -13,6 +13,7 @@ public class VideoInteractable : Interactable
     {
         base.Awake();
         _video = GetComponent<VideoPlayer>();
+        
     }
 
     // Update is called once per frame

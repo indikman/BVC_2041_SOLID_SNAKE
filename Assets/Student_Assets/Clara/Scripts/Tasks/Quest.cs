@@ -8,8 +8,21 @@ using System;
 [CreateAssetMenu(fileName = "Quest", menuName = "SOs/Clara/Quest", order = 1)]
 public class Quest : ScriptableObject
 {
-    public List<IndividualTasks> tasks = new List<IndividualTasks>();
+    public string taskName;
+    //public string taskDescription;
+    public bool isCompleted;
 
-    //[Header("Information")] public TaskInformation info;
+    public Action OnTaskComplete;
+
+    private void OnEnable()
+    {
+        isCompleted = false;
+    }
+    public void OnComplete()
+    {
+        Debug.Log("Task Complete:" + taskName );
+        isCompleted = true;
+        OnTaskComplete?.Invoke();
+    }
 }
     

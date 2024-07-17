@@ -7,45 +7,39 @@ using UnityEngine.Events;
 public class TaskManager : MonoBehaviour
 {
     public UnityEvent TaskListComplete;
-    public IndividualTasks individualTasks;
-    //private Quest _quest;
-    private TaskUI ui;
-
-    [SerializeField]
-    private Quest _quest;
 
     public AudioSource source;
     public AudioClip clip;
+    public List<Quest> quests;
+    public Toggle toggle;
+    public GameObject canvas;
+    private int totalTasks = 0;
 
-    private void Update()
+    private void Awake()
     {
-        foreach (var task in _quest.tasks)
+        totalTasks = quests.Count;
+        float staryingX = -780;
+        float startingY = 282;
+        int i = 0;
+
+        foreach (Quest quest in quests)
         {
-            if (individualTasks.isCompleted == true)
-            {
-                TaskListComplete?.Invoke();
-            }
+            Toggle taskToggle = Instantiate(toggle, canvas.transform);
+            taskToggle.transform.localPosition = new Vector3(staryingX, startingY - i * 40, 0);
+            taskToggle.enabled = true;
+            taskToggle.isOn = false;
+            Text label = taskToggle.GetComponentInChildren<Text>();
+            label.text = quest.taskName;
+
+            quest.OnTaskComplete += () => OnTaskCompleteEvent(taskToggle);
+            i++;
         }
     }
 
-    public void UpdateTasks()
+    private void OnTaskCompleteEvent(Toggle toggle)
     {
+        Debug.Log("update list");
         source.PlayOneShot(clip);
-        ui.UpdateUI();
-        // play the audio clip, UI thingz
+        toggle.isOn = true;
     }
-    public void EndTask()
-    {
-        foreach (var task in _quest.tasks)
-        {
-            task.isCompleted = true;
-        }
-    }
-}
-[System.Serializable]
-public class IndividualTasks
-{
-    public string taskName;
-    public string taskDescription;
-    public bool isCompleted;
 }
