@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.PackageManager.Requests;
 
 public class TaskUI : MonoBehaviour
 {
-    public IndividualTasks task;
+    //public IndividualTasks task;
     public Quest quest;
 
     public TMP_Text taskNameText;
@@ -18,13 +19,16 @@ public class TaskUI : MonoBehaviour
     }
     public void UpdateUI()
     {
-        taskNameText.text = task.taskName;
-        taskDescriptionText.text = task.taskDescription;
-
-        if (task.isCompleted == true)
+        foreach (var task in quest.tasks)
         {
-            Destroy(taskNameText);
-            Destroy(taskDescriptionText);
+            taskNameText.text = task.taskName;
+            taskDescriptionText.text = task.taskDescription;
+
+            if (task.isCompleted == true)
+            {
+                Destroy(taskNameText);
+                Destroy(taskDescriptionText);
+            }
         }
     }
 }

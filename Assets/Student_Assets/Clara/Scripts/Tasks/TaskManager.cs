@@ -8,8 +8,11 @@ public class TaskManager : MonoBehaviour
 {
     public UnityEvent TaskListComplete;
     public IndividualTasks individualTasks;
-    private Quest _quest;
+    //private Quest _quest;
     private TaskUI ui;
+
+    [SerializeField]
+    private Quest _quest;
 
     public AudioSource source;
     public AudioClip clip;
