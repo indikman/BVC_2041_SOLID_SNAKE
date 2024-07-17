@@ -2143,6 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpening: 0
+  door: {fileID: 724463596}
 --- !u!1 &733413562
 GameObject:
   m_ObjectHideFlags: 3
@@ -2600,7 +2601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &793815223
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3942,6 +3943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpening: 0
+  door: {fileID: 0}
 --- !u!65 &1206679364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4106,8 +4108,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -500}
-  m_SizeDelta: {x: 500, y: 700}
+  m_AnchoredPosition: {x: 250, y: -275}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1287473654
 MonoBehaviour:
@@ -4324,6 +4326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpening: 0
+  door: {fileID: 1531791799}
 --- !u!1 &1567338459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4913,10 +4916,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1034662631}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1338662641}
+        m_TargetAssemblyTypeName: InputDisable, Assembly-CSharp
+        m_MethodName: DisableInput
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4943,6 +4946,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1531791801}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1338662641}
+        m_TargetAssemblyTypeName: InputDisable, Assembly-CSharp
+        m_MethodName: EnableInput
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5502,7 +5517,7 @@ MonoBehaviour:
   quests:
   - {fileID: 11400000, guid: e1c9c87f24c05c04b9dd3765d1c35f23, type: 2}
   - {fileID: 11400000, guid: 55847949235ac8a4e8709c2d3e5ff70e, type: 2}
-  toggle: {fileID: 793815224}
+  toggle: {fileID: 7644474147247754448, guid: ab15c250b8c692b45bb5ed6e5fb074da, type: 3}
   canvas: {fileID: 243276671}
 --- !u!1 &2047318562 stripped
 GameObject:
