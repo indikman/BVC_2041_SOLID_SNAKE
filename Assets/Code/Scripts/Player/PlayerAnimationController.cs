@@ -11,12 +11,6 @@ public class PlayerAnimationController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetMovement(Vector3 movementVector)
     {
         _animator.SetBool("isRunning", movementVector.magnitude > 0.1f);
