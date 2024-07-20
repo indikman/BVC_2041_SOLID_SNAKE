@@ -36,14 +36,14 @@ namespace Code.Scripts.Managers
             _gameInput.Enable();
         }
 
-        public void EnableInputType(GameInputType inputType)
+        public void EnableInputType()
         {
-            _actionMaps[inputType].Enable();
+            _gameInput.PlayerControl.Movement.Enable();
         }
 
-        public void DisableInputType(GameInputType inputType)
+        public void DisableInputType()
         {
-            _actionMaps[inputType].Disable();
+            _gameInput.PlayerControl.Movement.Disable();
         }
         
 

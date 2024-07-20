@@ -19,6 +19,13 @@ public class Door : MonoBehaviour
             doorPivot = transform;
         }
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown("h"))
+        {
+            OpenDoor();
+        }
+    }
     public void OpenDoor()
     {
         if (!isOpening && !isClosing) 
