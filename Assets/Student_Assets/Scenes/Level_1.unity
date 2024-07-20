@@ -387,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -367, y: 192.8}
+  m_AnchoredPosition: {x: -839, y: 466}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &66404732
@@ -503,6 +503,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66404730}
   m_CullTransparentMesh: 1
+--- !u!4 &105424850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 550646762498873729, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+  m_PrefabInstance: {fileID: 356271070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &115030065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,66 +1161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.023773193, y: -0.8626906}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &243080391
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 243080393}
-  - component: {fileID: 243080392}
-  m_Layer: 0
-  m_Name: FrontDoorOpener
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &243080392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243080391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6dbabbf67c53b4d9d5e5dc8a492320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 53776884bd6fee54e821d9e4d9712ed9, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &243080393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243080391}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.585884, y: -407.9726, z: 24.532003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1163465812}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316225365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1390,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1309162654}
+    - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309162658}
     - targetCorrespondingSourceObject: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 933821655}
@@ -1638,7 +1586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 476, y: 263}
+  customRes: {x: 960, y: 540}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -2043,7 +1991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -363.2, y: 144}
+  m_AnchoredPosition: {x: -821, y: 421}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545045046
@@ -2061,7 +2009,19 @@ MonoBehaviour:
   isTextVisible: 0
   checkEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545045047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3803,7 +3763,6 @@ Transform:
   - {fileID: 316225367}
   - {fileID: 1527111346}
   - {fileID: 736307001}
-  - {fileID: 243080393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175950136
@@ -4117,6 +4076,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 978912613816088730, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
+--- !u!114 &1309162658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309162650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a92c8c861cf764ea4506b1c4621a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAngle: 90
+  openDuration: 2
+  closeDuration: 2
+  openWaitTime: 3
+  doorTransform: {fileID: 105424850}
 --- !u!1 &1438046385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5141,7 +5117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openAngle: 90
-  openDuration: 2
+  openDuration: 3
   closeDuration: 2
   openWaitTime: 5
   doorTransform: {fileID: 189400557}

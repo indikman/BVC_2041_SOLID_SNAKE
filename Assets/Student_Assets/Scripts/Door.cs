@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public float openAngle = 90f; 
-    public float openDuration = 2f;
-    public float closeDuration = 2f; 
-    public float openWaitTime = 3f; 
-    public Transform doorTransform; 
+    [SerializeField] private float openAngle = 90f;
+    [SerializeField] private float openDuration = 2f;
+    [SerializeField] private float closeDuration = 2f;
+    [SerializeField] private float openWaitTime = 3f;
+    [SerializeField] private Transform doorTransform; 
 
     private bool isOpening = false; 
     private bool isClosing = false; 
