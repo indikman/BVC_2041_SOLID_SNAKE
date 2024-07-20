@@ -1418,15 +1418,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3223915320484425037, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1778712184}
-    - targetCorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1531791801}
     - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948967328}
-    - targetCorrespondingSourceObject: {fileID: 7776286653020880029, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 724463598}
+      addedObject: {fileID: 1948967330}
+    - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309162654}
     - targetCorrespondingSourceObject: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 933821655}
@@ -2125,25 +2125,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659074152}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &724463596 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7776286653020880029, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+--- !u!4 &724463599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 550646762498873729, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
   m_PrefabInstance: {fileID: 356271070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &724463598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724463596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f5a47e942d14904f9011affb0f70a62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOpening: 0
-  door: {fileID: 724463596}
 --- !u!1 &733413562
 GameObject:
   m_ObjectHideFlags: 3
@@ -3942,8 +3928,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5a47e942d14904f9011affb0f70a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 2
+  angle: 90
+  waitTime: 2
+  doorPivot: {fileID: 0}
   isOpening: 0
-  door: {fileID: 0}
+  isClosing: 0
 --- !u!65 &1206679364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4169,6 +4159,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
   m_PrefabInstance: {fileID: 356271070}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1309162654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309162650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5a47e942d14904f9011affb0f70a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2
+  angle: 90
+  waitTime: 2
+  doorPivot: {fileID: 724463599}
+  isOpening: 0
+  isClosing: 0
 --- !u!1 &1338662640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,25 +4316,11 @@ PlayableDirector:
     m_References:
     - c7954a289e3c602488ff2b2f395245b8: {fileID: 466284751}
     - 1512506c2cb9a7c45823452b9cad1877: {fileID: 1155179859}
---- !u!1 &1531791799 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4821691663266366856, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+--- !u!4 &1531791800 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2308267471828377388, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
   m_PrefabInstance: {fileID: 356271070}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1531791801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531791799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f5a47e942d14904f9011affb0f70a62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isOpening: 0
-  door: {fileID: 1531791799}
 --- !u!1 &1567338459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,7 +4438,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1531791801}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: CloseDoor
         m_Mode: 1
@@ -4471,7 +4465,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 724463598}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: OpenDoor
         m_Mode: 1
@@ -4943,7 +4937,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1531791801}
+      - m_Target: {fileID: 1948967330}
         m_TargetAssemblyTypeName: Door, Assembly-CSharp
         m_MethodName: OpenDoor
         m_Mode: 1
@@ -5222,6 +5216,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
+--- !u!114 &1948967330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948967324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5a47e942d14904f9011affb0f70a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2
+  angle: 90
+  waitTime: 2
+  doorPivot: {fileID: 1531791800}
+  isOpening: 0
+  isClosing: 0
 --- !u!1 &1951160940
 GameObject:
   m_ObjectHideFlags: 0
