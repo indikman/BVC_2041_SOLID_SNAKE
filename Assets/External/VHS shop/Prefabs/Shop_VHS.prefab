@@ -14320,7 +14320,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5203239798595498379}
-  - component: {fileID: 4496606523703406630}
   - component: {fileID: 5939851333488115301}
   m_Layer: 0
   m_Name: Doorway
@@ -14344,14 +14343,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 550646762498873729}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!33 &4496606523703406630
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5680673907990414751}
-  m_Mesh: {fileID: 978912613816088730, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
 --- !u!23 &5939851333488115301
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -60,4 +60,8 @@ public class Door : MonoBehaviour
 
         isClosing = false;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        OpenDoor();
+    }
 }
