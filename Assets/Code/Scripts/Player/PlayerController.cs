@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
 
     }
 
+    
     void RegisterListeners()
     {
         controlChannelSo.Movement += Movement;
