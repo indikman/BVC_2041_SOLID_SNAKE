@@ -10,6 +10,7 @@ namespace Code.Scripts.Managers
     {
         [SerializeField] private PlayerControlChannelSO playerControlChannel;
         [SerializeField] private CodecControlChannelSO codecControlChannel;
+        [SerializeField] private MenuInteractionSO menuInputChannel;
         private GameInput _gameInput;
         private GameInputType _gameInputType;
         private Dictionary<GameInputType, InputActionMap> _actionMaps;
@@ -33,6 +34,12 @@ namespace Code.Scripts.Managers
                 _gameInput.CodecCall.Open.performed += (val) => codecControlChannel?.HandleOpen();
                 _gameInput.CodecCall.Next.performed += (val) => codecControlChannel?.HandleNext();
                 _actionMaps.Add(GameInputType.CodecCall, _gameInput.CodecCall);
+                // Menu Mapping
+                _gameInput.MenuControl.Open.performed += (ctx) => menuInputChannel?.HandleMenuOpen();
+                _gameInput.MenuControl.Close.performed += (ctx) => menuInputChannel?.HandleMenuClose();
+                _gameInput.MenuControl.ScrollMenu.performed += (ctx) => menuInputChannel?.HandleMenuScroll(ctx.ReadValue<float>());
+                _gameInput.MenuControl.SelectItem.performed += (ctx) => menuInputChannel?.HandleItemSelected();
+                _actionMaps.Add(GameInputType.MenuControl, _gameInput.MenuControl);
             }
             _gameInput.Enable();
         }

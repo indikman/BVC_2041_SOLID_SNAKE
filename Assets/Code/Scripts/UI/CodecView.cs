@@ -118,30 +118,30 @@ public class CodecView : MonoBehaviour, ICodecListener
     IEnumerator ExecuteCodecCall()
     {
         //Step 1: make display appear
-        yield return new WaitForSeconds(_codecSettings.OpeningWait);
+        yield return new WaitForSecondsRealtime(_codecSettings.OpeningWait);
         _mainDisplay.RemoveFromClassList(CodecReference.HideDisplayClass);
-        yield return new WaitForSeconds(_codecSettings.OpeningWait);
+        yield return new WaitForSecondsRealtime(_codecSettings.OpeningWait);
         //Step 2 play audio make characters appear
         _codecRunning = true; //do this so we actually keep track of the codec running so it can be tabbed out of
         var WaveAnimation = StartCoroutine(AnimateWaves());
         _sfxSource.Play();
         _leftSprite.RemoveFromClassList(CodecReference.HideCharacterClass);
         _rightSprite.RemoveFromClassList(CodecReference.HideCharacterClass);
-        yield return new WaitForSeconds(_codecSettings.CharacterAppearWait);
+        yield return new WaitForSecondsRealtime(_codecSettings.CharacterAppearWait);
         
         //Step 2.5: pause before people start talking
-        yield return new WaitForSeconds(_codecSettings.PauseBeforeTalking);
+        yield return new WaitForSecondsRealtime(_codecSettings.PauseBeforeTalking);
         
         //step 3: play audio and display text
         yield return StartCoroutine(DialogueScenes());
         StartCoroutine(AnimateSprites(_leftSprite, _leftCharacter.GetAnimation(CharacterAnimationType.Idle)));
         StartCoroutine(AnimateSprites(_rightSprite, _rightCharacter.GetAnimation(CharacterAnimationType.Idle)));
         //step 4: wait a couple of seconds
-        yield return new WaitForSeconds(_codecSettings.ClosingWait);
+        yield return new WaitForSecondsRealtime(_codecSettings.ClosingWait);
         _sfxSource.clip = _codecSettings.ClosingSFX;
         _sfxSource.Play();
         _mainDisplay.AddToClassList(CodecReference.HideDisplayClass);
-        yield return new WaitForSeconds(_codecSettings.ClosingWait);
+        yield return new WaitForSecondsRealtime(_codecSettings.ClosingWait);
         _codecInfo.AbleToSkip = true;
         CodecComplete?.Invoke();
         Destroy(this.gameObject);

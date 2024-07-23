@@ -332,9 +332,36 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             ""id"": ""38f5d76f-f3f0-418a-aaf6-915e32ba8ebc"",
             ""actions"": [
                 {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
+                    ""name"": ""ScrollMenu"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""d4f807b3-804c-42e8-8d34-39d56bb7c1e8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SelectItem"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""c1aec262-cee2-4428-95e8-fc016b736921"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Open"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""5ccbd62b-c638-4119-8304-e6506ff1273a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Close"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""7d89234d-ceaa-4d9d-bd40-44a1c9349004"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -343,13 +370,68 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""8dc29a13-ab4f-4d23-8502-42ee415ef3f8"",
-                    ""path"": """",
+                    ""name"": ""Left/RightScroll"",
+                    ""id"": ""ef361a06-43eb-4f2f-b8a9-c069956ab979"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ScrollMenu"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""c2d17290-c0ab-451d-8700-e908799fcf33"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mouse and Key"",
-                    ""action"": ""New action"",
+                    ""action"": ""ScrollMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d64a5a27-b703-4725-aed0-64f1d64edcc6"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""ScrollMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6608886a-4db1-485f-aa61-844aa98250c3"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""SelectItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""11a5a987-3f89-4d31-bb5b-5047c023b7db"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""Open"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d46b4c5c-6a1c-4aac-b107-abcfc3a59339"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Key"",
+                    ""action"": ""Close"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -444,7 +526,10 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         m_PlayerControl_UnequipWeapon = m_PlayerControl.FindAction("UnequipWeapon", throwIfNotFound: true);
         // MenuControl
         m_MenuControl = asset.FindActionMap("MenuControl", throwIfNotFound: true);
-        m_MenuControl_Newaction = m_MenuControl.FindAction("New action", throwIfNotFound: true);
+        m_MenuControl_ScrollMenu = m_MenuControl.FindAction("ScrollMenu", throwIfNotFound: true);
+        m_MenuControl_SelectItem = m_MenuControl.FindAction("SelectItem", throwIfNotFound: true);
+        m_MenuControl_Open = m_MenuControl.FindAction("Open", throwIfNotFound: true);
+        m_MenuControl_Close = m_MenuControl.FindAction("Close", throwIfNotFound: true);
         // CodecCall
         m_CodecCall = asset.FindActionMap("CodecCall", throwIfNotFound: true);
         m_CodecCall_Next = m_CodecCall.FindAction("Next", throwIfNotFound: true);
@@ -596,12 +681,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     // MenuControl
     private readonly InputActionMap m_MenuControl;
     private List<IMenuControlActions> m_MenuControlActionsCallbackInterfaces = new List<IMenuControlActions>();
-    private readonly InputAction m_MenuControl_Newaction;
+    private readonly InputAction m_MenuControl_ScrollMenu;
+    private readonly InputAction m_MenuControl_SelectItem;
+    private readonly InputAction m_MenuControl_Open;
+    private readonly InputAction m_MenuControl_Close;
     public struct MenuControlActions
     {
         private @GameInput m_Wrapper;
         public MenuControlActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_MenuControl_Newaction;
+        public InputAction @ScrollMenu => m_Wrapper.m_MenuControl_ScrollMenu;
+        public InputAction @SelectItem => m_Wrapper.m_MenuControl_SelectItem;
+        public InputAction @Open => m_Wrapper.m_MenuControl_Open;
+        public InputAction @Close => m_Wrapper.m_MenuControl_Close;
         public InputActionMap Get() { return m_Wrapper.m_MenuControl; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -611,16 +702,34 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_MenuControlActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_MenuControlActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
+            @ScrollMenu.started += instance.OnScrollMenu;
+            @ScrollMenu.performed += instance.OnScrollMenu;
+            @ScrollMenu.canceled += instance.OnScrollMenu;
+            @SelectItem.started += instance.OnSelectItem;
+            @SelectItem.performed += instance.OnSelectItem;
+            @SelectItem.canceled += instance.OnSelectItem;
+            @Open.started += instance.OnOpen;
+            @Open.performed += instance.OnOpen;
+            @Open.canceled += instance.OnOpen;
+            @Close.started += instance.OnClose;
+            @Close.performed += instance.OnClose;
+            @Close.canceled += instance.OnClose;
         }
 
         private void UnregisterCallbacks(IMenuControlActions instance)
         {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
+            @ScrollMenu.started -= instance.OnScrollMenu;
+            @ScrollMenu.performed -= instance.OnScrollMenu;
+            @ScrollMenu.canceled -= instance.OnScrollMenu;
+            @SelectItem.started -= instance.OnSelectItem;
+            @SelectItem.performed -= instance.OnSelectItem;
+            @SelectItem.canceled -= instance.OnSelectItem;
+            @Open.started -= instance.OnOpen;
+            @Open.performed -= instance.OnOpen;
+            @Open.canceled -= instance.OnOpen;
+            @Close.started -= instance.OnClose;
+            @Close.performed -= instance.OnClose;
+            @Close.canceled -= instance.OnClose;
         }
 
         public void RemoveCallbacks(IMenuControlActions instance)
@@ -721,7 +830,10 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     }
     public interface IMenuControlActions
     {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnScrollMenu(InputAction.CallbackContext context);
+        void OnSelectItem(InputAction.CallbackContext context);
+        void OnOpen(InputAction.CallbackContext context);
+        void OnClose(InputAction.CallbackContext context);
     }
     public interface ICodecCallActions
     {
