@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8251126745203398985}
   - component: {fileID: 7628412130296175256}
   - component: {fileID: 2830974505448597857}
-  - component: {fileID: 4623225829816528034}
   m_Layer: 0
   m_Name: OBJECT THE PLAYER HAS TO TOUCH
   m_TagString: Untagged
@@ -121,20 +120,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: aaaaaa
   objectDescription: afsafa
-  sprite: {fileID: 0}
-  spriteRenderer: {fileID: 0}
---- !u!114 &4623225829816528034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5172407179062114288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c642110a1a6740448b78488aacee47ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  individualInteractable: {fileID: 2830974505448597857}
-  collectionOfInventoryObjects: {fileID: 11400000, guid: eb48df4cd48f11c40aaa4308009c1631, type: 2}
-  playerPickedUpObject: 0
+  objectSprite: {fileID: 0}

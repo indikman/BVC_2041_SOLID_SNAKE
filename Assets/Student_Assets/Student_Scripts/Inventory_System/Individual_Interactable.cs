@@ -30,8 +30,7 @@ public class Individual_Interactable : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log("This is objectHasBeenGrabbed boolean: " + objectHasBeenGrabbed); //This is just for testing
-        pickedUpObjectEvent += Out;
+        pickedUpObjectEvent += DestroySelf;
     }
 
     void OnTriggerEnter(Collider collider)
@@ -40,17 +39,12 @@ public class Individual_Interactable : MonoBehaviour
             objectHasBeenGrabbed = true;
     }
 
-    private void Out(bool value)
+    private void DestroySelf(bool value)
     {
         if(value == true)
-        {
-            Debug.Log("Statement from single script is true"); //This is just for testing
-            this.gameObject.SetActive(false);
-        }
-
-        if(value == false) //This is just for testing
-            Debug.Log("Statement is single script is false"); //This is just for testing
+            Destroy(this.gameObject);
         
+        //if(value == false) //This is just for testing
+            //Debug.Log("Statement is single script is false"); //This is just for testing
     }
-    
 }

@@ -42,6 +42,8 @@ public class DisplayInventoryItem : MonoBehaviour
         {
            individualInteractable.pickedUpObjectEvent += DisplayItem;
         }
+
+        inventoryItemHasBeenClickedEvent += DeleteInventorySlot;
     }
 
     private void DisplayItem(bool value) //Displaying the image sprite and texts from TextMeshPros
@@ -53,11 +55,17 @@ public class DisplayInventoryItem : MonoBehaviour
             imageDescription.text = string.Format(individualInteractable.objectDescription);
         }
     
-        if(value == false) //This is just for testing
-            Debug.Log("Image statement is false"); //This is just for testing
+        //if(value == false) //This is just for testing
+            //Debug.Log("Image statement is false"); //This is just for testing
     }
 
-    public void OnUseInventoryItemClick()
+    private void DeleteInventorySlot(bool value)
+    {
+        if(value == true)
+            Destroy(inventorySlot);
+    }
+
+    public void OnUseInventoryItemClick() //This method is to be assigned to the button in the Inspector
     {
         inventoryItemHasBeenClickedOn = true;
     }

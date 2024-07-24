@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Accesible_Inventory_Object", menuName = "Siena SO's/Assign a storable object", order = 2)]
+[CreateAssetMenu(fileName = "Accesible_Inventory_Object", menuName = "Siena SO's/Assign a storable object for inventory", order = 2)]
 public class Collection_Of_Inventory_Objects : ScriptableObject
 {
    public List<Individual_Interactable> interactbleObject = new List<Individual_Interactable>();
