@@ -22,16 +22,16 @@ public class AudioManager : Singleton<AudioManager>
         _source.PlayOneShot(clip);
     }
 
-    public void PlayMusic(AudioClip clip, GameObject sourceObject, bool isLooped)
+    public void PlayMusic(AudioClip clip, bool isLooped, GameObject targetSource)
     {
         if (clip == null)  return;
 
-        AudioSource source = sourceObject.GetComponent<AudioSource>();
+        AudioSource source = targetSource.GetComponent<AudioSource>();
 
         if (source == null) return;
 
-        _source.clip = clip;
-        _source.loop = isLooped;
-        _source.Play();
+        source.clip = clip;
+        source.loop = isLooped;
+        source.Play();
     }
 }

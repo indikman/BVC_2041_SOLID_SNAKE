@@ -14,12 +14,14 @@ public class Inventory : MonoBehaviour
     {
         Key.OnKeyCollected += Add;
         Coin.OnCoinCollected += Add;
+        CrabSoda.OnSodaCollected += Add;
     }
 
     private void OnDisable()
     {
         Key.OnKeyCollected -= Add;
         Coin.OnCoinCollected -= Add;
+        CrabSoda.OnSodaCollected -= Add;
     }
 
     public void Add(ItemData itemData)
