@@ -53,8 +53,8 @@ public class DisplayInventoryItem : MonoBehaviour
             imageDescription.text = string.Format(individualInteractable.objectDescription);
         }
     
-        if(value == false)
-            Debug.Log("Image statement is false");
+        if(value == false) //This is just for testing
+            Debug.Log("Image statement is false"); //This is just for testing
     }
 
     public void OnUseInventoryItemClick()

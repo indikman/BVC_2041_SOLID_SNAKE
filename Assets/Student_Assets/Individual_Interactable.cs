@@ -48,10 +48,9 @@ public class Individual_Interactable : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
-        if(value == false)
-        {
+        if(value == false) //This is just for testing
             Debug.Log("Statement is single script is false"); //This is just for testing
-        }
+        
     }
     
 }
