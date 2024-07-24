@@ -39,11 +39,9 @@ public class DisplayInventoryItem : MonoBehaviour
     private void Update()
     {
         foreach(var interactbleObject in collectionOfInventoryObjects.interactbleObject)
-        {
            individualInteractable.pickedUpObjectEvent += DisplayItem;
-        }
-
-        inventoryItemHasBeenClickedEvent += DeleteInventorySlot;
+        
+        inventoryItemHasBeenClickedEvent += DeleteInventorySlot; //Calling the "DeleteInventorySlot" method
     }
 
     private void DisplayItem(bool value) //Displaying the image sprite and texts from TextMeshPros
@@ -54,9 +52,6 @@ public class DisplayInventoryItem : MonoBehaviour
             imageTitle.text = string.Format(individualInteractable.objectName);
             imageDescription.text = string.Format(individualInteractable.objectDescription);
         }
-    
-        //if(value == false) //This is just for testing
-            //Debug.Log("Image statement is false"); //This is just for testing
     }
 
     private void DeleteInventorySlot(bool value)

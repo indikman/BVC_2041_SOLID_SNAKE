@@ -30,7 +30,7 @@ public class Individual_Interactable : MonoBehaviour
 
     void Update()
     {
-        pickedUpObjectEvent += DestroySelf;
+        pickedUpObjectEvent += DestroySelf; //Calling the "DestroySelf" method
     }
 
     void OnTriggerEnter(Collider collider)
@@ -43,8 +43,5 @@ public class Individual_Interactable : MonoBehaviour
     {
         if(value == true)
             Destroy(this.gameObject);
-        
-        //if(value == false) //This is just for testing
-            //Debug.Log("Statement is single script is false"); //This is just for testing
     }
 }

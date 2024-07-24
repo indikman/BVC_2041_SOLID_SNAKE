@@ -13,7 +13,7 @@ public class Opening_Door : MonoBehaviour
     private float doorSpeed = 3.0f; 
     private float time; //Time tracking in how long it takes for the door to rotate
 
-    private bool playerWantsToInteractWithDoor = false;
+    private bool playerWantsToInteractWithDoor = false; //This boolean is to avoid triggering a collision more than one in "OnTriggerEnter"
 
     void Awake()
     {
@@ -23,7 +23,7 @@ public class Opening_Door : MonoBehaviour
 
     private void Update()
     {
-        displayInventoryItem.inventoryItemHasBeenClickedEvent += OpenDoor;
+        displayInventoryItem.inventoryItemHasBeenClickedEvent += OpenDoor; //Calling the "OpenDoor" method
     }
 
     void OnTriggerEnter(Collider collider)
