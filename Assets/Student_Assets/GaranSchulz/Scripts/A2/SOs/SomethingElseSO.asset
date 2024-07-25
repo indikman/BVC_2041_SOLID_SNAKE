@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3826283fe7b9d93439679fe396e40c52, type: 3}
-  m_Name: KeySO
+  m_Name: SomethingElseSO
   m_EditorClassIdentifier: 
-  <ObjectName>k__BackingField: Key
-  <InventoryIcon>k__BackingField: {fileID: 21300000, guid: 9bc67a3af46a6804eb461fa5789ee5b0, type: 3}
+  <ObjectName>k__BackingField: Key2
+  <InventoryIcon>k__BackingField: {fileID: 21300000, guid: a81493ab972e68d409d22270514caa88, type: 3}
   <WorldModel>k__BackingField: {fileID: -7387706064836869012, guid: 23f501bbe3113a9489d2b2e4a202ef1d, type: 3}
-  <ModelMaterial>k__BackingField: {fileID: -3833593751658459435, guid: 23f501bbe3113a9489d2b2e4a202ef1d, type: 3}
-  <ObjectDescription>k__BackingField: A key. You could open a door with this!
+  <ModelMaterial>k__BackingField: {fileID: 0}
+  <ObjectDescription>k__BackingField: A key? Doesn't do anything.

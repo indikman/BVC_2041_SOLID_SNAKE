@@ -8,8 +8,7 @@ public class ObjectSO : ScriptableObject
 {
     [field: SerializeField] public string ObjectName { get; private set; }
     [field: SerializeField] public Sprite InventoryIcon { get; private set; }
-    [field: SerializeField] public MeshRenderer WorldModel { get; private set; }
-    public bool IsPickedUp;
-    public event Action<string> ObjectPickedUp;
-    public void PickupEvent() => ObjectPickedUp?.Invoke(ObjectName);
+    [field: SerializeField] public Mesh WorldModel { get; private set; }
+    [field: SerializeField] public Material ModelMaterial { get; private set; }
+    [field: SerializeField] public string ObjectDescription { get; private set; }
 }
