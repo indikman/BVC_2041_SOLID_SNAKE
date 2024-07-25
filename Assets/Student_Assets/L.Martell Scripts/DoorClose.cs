@@ -13,11 +13,12 @@ public class DoorClose : MonoBehaviour
     private Vector3 forward;
 
     private float _doorSpeed = 3.0f;
+    public float doorTimes = 5.0f;
     private bool _playerHitsDoor = false;
 
     IEnumerator Start()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(doorTimes);
         _startRotation = transform.rotation.eulerAngles;
         forward = transform.right;
         StartCoroutine(OpenDoor());
