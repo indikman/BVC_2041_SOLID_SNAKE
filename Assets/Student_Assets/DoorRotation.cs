@@ -8,15 +8,12 @@ using Vector3 = UnityEngine.Vector3;
 
 public class DoorRotation : MonoBehaviour
 {
-    [SerializeField] private Vector3 openedPosition;
+    [SerializeField] private Vector3 openedRotation;
 
-    [SerializeField] private Vector3 closedPosition;
+    [SerializeField] private Vector3 closedRotation;
+    [SerializeField] private Vector3 originalPosition;
 
     [SerializeField] private float doorSpeed = 10f;
-
-    [SerializeField] private Vector3 startingPosition;
-
-    [SerializeField] private bool isOpened;
     // Start is called before the first frame update
     // Thank you to Ryan / AngelusNein for assistance.
     // using comments to show understanding and not just copypasting lol
@@ -24,23 +21,19 @@ public class DoorRotation : MonoBehaviour
     private void Awake()
     {
         //On awake, the door sets its current position into a variable
-        startingPosition = transform.position;
+        originalPosition = transform.position;
+        //Honestly unsure why this is here will ask, doesn't seem used
     }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void DoorRotate()
+    public void DoorOpener()
     {
         // Door opens by taking the vars and pumping them into DOrotate from DOTWEEN
-        transform.DORotate(new Vector3(-90, 90, 0), 10f, RotateMode.Fast);
+        transform.DOLocalRotate(openedRotation, doorSpeed, RotateMode.Fast);
+    }
+
+    public void DoorCloser()
+    {
+        // Door closes by tweening to originalposition
+        transform.DOLocalRotate(closedRotation, doorSpeed, RotateMode.Fast);
     }
 }
