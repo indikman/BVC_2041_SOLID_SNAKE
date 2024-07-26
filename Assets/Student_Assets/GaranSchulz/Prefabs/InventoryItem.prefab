@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2951452556082502707}
   - component: {fileID: 8378942634630749622}
   - component: {fileID: 8852716726235713657}
+  - component: {fileID: 1817733035904489008}
   m_Layer: 5
   m_Name: InventoryItem
   m_TagString: Untagged
@@ -120,7 +121,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8378942634630749622}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c2b17f040d69a2f488f1e2b4499fe40c, type: 2}
+        m_TargetAssemblyTypeName: MenuItemSO, Assembly-CSharp
+        m_MethodName: ClickEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817733035904489008}
+        m_TargetAssemblyTypeName: ImageDataContainer, Assembly-CSharp
+        m_MethodName: SendData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1817733035904489008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2991512365263884698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02325d01f446cb74bb4a0f06c17b3969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImageData: {fileID: 0}
+  _item: {fileID: 11400000, guid: c2b17f040d69a2f488f1e2b4499fe40c, type: 2}
 --- !u!1 &8346284992059027312
 GameObject:
   m_ObjectHideFlags: 0

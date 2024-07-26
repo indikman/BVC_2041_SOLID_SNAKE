@@ -1,31 +1,38 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class UIView : MonoBehaviour
 {
-    private CollectableObject[] _objects;
-    [SerializeField] private Image _imagePrefab;
+    [SerializeField] private Image _descBG;
+    [SerializeField] private TMP_Text _descText;
+    [SerializeField] private Button _equipButton;
+    [SerializeField] private MenuItemSO _itemCall;
+
     private void Awake()
     {
-        _objects = FindObjectsOfType<CollectableObject>();
-        
-        for (int i = 0; i < _objects.Length; i++) //very similar to what was done in TaskSO.cs
-        {
-            int index = i; 
-            _objects[index].ObjectPickedUp += (pickup) => CommunicateWithUI(pickup);;  //when an object is picked up, pass through the relevant data into this script
-        }
+        _itemCall.MenuItemClicked += () => UpdateTextBox();
     }
 
-    private void CommunicateWithUI(ObjectSO item)
+    private void UpdateTextBox()
     {
-        Debug.Log("Item get! " + item.ObjectName + "!");
-        Image newIcon = Instantiate(_imagePrefab, Vector3.zero, quaternion.identity, this.transform); //make new child image in grid
-        newIcon.sprite = item.InventoryIcon;
-        newIcon.GetComponentInChildren<TMP_Text>().text = item.ObjectName; //for later
+        _descBG.gameObject.SetActive(true);
+        _equipButton.gameObject.SetActive(true);
+        //_descText.gameObject.SetActive(true);
+        Invoke("UpdateTextBoxDelay", 0.01f); //gross hack but ensures proper item description is loaded
+    }
+
+    private void UpdateTextBoxDelay()
+    {
+        _descText.text = _itemCall.ItemSelected.ObjectDescription;
+    }
+
+    public void HideTextBox()
+    {
+        _descBG.gameObject.SetActive(false);
+        _equipButton.gameObject.SetActive(false);
     }
 }
