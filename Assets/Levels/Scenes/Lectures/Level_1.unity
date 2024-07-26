@@ -1089,6 +1089,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038152504212731740, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9201363001870526126, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       propertyPath: m_Name
       value: Microwave
@@ -1136,6 +1160,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948967328}
+    - targetCorrespondingSourceObject: {fileID: 1533863965479125790, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948967333}
     - targetCorrespondingSourceObject: {fileID: 5680673907990414751, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1309162654}
@@ -1332,7 +1359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 960, y: 540}
+  customRes: {x: 529, y: 133}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -4098,17 +4125,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1948967324}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1948967333}
+        m_TargetAssemblyTypeName: DoorRotation, Assembly-CSharp
+        m_MethodName: DoorRotate
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &1848302376
 Transform:
@@ -4285,6 +4312,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
+--- !u!114 &1948967333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948967324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2af26582a8c8f45a5ed79bc59d1c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2047318562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}

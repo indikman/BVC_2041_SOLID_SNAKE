@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DoorRotation : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class DoorRotation : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DoorRotate()
+    {
+        transform.DORotate(new Vector3(-90, 90, 0), 2f, RotateMode.Fast);
     }
 }

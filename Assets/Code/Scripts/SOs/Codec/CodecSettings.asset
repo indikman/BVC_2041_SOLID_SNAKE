@@ -26,7 +26,7 @@ MonoBehaviour:
   <CodecPrefab>k__BackingField: {fileID: 2668161080704207404, guid: 32775cf62da982b49a7ba01691dc51b0, type: 3}
   <CodecControlChannelSo>k__BackingField: {fileID: 11400000, guid: 20f68c08b3b1509468ed1f622b66f16e, type: 2}
   <WaveSpeed>k__BackingField: 0.1
-  <OpeningWait>k__BackingField: 0.5
-  <CharacterAppearWait>k__BackingField: 0.5
-  <ClosingWait>k__BackingField: 2
-  <CharacterDiscussionWait>k__BackingField: 0.5
+  <OpeningWait>k__BackingField: 0.1
+  <CharacterAppearWait>k__BackingField: 0.1
+  <ClosingWait>k__BackingField: 0.07
+  <CharacterDiscussionWait>k__BackingField: 0.08
