@@ -14,6 +14,7 @@ public class UIView : MonoBehaviour
 
     private void Awake()
     {
+        _itemCall.ItemSelected = null; //this probably shouldnt go in this script, but ensures a proper reset of MenuItemSO on start
         _itemCall.MenuItemClicked += () => UpdateTextBox();
     }
 

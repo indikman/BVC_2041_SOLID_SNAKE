@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19dd6066fe975754bb96aebceeaed47b, type: 3}
   m_Name: MenuSO
   m_EditorClassIdentifier: 
+  ItemSelected: {fileID: 11400000, guid: 7b1ca99a1fb75fe43a72e9538b45fec0, type: 2}
