@@ -30,6 +30,6 @@ public class CollectableObject : MonoBehaviour
         _isPickedUp = true;
         PickupEvent(); //trigger event so listeners can respond
         //Debug.Log("?");
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 0.01f);
     }
 }

@@ -17,19 +17,26 @@ public class InteractTrigger : MonoBehaviour
     {
         if (_hasBeenActivated)
             return;
-        if (other.CompareTag("Player") && _equippedItem.ItemSelected != null && _requiredObject.ObjectName == _equippedItem.ItemSelected.ObjectName)
-            _input.Interact2 += () => OnSuccessfulInteract.Invoke();
+        if (other.CompareTag("Player") && _requiredObject == _equippedItem.ItemSelected)
+            _input.Interact2 += CallEvent;
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
-            _input.Interact2 -= OnSuccessfulInteract.Invoke;
+            _input.Interact2 -= CallEvent;
+    }
+
+    private void CallEvent()
+    {
+        OnSuccessfulInteract.Invoke();
     }
 
     public void DisableCollider()
     {
-        _input.Interact2 -= OnSuccessfulInteract.Invoke;
+        //Debug.Log("INTERACT SUCCESSFUL");
+        _input.Interact2 -= CallEvent;
         _hasBeenActivated = true;
+        Destroy(this.gameObject);
     }
 }

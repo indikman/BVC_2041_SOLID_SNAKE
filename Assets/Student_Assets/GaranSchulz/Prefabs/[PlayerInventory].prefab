@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _imagePrefab: {fileID: 8378942634630749622, guid: 5b5e78a98b418b648bc8e2002bb0baf0, type: 3}
+  _selectedItem: {fileID: 11400000, guid: c2b17f040d69a2f488f1e2b4499fe40c, type: 2}
 --- !u!1 &3554905112783784822
 GameObject:
   m_ObjectHideFlags: 0

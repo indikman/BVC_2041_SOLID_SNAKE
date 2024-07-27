@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3826283fe7b9d93439679fe396e40c52, type: 3}
+  m_Name: CoinSO
+  m_EditorClassIdentifier: 
+  <ObjectName>k__BackingField: Coin
+  <InventoryIcon>k__BackingField: {fileID: 21300000, guid: 54791a47e092bed43a0d6169d623f50f, type: 3}
+  <WorldModel>k__BackingField: {fileID: 2534964839176971238, guid: 8154e6eecb4c08847b77f026d27d5a34, type: 3}
+  <ModelMaterial>k__BackingField: {fileID: -6478536213147159724, guid: 8154e6eecb4c08847b77f026d27d5a34, type: 3}
+  <ObjectDescription>k__BackingField: A coin of indeterminate value, but it's probably
+    worth less than a dollar. Could buy a soda with this.

@@ -66,7 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dda3306e94e6c84e9ea0b823551db16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputCheck: {fileID: 11400000, guid: 1800cd021dbf0154897ea7f520fdf294, type: 2}
-  VolumeTriggered:
+  _equippedItem: {fileID: 11400000, guid: c2b17f040d69a2f488f1e2b4499fe40c, type: 2}
+  _requiredObject: {fileID: 0}
+  _input: {fileID: 11400000, guid: 1800cd021dbf0154897ea7f520fdf294, type: 2}
+  OnSuccessfulInteract:
     m_PersistentCalls:
       m_Calls: []

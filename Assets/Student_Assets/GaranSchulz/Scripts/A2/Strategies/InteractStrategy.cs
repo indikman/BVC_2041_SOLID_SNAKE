@@ -12,11 +12,11 @@ public class InteractStrategy : MonoBehaviour
 
     private void Awake()
     {
-        _control.Interact2 += () => TestLog();
+        _control.Interact2 += () => InteractWithObject();
     }
 
-    private void TestLog()
+    private void InteractWithObject()
     {
-        _equippedItem.ItemSelected.Interact();
+        _equippedItem.ItemSelected?.Interact();
     }
 }

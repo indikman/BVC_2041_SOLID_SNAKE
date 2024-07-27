@@ -9,6 +9,13 @@ public class MenuItemSO : ScriptableObject
 {
     public event Action MenuItemClicked;
     public ObjectSO ItemSelected;
+    
+    //this SO essentially handles what the current selected item is
+    public void ClickEvent() => MenuItemClicked?.Invoke(); //this event switches what item is selected when you click on one
 
-    public void ClickEvent() => MenuItemClicked?.Invoke();
+    private void OnEnable()
+    {
+        ItemSelected = null;
+    }
+    
 }
