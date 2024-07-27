@@ -10,5 +10,5 @@ public class ItemSO : ScriptableObject
     public string description;
 
     [field: SerializeField]
-    public Texture2D texture; //sprite or texture?
+    public Sprite sprite;
 }

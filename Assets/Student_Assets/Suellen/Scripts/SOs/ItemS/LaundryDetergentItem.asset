@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LaundryDetergentItem
   m_EditorClassIdentifier: 
   name: Laundry Detergent
-  description: Use this detergent to do your laundry.
-  texture: {fileID: 2800000, guid: 91ee3e46b2899424b8dd3864ba96368e, type: 3}
+  description: This item can be used to do the laundry
+  sprite: {fileID: 21300000, guid: 91ee3e46b2899424b8dd3864ba96368e, type: 3}
