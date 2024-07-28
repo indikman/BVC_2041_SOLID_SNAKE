@@ -8,7 +8,6 @@ using UnityEngine.Video;
 public class VideoInteractable : Interactable
 {
     private VideoPlayer _video;
-    
     protected override void Awake()
     {
         base.Awake();
