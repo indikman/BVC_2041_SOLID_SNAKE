@@ -3,14 +3,16 @@ using UnityEngine;
 
 public class InteractableItem : MonoBehaviour
 {
+    public event Action<string, TriggerTaskEvent> OnInteraction;
+    public TriggerTaskEvent task;
+
     private bool _hasPlayer;
-    public event Action<string> OnInteraction;
 
     void Update()
     {
         if (_hasPlayer && Input.GetKeyDown(KeyCode.E))
         {
-            OnInteraction?.Invoke(this.tag);
+            OnInteraction?.Invoke(this.tag, task);
         }
     }
 

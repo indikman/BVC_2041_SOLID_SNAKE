@@ -36,15 +36,16 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    public void ExecuteInteraction(string objectTag)
+    public void ExecuteInteraction(string objectTag, TriggerTaskEvent task)
     {
             if (
                 (objectTag == "Door" && _interactionStrategy is OpenLockStrategy) ||
                 (objectTag == "Laundry" && _interactionStrategy is LaundryStrategy)
             )
             {
-                _interactionStrategy?.Execute(); // Interacts
+                _interactionStrategy?.Execute();
                 playerInventory.RemoveItem();
-        }
+                task.OnTaskCompleted();
+            }
     }
 }
