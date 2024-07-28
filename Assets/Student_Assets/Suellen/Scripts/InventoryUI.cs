@@ -18,16 +18,14 @@ public class InventoryUI : MonoBehaviour
     {
         _playerInventory.OnItemLoaded += PopulateInventory;
         _playerInventory.OnItemSelected += PopulateSelectedItemDetail;
-        //_playerInventory.OnItemUsed += RemoveItemButton;
-        //_playerInventory.OnItemPicked += RemoveItemButton; //strategy
+        _playerInventory.OnItemUsed += RemoveItemButton;
     }
 
     private void OnDisable()
     {
         _playerInventory.OnItemLoaded -= PopulateInventory;
         _playerInventory.OnItemSelected -= PopulateSelectedItemDetail;
-        //_playerInventory.OnItemUsed -= RemoveItemButton;
-        //_playerInventory.OnItemPicked -= RemoveItemButton; //strategy
+        _playerInventory.OnItemUsed -= RemoveItemButton;
     }
 
     private void PopulateInventory(ItemSO item)
@@ -38,7 +36,6 @@ public class InventoryUI : MonoBehaviour
         Button button = newItem.GetComponent<Button>();
         button.onClick.AddListener(() =>
         {
-            Debug.Log("Button Pressed!");
             _playerInventory.DisplayItemDetail(item);
             _selectedItemDetail.SetActive(true);
         });
@@ -51,11 +48,20 @@ public class InventoryUI : MonoBehaviour
         _itemImage.sprite = item.sprite;
     }
 
-    //private void RemoveItemButton(ItemSO item)
-    //{
-    //    Debug.Log($"Removing item button {item.name}");
-    //    Destroy(button.gameObject);
-    //    _selectedItemDetail.SetActive(false);
-    //    _playerInventory.RemoveItem(item); //wrong use event
-    //}
+    private void RemoveItemButton(ItemSO item)
+    {
+        Debug.Log($"Removing item button {item.name}");
+        _selectedItemDetail.SetActive(false);
+
+        Button[] allButtons = _inventoryGrid.GetComponentsInChildren<Button>(); 
+
+        foreach (Button button in allButtons)
+        {
+            InventoryItem inventoryItem = button.GetComponent<InventoryItem>();
+            if (inventoryItem.itemSO == item)
+            {
+                Destroy(button.gameObject);
+            }
+        }
+    }
 }

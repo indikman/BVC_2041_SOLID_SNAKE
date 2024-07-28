@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class PlayerInventory : MonoBehaviour
 {
     public event Action<ItemSO> OnItemLoaded;
     public event Action<ItemSO> OnItemSelected;
     public event Action<ItemSO> OnItemPicked;
-    //public event Action<ItemSO> OnItemUsed;
+    public event Action<ItemSO> OnItemUsed;
 
     private List<ItemSO> _items = new List<ItemSO>();
     private ItemSO _selectedItem;
@@ -40,7 +38,6 @@ public class PlayerInventory : MonoBehaviour
         {
             _pickedItem = _selectedItem;
             OnItemPicked?.Invoke(_pickedItem);
-            Debug.Log($"Picked item {_pickedItem.name}");
         }
     }
 
@@ -50,9 +47,9 @@ public class PlayerInventory : MonoBehaviour
         OnItemLoaded?.Invoke(item);
     }
 
-    public void RemoveItem(ItemSO item)
+    public void RemoveItem()
     {
-        _items.Remove(item);
-        //OnItemUsed?.Invoke(item);
+        _items.Remove(_pickedItem);
+        OnItemUsed?.Invoke(_pickedItem);
     }
 }

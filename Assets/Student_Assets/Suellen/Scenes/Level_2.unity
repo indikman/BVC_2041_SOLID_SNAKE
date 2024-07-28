@@ -1713,6 +1713,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7614109759146739436, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1720,6 +1724,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5901308285911992481, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1646806654}
+    - targetCorrespondingSourceObject: {fileID: 5901308285911992481, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1646806655}
   m_SourcePrefab: {fileID: 100100000, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
 --- !u!1 &763007359
 GameObject:
@@ -1881,9 +1888,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849076334}
+  - component: {fileID: 849076336}
+  - component: {fileID: 849076337}
   m_Layer: 0
   m_Name: FrontDoorParent
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1904,6 +1913,39 @@ Transform:
   - {fileID: 7272638917594744636}
   m_Father: {fileID: 543450653566092920}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &849076336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849076333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4821582, y: 2.6670659, z: 1.2082863}
+  m_Center: {x: -5.2300596, y: 1.2905897, z: -22.73987}
+--- !u!114 &849076337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849076333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65903171b858e7429ac24dc122a82bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920833981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,6 +2544,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292854612}
   m_CullTransparentMesh: 1
+--- !u!1 &1350074393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350074394}
+  - component: {fileID: 1350074396}
+  - component: {fileID: 1350074395}
+  m_Layer: 0
+  m_Name: Laundry
+  m_TagString: Laundry
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350074394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350074393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.44, y: 1.05, z: -25.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653566092920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350074395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350074393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65903171b858e7429ac24dc122a82bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1350074396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350074393}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 2, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1424096888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,6 +2845,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1961d56fbe45eb4bbfbeb2b44fef56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1646806655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500654986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eb33806f1f7f7489dd79108efe6ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1830700114
@@ -6018,6 +6138,7 @@ Transform:
   - {fileID: 5980911719582723048}
   - {fileID: 8622746820194916249}
   - {fileID: 7619562305458826339}
+  - {fileID: 1350074394}
   - {fileID: 5950786161944919201}
   - {fileID: 1838724154003035524}
   - {fileID: 6395115209232121131}
@@ -8722,6 +8843,7 @@ GameObject:
   - component: {fileID: 8103695659800662514}
   - component: {fileID: 8918280151301497679}
   - component: {fileID: 431980586431688453}
+  - component: {fileID: 8918280151301497680}
   m_Layer: 0
   m_Name: FrontDoor
   m_TagString: Untagged
@@ -43298,6 +43420,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8918280151301497680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155298510542566270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e637040c009f69745944a640b04a7bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 1
 --- !u!33 &8919077072089445037
 MeshFilter:
   m_ObjectHideFlags: 0

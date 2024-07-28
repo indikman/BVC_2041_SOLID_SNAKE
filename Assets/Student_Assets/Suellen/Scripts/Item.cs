@@ -9,7 +9,6 @@ public class Item : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Hi");
         PlayerInventory playerInventory = FindObjectOfType<PlayerInventory>();
         OnCollectedItem += playerInventory.AddItem;
     }
@@ -18,7 +17,6 @@ public class Item : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Item: " + item.name);
             Destroy(this.gameObject);
             OnCollectedItem?.Invoke(item);
         }

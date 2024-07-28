@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DemoRoom
+  - Door
+  - Laundry
   layers:
   - Default
   - TransparentFX
