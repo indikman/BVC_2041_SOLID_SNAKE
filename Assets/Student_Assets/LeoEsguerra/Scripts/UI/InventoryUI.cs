@@ -5,6 +5,8 @@ using Code.Scripts.Managers;
 using System;
 using UnityEngine.Events;
 
+// InventoryUI class that displays the inventory
+// Uses UIBuilder to create the UI
 public class InventoryUI : MonoBehaviour
 {
     private List<InventorySlot> _inventory = new List<InventorySlot>();
@@ -13,7 +15,6 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private int _slotCount = 10;
 
     public Inventory inventory;
-
 
     // Add listener to inventory
     private void OnEnable()

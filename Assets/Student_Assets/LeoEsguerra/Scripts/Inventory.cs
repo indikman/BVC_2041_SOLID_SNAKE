@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Inventory class that holds items
 public class Inventory : MonoBehaviour
 {
     private ItemSO _activeItem;
     public event Action<ItemSO> OnItemsLoaded;
     public event Action<ItemSO> OnItemSelected;
-    [SerializeField]private List<ItemSO> _items = new List<ItemSO>();
+    [SerializeField] private List<ItemSO> _items = new List<ItemSO>();
 
+    // Load items to inventory UI if there are any
     private void LoadItems()
     {
         foreach (ItemSO item in _items)
