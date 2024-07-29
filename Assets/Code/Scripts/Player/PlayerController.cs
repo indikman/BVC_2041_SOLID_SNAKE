@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
     // Start is called before the first frame update
     void Awake()
     {
+        _rb = GetComponent<Rigidbody>();
        _characterController = GetComponent<CharacterController>();
        _animationController = GetComponent<PlayerAnimationController>();
        RegisterListeners();
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
         var newMoveDirection = Camera.main.transform.rotation * _movementDirection;
         newMoveDirection.y = 0.0f;
         newMoveDirection.Normalize();
-        _characterController.Move(newMoveDirection * playerData.Speed * Time.fixedDeltaTime);
+        /*_characterController.Move(newMoveDirection * playerData.Speed * Time.fixedDeltaTime);
         if (!_characterController.isGrounded)
         {
             Vector3 down = -transform.up;
@@ -99,7 +100,10 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
                 _characterController.Move(Vector3.down * (transform.position.y - hit.point.y));
             }
 
-        }
+        }*/
+
+        _rb.MovePosition(transform.position + newMoveDirection * playerData.Speed * Time.fixedDeltaTime);
+
         if(_movementDirection != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(newMoveDirection),
             playerData.Acceleration * Time.fixedDeltaTime);

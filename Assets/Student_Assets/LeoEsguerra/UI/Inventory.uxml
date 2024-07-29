@@ -1,9 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Student_Assets/LeoEsguerra/UI/Inventory.uss?fileID=7433441132597879392&amp;guid=c309934d4139d439980a55419727ef04&amp;type=3#Inventory" />
-    <ui:VisualElement name="Root" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Student_Assets/LeoEsguerra/Art/square.png?fileID=2800000&amp;guid=9b634aaebc18148b78547255c5b8c590&amp;type=3#square&quot;); background-color: rgba(0, 0, 0, 0.5); -unity-background-image-tint-color: rgba(0, 0, 0, 0.5); max-width: 300px;">
-        <ui:VisualElement name="Header" style="flex-grow: 1; max-height: 50px;">
-            <ui:Label tabindex="-1" text="INVENTORY" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 20px; color: rgb(255, 255, 255);" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Student_Assets/LeoEsguerra/Art/square.png?fileID=2800000&amp;guid=9b634aaebc18148b78547255c5b8c590&amp;type=3#square&quot;); background-color: rgba(0, 0, 0, 0.5); -unity-background-image-tint-color: rgba(0, 0, 0, 0.5); max-width: 200px;">
+        <ui:VisualElement name="Header" style="flex-grow: 1; max-height: 30px;">
+            <ui:Label tabindex="-1" text="INVENTORY" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 15px; color: rgb(255, 255, 255);" />
         </ui:VisualElement>
         <ui:VisualElement name="SlotContainer" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap;" />
+        <ui:VisualElement name="Preview" style="flex-grow: 1; height: auto; max-height: 30%;">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name" style="color: rgb(255, 255, 255);" />
+            <ui:VisualElement name="Image" style="flex-grow: 1; min-height: 100px; min-width: 100px;" />
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Description" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -11,9 +11,16 @@ public class Interactable : MonoBehaviour
     public UnityEvent InteractBegan, InteractEnded;
     // Start is called before the first frame update
     protected bool _playing = false;
+    protected bool _canInteract = true;
+    [SerializeField] private ItemSO _requiredItem;
+    [SerializeField] private Inventory inventory;
     protected virtual void Awake()
     {
         GetComponent<BoxCollider>().isTrigger = true;
+        if(_requiredItem != null)
+        {
+            _canInteract = false;
+        }
     }
 
     // Update is called once per frame
@@ -21,12 +28,36 @@ public class Interactable : MonoBehaviour
     {
         
     }
+
+    // Add listener to inventory
+    private void OnEnable()
+    {    
+        inventory.OnItemSelected += CheckCanInteract;
+    }
+
+    // Remove listener from inventory
+    private void OnDisable()
+    {
+        inventory.OnItemSelected -= CheckCanInteract;
+    }
     
+    // Check if the player has the required item
+    private void CheckCanInteract(ItemSO item)
+    {
+        if(_requiredItem != null)
+        {
+            _canInteract = item == _requiredItem;
+        }
+        else
+        {
+            _canInteract = true;
+        }
+    }
+
     void CheckInteract(Transform playerTransform)
     {
-        
         float angle = Vector3.Dot(playerTransform.forward, (transform.position - playerTransform.position).normalized);
-        if (angle > 0)
+        if (angle > 0 && _canInteract)
         {
             Trigger();
         }

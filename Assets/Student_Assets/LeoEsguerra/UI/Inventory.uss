@@ -1,18 +1,13 @@
 .slotContainer {
     width: 64px;
     height: 64px;
-    margin: 5px;
-    /* border-left-color: rgb(48, 48, 48);
-    border-right-color: rgb(48, 48, 48);
-    border-top-color: rgb(48, 48, 48);
-    border-bottom-color: rgb(48, 48, 48);
-    background-color: rgb(9, 19, 21); */
-    background-image: url('/Assets/Student_Assets/LeoEsguerra/Art/inventory_slot.png');
+    margin-left: 18px;
+    margin-top: 5px;
+    background-image: url("project://database/Assets/Student_Assets/LeoEsguerra/Art/inventory_slot.png?fileID=21300000&guid=b5936966a599c48498f78a93a912436e&type=3#inventory_slot");
     background-color: rgba(0, 0, 0, 0);
 }
 
 .slotIcon {
-    padding: 15px;
     flex-shrink: 0;
     flex-grow: 1;
 }
