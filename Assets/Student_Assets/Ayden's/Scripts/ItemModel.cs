@@ -18,7 +18,7 @@ public class ItemModel : MonoBehaviour
     public event Action<Sprite> SpriteChangedEvent;
 
 
-    public int Count
+    public int Count // relay message that count has changed
     {
         get => _count;
         set
@@ -28,7 +28,7 @@ public class ItemModel : MonoBehaviour
         }
     }
 
-    public Sprite Sprite
+    public Sprite Sprite // relay message that sprite has changed
     {
         get => _sprite;
         set
@@ -36,20 +36,5 @@ public class ItemModel : MonoBehaviour
             _sprite = value;
             SpriteChangedEvent?.Invoke(_sprite);
         }
-    }
-    
-    
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
