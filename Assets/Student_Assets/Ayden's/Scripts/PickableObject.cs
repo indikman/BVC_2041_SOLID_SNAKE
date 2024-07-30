@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickableObject : MonoBehaviour
 {
@@ -11,9 +13,12 @@ public class PickableObject : MonoBehaviour
     
     public ItemSO item;
 
-    private Sprite _sprite;
+    private Image _sprite;
+    
+    private Inventory _playerInventory;
 
     [SerializeField] private int despawnTime;
+    
 
     private int _value = 1;
 

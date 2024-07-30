@@ -3,19 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemModel : MonoBehaviour
 {
 
-    private int _count;
+    private int _count = 1;
 
     private string _name;
 
-    private Sprite _sprite;
+    private Image _sprite;
 
     public event Action<int> CountIncreasedEvent;
 
-    public event Action<Sprite> SpriteChangedEvent;
+    public event Action<Image> SpriteChangedEvent;
 
 
     public int Count // relay message that count has changed
@@ -28,7 +29,7 @@ public class ItemModel : MonoBehaviour
         }
     }
 
-    public Sprite Sprite // relay message that sprite has changed
+    public Image Sprite // relay message that sprite has changed
     {
         get => _sprite;
         set

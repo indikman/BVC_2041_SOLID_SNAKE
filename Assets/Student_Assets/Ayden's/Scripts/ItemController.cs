@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
@@ -28,13 +29,13 @@ public class ItemController : MonoBehaviour
         Debug.Log("ModelValue");
     }
 
-    public void ChangeSpriteValue(Sprite value)
+    public void ChangeSpriteValue(Image value)
     {
         _model.Sprite = value;
         Debug.Log("ModelSprite");
     }
 
-    public void SpriteValueChanged(Sprite sprite)
+    public void SpriteValueChanged(Image sprite)
     {
         _view.UpdateSpriteValue(sprite);
         Debug.Log("viewValue");
