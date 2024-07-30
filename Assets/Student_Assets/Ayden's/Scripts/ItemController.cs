@@ -8,6 +8,7 @@ public class ItemController : MonoBehaviour
 {
     private ItemModel _model;
     private ItemView _view;
+    public List<Image> InventoryObjects { get; private set; } = new List<Image>();
 
     private void Start()
     {
@@ -38,6 +39,7 @@ public class ItemController : MonoBehaviour
     public void SpriteValueChanged(Image sprite)
     {
         _view.UpdateSpriteValue(sprite);
+        InventoryObjects.Add(sprite);
         Debug.Log("viewValue");
     }
 

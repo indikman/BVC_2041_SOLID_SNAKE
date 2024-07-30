@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Makarov
   m_EditorClassIdentifier: 
   itemName: Makarov
-  itemSprite: {fileID: -76874702, guid: 4b8e9ead2e9a7ef4593482e78bd6d112, type: 3}
+  itemSprite: {fileID: 1278152840070174397, guid: 30170bde9a67d884b99ceb46b3e81777, type: 3}
   itemObject: {fileID: 919132149155446097, guid: 2db49aa751006e94d8f245577bf06461, type: 3}

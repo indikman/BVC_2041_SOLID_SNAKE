@@ -20,6 +20,8 @@ public class ItemView : MonoBehaviour
 
     private Inventory _inventory;
 
+    private ItemController _controller;
+
     [SerializeField] private int despawnTime;
 
     private ItemModel _model;
@@ -38,7 +40,8 @@ public class ItemView : MonoBehaviour
     private void Awake()
     {
         _model = FindObjectOfType<ItemModel>();
-        //_inventorySprites = GetComponentsInChildren<Image>();
+        _inventorySprites = GetComponentsInChildren<Image>();
+        _controller = FindObjectOfType<ItemController>();
         for (int i = 0; i < _inventorySprites.Length; i++)
         {
             _inventorySprites[i].enabled = false;
@@ -49,9 +52,10 @@ public class ItemView : MonoBehaviour
     {
         for (int i = 0; i < _model.Count; i++ )
         {
-            Debug.Log("inventory");
+            Debug.Log(sprite);
             _inventorySprites[i].enabled = true;
             _inventorySprites[i] = sprite;
+
         }
     }
 
