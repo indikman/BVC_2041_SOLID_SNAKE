@@ -11,18 +11,10 @@ public class ItemView : MonoBehaviour
     public event Action<int> ItemIncreasedEvent;
     public event Action<Image> ItemSpriteChangedEvent;
     public ItemSO item;
-    public event Action<ItemSO> ObjectPickedUp;
-    public void PickedUpEvent() => ObjectPickedUp?.Invoke(item);
-
-    private Image[]  _sprite;
 
     [SerializeField] private Image[] _inventorySprites;
 
-    private Inventory _inventory;
-
     private ItemController _controller;
-
-    [SerializeField] private int despawnTime;
 
     private ItemModel _model;
 
@@ -54,7 +46,10 @@ public class ItemView : MonoBehaviour
         {
             Debug.Log(sprite);
             _inventorySprites[i].enabled = true;
+            //_inventorySprites[i] = sprite;
             _inventorySprites[i].sprite = sprite.sprite;
+
+            //figure out recursively changing sprites 
 
         }
     }
