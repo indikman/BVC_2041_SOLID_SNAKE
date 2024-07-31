@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Makarov
   itemSprite: {fileID: 1278152840070174397, guid: 30170bde9a67d884b99ceb46b3e81777, type: 3}
+  _sprite: {fileID: 987581949240234077, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
   mesh: {fileID: 6161016646456385739, guid: f0cfd3a6af25c4b419becb258101c58e, type: 3}
   _material: {fileID: 2141126021990138764, guid: e12b339bc1567884cbe702f88b87c8bc, type: 3}
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}

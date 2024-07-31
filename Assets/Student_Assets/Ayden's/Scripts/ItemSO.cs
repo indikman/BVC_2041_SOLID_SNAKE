@@ -10,6 +10,8 @@ public class ItemSO : ScriptableObject
     public string itemName;
 
     public Image itemSprite;
+
+    public Sprite _sprite;
     
     public Mesh mesh;
 

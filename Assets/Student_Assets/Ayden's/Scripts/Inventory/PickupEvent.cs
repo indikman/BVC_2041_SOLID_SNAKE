@@ -1,25 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Item : MonoBehaviour
+public delegate void PickUp();
+public class PickupEvent : MonoBehaviour
 {
+    private EventManager _eventManager = new EventManager();
+    private InventoryView _inventoryView;
     public MeshFilter _mesh;
     public ItemSO item;
     public MeshRenderer _renderer;
     public string _itemName;
     public Image _image;
     public Sprite _sprite;
-    public EventManager _eventManager;
 
     public Action<ItemSO> ItemEvent;
-    
-    
-    private void Start()
+
+    public void Start()
     {
         _mesh = GetComponent<MeshFilter>();
         _renderer = GetComponent<MeshRenderer>();
@@ -34,8 +33,10 @@ public class Item : MonoBehaviour
         gameObject.AddComponent<MeshCollider>();
         gameObject.GetComponent<MeshCollider>().convex = true;
         gameObject.GetComponent<MeshCollider>().isTrigger = true;
+        _inventoryView = FindObjectOfType<InventoryView>();// set reference to inventory object 
+        _eventManager.internalEvent += ReactionToItem;// subscribe to the event managers event
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -45,4 +46,13 @@ public class Item : MonoBehaviour
             Debug.Log("hit");
         }
     }
+
+    public void ReactionToItem()
+    {
+        _image.sprite = _sprite;
+        _inventoryView.ImageChange(_image); // change image
+    }
 }
+
+
+

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85e771a553909d429186b9bbd971c72, type: 3}
   m_Name: Motel
   m_EditorClassIdentifier: 
-  itemName: Makarov
+  itemName: Motel
   itemSprite: {fileID: 1278152840070174397, guid: 2ae54583902875946a205ee8e27d3612, type: 3}
-  itemObject: {fileID: 919132149155446097, guid: 2db49aa751006e94d8f245577bf06461, type: 3}
+  _sprite: {fileID: 8298204125706555172, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
+  mesh: {fileID: 3760128882730901831, guid: 98ecc24ad4c655c48a977ce2dabfb398, type: 3}
+  _material: {fileID: 5037215003110871432, guid: 98ecc24ad4c655c48a977ce2dabfb398, type: 3}
+  collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
