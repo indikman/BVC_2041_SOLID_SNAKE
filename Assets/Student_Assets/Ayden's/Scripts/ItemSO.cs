@@ -10,9 +10,12 @@ public class ItemSO : ScriptableObject
     public string itemName;
 
     public Image itemSprite;
+    
+    public Mesh mesh;
 
-    public GameObject itemObject;
+    public Material _material;
 
+    public MeshCollider collider;
     void Start()
     {
         

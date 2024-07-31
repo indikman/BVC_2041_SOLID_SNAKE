@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f85e771a553909d429186b9bbd971c72, type: 3}
-  m_Name: Makarov
+  m_Name: Motel
   m_EditorClassIdentifier: 
   itemName: Makarov
-  itemSprite: {fileID: 1278152840070174397, guid: 30170bde9a67d884b99ceb46b3e81777, type: 3}
-  mesh: {fileID: 6161016646456385739, guid: f0cfd3a6af25c4b419becb258101c58e, type: 3}
-  _material: {fileID: 2141126021990138764, guid: e12b339bc1567884cbe702f88b87c8bc, type: 3}
-  collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
+  itemSprite: {fileID: 1278152840070174397, guid: 2ae54583902875946a205ee8e27d3612, type: 3}
+  itemObject: {fileID: 919132149155446097, guid: 2db49aa751006e94d8f245577bf06461, type: 3}
