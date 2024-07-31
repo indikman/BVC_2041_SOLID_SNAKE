@@ -54,7 +54,7 @@ public class ItemView : MonoBehaviour
         {
             Debug.Log(sprite);
             _inventorySprites[i].enabled = true;
-            _inventorySprites[i] = sprite;
+            _inventorySprites[i].sprite = sprite.sprite;
 
         }
     }
