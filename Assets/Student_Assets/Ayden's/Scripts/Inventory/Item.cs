@@ -11,6 +11,8 @@ public class Item : MonoBehaviour
     public ItemSO item;
     public MeshRenderer _renderer;
     public string _itemName;
+
+    public Action<ItemSO> ItemEvent;
     
     
     private void Start()
