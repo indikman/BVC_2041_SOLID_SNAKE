@@ -9,26 +9,23 @@ public class InventoryView : MonoBehaviour
     private Image _image;
     private PickupEvent _pickupEvent;
     // private Dictionary<int, Image> InventoryItems = new Dictionary<int, Image>();
-    private Dictionary<Image, int> InventoryItems = new Dictionary<Image, int>(); 
+    private Dictionary<Image, int> InventoryItems = new Dictionary<Image, int>();// dictionary using image as key and int as value in its key value pair
     
 
-    private void Inventory()
+    public void ImageChange(Image image)// takes image value and can be overriden
     {
-        
-    }
-
-    public void ImageChange(Image image)
-    {
-        bool exists = InventoryItems.TryAdd(image, 1);
-        if (exists)
+        bool exists = InventoryItems.TryAdd(image, 1);// use the dictionary to check if image already exists
+        if (exists)// does only once per item
         {
             Debug.Log(image);
             Instantiate(image, transform.parent);
+            // set count of item to 1
         }
-        else
+        else// will run if a duplicate item is picked up
         {
             Debug.Log("exists");
             return;
+            //increase the count of the item
         }
     }
 
