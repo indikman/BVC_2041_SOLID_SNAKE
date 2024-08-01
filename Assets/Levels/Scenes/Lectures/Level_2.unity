@@ -38915,6 +38915,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6656202ae60ded04f8d8384bca14f67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinSpent: {fileID: 8300000, guid: 1b855b64b63ffca46a1e53380d6f1521, type: 3}
+  crabSodaItemData: {fileID: 11400000, guid: 07ed88b4ea51a91489a762237a0ec34f, type: 2}
+  coinItemData: {fileID: 11400000, guid: 4f95bb2f2f271b74dba9390b1d8f6db9, type: 2}
 --- !u!65 &7707197460914149497
 BoxCollider:
   m_ObjectHideFlags: 0

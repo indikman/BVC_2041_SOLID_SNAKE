@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Code.Scripts.Managers;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class Inventory : Singleton<Inventory>
 {
     public static event Action<List<InventoryItem>> OnInventoryChanged;
     
@@ -15,6 +16,7 @@ public class Inventory : MonoBehaviour
         Key.OnKeyCollected += Add;
         Coin.OnCoinCollected += Add;
         CrabSoda.OnSodaCollected += Add;
+        VendingMachine.OnCoinSpent += Remove;
     }
 
     private void OnDisable()
@@ -22,6 +24,7 @@ public class Inventory : MonoBehaviour
         Key.OnKeyCollected -= Add;
         Coin.OnCoinCollected -= Add;
         CrabSoda.OnSodaCollected -= Add;
+        VendingMachine.OnCoinSpent -= Remove;
     }
 
     public void Add(ItemData itemData)
@@ -55,5 +58,10 @@ public class Inventory : MonoBehaviour
             
             OnInventoryChanged?.Invoke(InventoryItems);
         }
+    }
+
+    public bool HasItem(ItemData itemData)
+    {
+        return _itemDict.ContainsKey(itemData) && _itemDict[itemData].StackSize > 0;
     }
 }

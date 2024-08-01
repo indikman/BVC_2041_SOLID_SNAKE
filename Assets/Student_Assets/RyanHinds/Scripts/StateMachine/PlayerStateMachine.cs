@@ -28,6 +28,7 @@ public class PlayerStateMachine : MonoBehaviour
     #region States
     public PlayerIdleState IdleState;
     public PlayerMoveState MoveState;
+    public PlayerInteractState InteractState;
     #endregion
 
     public event Action<IState> StateChanged;
@@ -36,6 +37,7 @@ public class PlayerStateMachine : MonoBehaviour
     {
         this.IdleState = new PlayerIdleState(this);
         this.MoveState = new PlayerMoveState(this);
+        this.InteractState = new PlayerInteractState(this);
     }
 
     private void Awake()

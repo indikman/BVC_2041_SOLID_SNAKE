@@ -76,7 +76,10 @@ public class PlayerBaseState : IState, IPlayerControlListener
 
     public void Crouch() {}
 
-    public void Interact() {}
+    public void Interact()
+    {
+        _stateMachine.ChangeState(_stateMachine.InteractState);
+    }
 
     public void Interact2() {}
 
