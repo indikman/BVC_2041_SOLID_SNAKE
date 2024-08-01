@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Motel
   itemSprite: {fileID: 1278152840070174397, guid: 2ae54583902875946a205ee8e27d3612, type: 3}
   _sprite: {fileID: 8298204125706555172, guid: 3e26ee0b259b4d544bf930b96729d5ca, type: 3}
-  mesh: {fileID: 3760128882730901831, guid: 98ecc24ad4c655c48a977ce2dabfb398, type: 3}
-  _material: {fileID: 5037215003110871432, guid: 98ecc24ad4c655c48a977ce2dabfb398, type: 3}
+  mesh: {fileID: -5130528602406934341, guid: 98ecc24ad4c655c48a977ce2dabfb398, type: 3}
+  _material: {fileID: 7385257968177431411, guid: e12b339bc1567884cbe702f88b87c8bc, type: 3}
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}

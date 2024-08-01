@@ -11,7 +11,7 @@ public class InventoryView : MonoBehaviour
 
     public void ImageChange(Image image)
     {
-        Instantiate(image);
+        Instantiate(image, transform.parent);
     }
 
     private void Start()

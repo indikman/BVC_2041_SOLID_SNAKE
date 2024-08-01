@@ -15,6 +15,7 @@ public class PickupEvent : MonoBehaviour
     public string _itemName;
     public Image _image;
     public Sprite _sprite;
+    [SerializeField]private Transform _transform;
 
     public Action<ItemSO> ItemEvent;
 
@@ -49,9 +50,12 @@ public class PickupEvent : MonoBehaviour
 
     public void ReactionToItem()
     {
+        
         _image.sprite = _sprite;
         _inventoryView.ImageChange(_image); // change image
     }
+    
+    // parent images to the inventory screen, group images together by type/name 
 }
 
 
