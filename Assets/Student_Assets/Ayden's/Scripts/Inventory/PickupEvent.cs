@@ -52,6 +52,7 @@ public class PickupEvent : MonoBehaviour
     {
         
         _image.sprite = _sprite;
+       // Debug.Log(_sprite, _image);
         _inventoryView.ImageChange(_image); // change image
     }
     
