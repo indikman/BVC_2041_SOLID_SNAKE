@@ -1578,8 +1578,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454651009}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15597841, y: 0.432953, z: -0.076319024, w: -0.8845326}
-  m_LocalPosition: {x: 55.872746, y: 3.1000001, z: 25.103973}
+  m_LocalRotation: {x: 0.064041056, y: 0.915336, z: -0.16140765, w: 0.36332676}
+  m_LocalPosition: {x: 42.9, y: 3.3, z: 32.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2446,18 +2446,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2139826972}
-        m_TargetAssemblyTypeName: DoorRotation, Assembly-CSharp
-        m_MethodName: DoorCloser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   CodecComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -2905,7 +2893,6 @@ MonoBehaviour:
   openedRotation: {x: 0, y: 0, z: -90}
   closedRotation: {x: 0, y: 0, z: 0}
   originalPosition: {x: 0, y: 0, z: 0}
-  doorSpeed: 10
 --- !u!1 &910623153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,9 +3546,10 @@ MonoBehaviour:
   tasksText: {fileID: 574104843}
   description: {fileID: 1148055325}
   tasks:
-  - {fileID: 11400000, guid: 23050712cab965d4e9d05687cf4dfe6c, type: 2}
   - {fileID: 11400000, guid: df33225c431d3e74eaa6a3ed273f89a2, type: 2}
+  - {fileID: 11400000, guid: 23050712cab965d4e9d05687cf4dfe6c, type: 2}
   - {fileID: 11400000, guid: 74742e8dae5b1d94380e5492fb90d561, type: 2}
+  completesfx: {fileID: 8300000, guid: 389efd8a0dd53cf43973e02ea995112e, type: 3}
   onAreaTasksComplete:
     m_PersistentCalls:
       m_Calls:
@@ -5030,7 +5018,6 @@ MonoBehaviour:
   openedRotation: {x: 0, y: 90, z: 0}
   closedRotation: {x: 0, y: 0, z: 0}
   originalPosition: {x: 0, y: 0, z: 0}
-  doorSpeed: 10
 --- !u!1 &1848302374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5431,7 +5418,6 @@ MonoBehaviour:
   openedRotation: {x: 0, y: 0, z: 0}
   closedRotation: {x: 0, y: 0, z: 0}
   originalPosition: {x: 0, y: 0, z: 0}
-  doorSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

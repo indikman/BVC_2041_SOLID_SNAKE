@@ -13,8 +13,8 @@ public class DoorRotation : MonoBehaviour
     [SerializeField] private Vector3 closedRotation;
     [SerializeField] private Vector3 originalPosition;
 
-    [SerializeField] private float doorSpeed = 10f;
-    // Start is called before the first frame update
+    private float doorSpeed = 2f;
+    // Door Opener speed unserialized and changed to 2f to prevent the ability to run outside before the door closes
     // Thank you to Ryan / AngelusNein for assistance.
     // using comments to show understanding and not just copypasting lol
     

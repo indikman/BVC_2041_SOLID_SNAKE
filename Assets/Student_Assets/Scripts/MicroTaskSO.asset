@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0a9c16042b9b0443808d77678219f90, type: 3}
-  m_Name: BasicTaskTracker
+  m_Script: {fileID: 11500000, guid: 8e747194f2ab78b4397a2378608b0958, type: 3}
+  m_Name: MicroTaskSO
   m_EditorClassIdentifier: 
-  task_doorentered: 0
-  task_completefirstcodec: 0
-  task_backrooms: 0
+  TaskName: Microwave
+  TaskDescription: Microwave
+  TaskCompletionStatus: 1
+  taskcompletesfx: {fileID: 8300000, guid: 4c76d01a1a5643b428b3a1b324b0f497, type: 3}

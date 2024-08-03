@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Code.Scripts.Inputs;
 using Unity.VisualScripting;
+using Code.Scripts.Inputs;
+using Code.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -34,6 +35,17 @@ public class CodecView : MonoBehaviour, ICodecListener
     {
         _codecSettings.CodecControlChannelSo.Next.AddListener(Next);
         _codecSettings.CodecControlChannelSo.Open.AddListener(Open);
+        //This is really smart.
+        //Simply calling the GameInput with a Delegate and removing GameInput at the beginning
+        //and end of a call. Will require further study into delegates.
+        _codecSettings.CodecControlChannelSo.Open.AddListener(delegate
+        {
+           InputManager.Instance.DisableInputType(GameInputType.PlayerControl);
+        });
+        _codecSettings.CodecControlChannelSo.Next.AddListener(delegate
+        {
+            InputManager.Instance.EnableInputType(GameInputType.PlayerControl);
+        });
     }
 
     void RemoveListeners()
