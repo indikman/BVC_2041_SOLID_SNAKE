@@ -1433,7 +1433,7 @@ Transform:
   m_GameObject: {fileID: 454651009}
   serializedVersion: 2
   m_LocalRotation: {x: 0.064041056, y: 0.915336, z: -0.16140765, w: 0.36332676}
-  m_LocalPosition: {x: 42.9, y: 3.3, z: 32.4}
+  m_LocalPosition: {x: 44.5, y: 3.2, z: 36.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cfuStatus: PSXEffects v1.18.4 - version ahead?!
   sections: 01010101
-  customRes: {x: 734, y: 378}
+  customRes: {x: 603, y: 378}
   resolutionFactor: 2
   limitFramerate: 60
   skipFrames: 0
@@ -4655,7 +4655,7 @@ GameObject:
   - component: {fileID: 1726939133}
   m_Layer: 0
   m_Name: DoorPivot
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4694,6 +4694,7 @@ MonoBehaviour:
   speed: 10
   Inital: {x: 0, y: 0, z: 0}
   Target: {x: 0, y: -90, z: 0}
+  _running: 0
 --- !u!65 &1726939133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4710,11 +4711,11 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.390339, y: 3.530639, z: 1}
-  m_Center: {x: 0.69516945, y: 1.2653197, z: 0}
+  m_Size: {x: 2.390339, y: 3.530639, z: 2.1465359}
+  m_Center: {x: 0.69516945, y: 1.2653197, z: 0.57326794}
 --- !u!1 &1778712176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3223915320484425037, guid: 7e231f6422b387a48a4560d01063f787, type: 3}

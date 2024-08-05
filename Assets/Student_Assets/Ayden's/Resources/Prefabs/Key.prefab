@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsKey: 1
+  _door: {fileID: 0}
+  detectionRadius: 2
 --- !u!64 &-3527000816238983289
 MeshCollider:
   m_ObjectHideFlags: 0
