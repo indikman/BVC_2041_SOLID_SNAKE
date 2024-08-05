@@ -16,6 +16,8 @@ public class PickupEvent : MonoBehaviour
     public Image _image;
     public Sprite _sprite;
     [SerializeField]private Transform _transform;
+    private GameObject _GameObject;
+    private ItemHandle _itemHandle;
 
     public Action<ItemSO> ItemEvent;
 
@@ -30,12 +32,15 @@ public class PickupEvent : MonoBehaviour
         _renderer.material = item._material;
         _itemName = item.itemName;
         _image = item.itemSprite;
+        _GameObject = item._gameObject;
 
         gameObject.AddComponent<MeshCollider>();
         gameObject.GetComponent<MeshCollider>().convex = true;
         gameObject.GetComponent<MeshCollider>().isTrigger = true;
         _inventoryView = FindObjectOfType<InventoryView>();// set reference to inventory object 
-        _eventManager.internalEvent += ReactionToItem;// subscribe to the event managers event
+        _itemHandle = FindObjectOfType<ItemHandle>();
+        _eventManager.internalEvent += ReactionToItem;
+        _eventManager.internalEvent += PlayerReactionToItem; // subscribe to the event managers event
     }
     
     private void OnTriggerEnter(Collider other)
@@ -44,17 +49,26 @@ public class PickupEvent : MonoBehaviour
         {
             Destroy(this.gameObject);
             _eventManager.Run();// run the events
-            Debug.Log("hit");
+            //Debug.Log("hit");
         }
+    }
+
+    public void PlayerReactionToItem()
+    {
+        _GameObject = item._gameObject;
+        Debug.Log(item);
+        _itemHandle.ItemChange(_GameObject);
     }
 
     public void ReactionToItem()
     {
         
         _image.sprite = _sprite;
-       // Debug.Log(_sprite, _image);
+        //Debug.Log(_sprite, _image);
         _inventoryView.ImageChange(_image); // change image
     }
+    
+    
     
     // parent images to the inventory screen, group images together by type/name 
 }

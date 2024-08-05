@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class InventoryView : MonoBehaviour
 {
     private Image _image;
+
     private PickupEvent _pickupEvent;
+    
     // private Dictionary<int, Image> InventoryItems = new Dictionary<int, Image>();
     private Dictionary<Image, int> InventoryItems = new Dictionary<Image, int>();// dictionary using image as key and int as value in its key value pair
     
@@ -28,6 +30,7 @@ public class InventoryView : MonoBehaviour
             //increase the count of the item
         }
     }
+    
 
     
     /* bool exists = InventoryItems.TryAdd(_image, whatevervalue) //when we use TryAdd, it tries to add that exact key,value pair to the dictionary. Given that keys must be unique, it will fail if the _image, or the key, already exists. Note that it must be the same value as well. 

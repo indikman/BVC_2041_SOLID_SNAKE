@@ -17,6 +17,8 @@ public class ItemSO : ScriptableObject
 
     public Material _material;
 
+    public GameObject _gameObject;
+
     public MeshCollider collider;
     void Start()
     {
