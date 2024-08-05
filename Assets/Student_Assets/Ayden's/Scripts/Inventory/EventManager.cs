@@ -14,6 +14,18 @@ public class EventManager
         InvokeEvent();
     }
 
+    public void RunInteract()
+    {
+        InvokeInteract();
+    }
+
+    public event Interact InteractEvent;
+
+    protected virtual void InvokeInteract()
+    {
+        InteractEvent?.Invoke();
+    }
+
     protected virtual void InvokeEvent()
     {
         internalEvent?.Invoke();
