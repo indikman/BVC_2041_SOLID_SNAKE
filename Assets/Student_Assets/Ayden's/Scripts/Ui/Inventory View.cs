@@ -12,7 +12,7 @@ public class InventoryView : MonoBehaviour
     
     // private Dictionary<int, Image> InventoryItems = new Dictionary<int, Image>();
     private Dictionary<Image, int> InventoryItems = new Dictionary<Image, int>();// dictionary using image as key and int as value in its key value pair
-    
+    [SerializeField] private Button inventoryButton;
 
     public void ImageChange(Image image)// takes image value and can be overriden
     {
@@ -43,6 +43,16 @@ public class InventoryView : MonoBehaviour
     private void Start()
     {
         _pickupEvent = FindObjectOfType<PickupEvent>();
+    }
+
+    public void CheckItem(ItemEnum RequiredItem)
+    {
+        
+    }
+
+    private void Awake()
+    {
+        inventoryButton.onClick.AddListener(delegate { CheckItem(ItemEnum.Key);});
     }
 
     // add image specifed by item picked up event. when item picked up add image of said item

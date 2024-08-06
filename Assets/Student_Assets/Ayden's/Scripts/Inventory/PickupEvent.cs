@@ -18,6 +18,7 @@ public class PickupEvent : MonoBehaviour
     [SerializeField]private Transform _transform;
     private GameObject _GameObject;
     private ItemHandle _itemHandle;
+    [SerializeField] private Button inventoryButton;
 
     public Action<ItemSO> ItemEvent;
 
@@ -30,7 +31,6 @@ public class PickupEvent : MonoBehaviour
         _sprite = item._sprite;
         _mesh.mesh = item.mesh;
         _renderer.material = item._material;
-        _itemName = item.itemName;
         _image = item.itemSprite;
         _GameObject = item._gameObject;
 
@@ -42,7 +42,12 @@ public class PickupEvent : MonoBehaviour
         _eventManager.internalEvent += ReactionToItem;
         _eventManager.internalEvent += PlayerReactionToItem; // subscribe to the event managers event
     }
-    
+
+    public void Awake()
+    {
+        inventoryButton.onClick.AddListener(delegate { _itemHandle.ItemChange(_GameObject);});
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -59,6 +64,8 @@ public class PickupEvent : MonoBehaviour
         Debug.Log(item);
         _itemHandle.ItemChange(_GameObject);
     }
+    
+    
 
     public void ReactionToItem()
     {

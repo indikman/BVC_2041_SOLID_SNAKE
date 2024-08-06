@@ -12,6 +12,7 @@ public class InteractableItem : MonoBehaviour
     public Aydens useKey;
     [SerializeField] private Door _door;
     [SerializeField] private float detectionRadius;
+    private bool canOpen;
     private void Start()
     {
         _door = FindObjectOfType<Door>();
@@ -19,15 +20,25 @@ public class InteractableItem : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float distance = Vector3.Distance(_door.transform.position, this.transform.position);
-        if (distance <= detectionRadius)
+        if (_door != null)
         {
-            _itemManager.InteractEvent += UseKey;
+            float distance = Vector3.Distance(_door.transform.position, this.transform.position);
+            if (distance <= detectionRadius)
+            {
+                _itemManager.InteractEvent += UseKey;
+                canOpen = true;
+            }
+            else
+            {
+                _itemManager.InteractEvent -= UseKey;
+                canOpen = false;
+            }
         }
         else
         {
-            _itemManager.InteractEvent -= UseKey;
+            return;
         }
+
     }
 
     private void Awake()
@@ -52,7 +63,15 @@ public class InteractableItem : MonoBehaviour
 
     private void OnUseKey()
     {
-        Debug.Log("KEY");
-        _itemManager.RunInteract();
+        if(canOpen)
+        {
+            Debug.Log("KEY");
+            _itemManager.RunInteract();
+        }
+        else
+        {
+            return;
+        }
+
     }
 }

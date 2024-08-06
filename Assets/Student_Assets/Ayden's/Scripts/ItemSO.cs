@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class ItemSO : ScriptableObject
 {
 
-    public string itemName;
-
     public Image itemSprite;
 
     public Sprite _sprite;
@@ -20,8 +18,14 @@ public class ItemSO : ScriptableObject
     public GameObject _gameObject;
 
     public MeshCollider collider;
-    void Start()
-    {
-        
-    }
+    
+    [field: SerializeField] public string ItemName { get; private set; }
+    [field: SerializeField] public ItemEnum ItemType { get; private set; }
+    [field: SerializeField, TextArea] public string ItemDescription { get; private set; }
+
+}
+
+public enum ItemEnum
+{
+    Key, Weapon,Useless
 }

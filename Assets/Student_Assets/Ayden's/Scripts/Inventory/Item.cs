@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Item : MonoBehaviour
+public class Itdsem : MonoBehaviour
 {
     public MeshFilter _mesh;
     public ItemSO item;
@@ -28,7 +28,6 @@ public class Item : MonoBehaviour
         _sprite = item._sprite;
         _mesh.mesh = item.mesh;
         _renderer.material = item._material;
-        _itemName = item.itemName;
         _image = item.itemSprite;
 
         gameObject.AddComponent<MeshCollider>();

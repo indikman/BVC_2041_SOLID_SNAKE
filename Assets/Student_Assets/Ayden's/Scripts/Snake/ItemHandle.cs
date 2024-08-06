@@ -11,7 +11,7 @@ public class ItemHandle : MonoBehaviour
     
     public void ItemChange(GameObject _gameObject)
     {
-        bool exists = PlayerItems.TryAdd(_gameObject, 1);// use the dictionary to check if image already exists
+        bool exists = PlayerItems.TryAdd(_gameObject, 1);// use the dictionary to check if gameobject already exists
         if (exists) // does only once per item
         {
             Debug.Log("Instantiate");
