@@ -18,6 +18,7 @@ MonoBehaviour:
   gameObject: {fileID: 7270207630725818447, guid: 4790ec3ae8472154cb46c6700ae7a141, type: 3}
   collider: {fileID: -3527000816238983289, guid: 4790ec3ae8472154cb46c6700ae7a141, type: 3}
   name: Key
-  ObjectButton: {fileID: 0}
+  ObjectButton: {fileID: 3870422917331907831, guid: ab8c4fde4b47bce478f5e0f3a8c5cee5, type: 3}
   sprite: {fileID: 21300000, guid: 3bd0a40de5443fd4d97b63014989be66, type: 3}
   <ItemDescription>k__BackingField: A key that opens things duh
+  itemType: 0

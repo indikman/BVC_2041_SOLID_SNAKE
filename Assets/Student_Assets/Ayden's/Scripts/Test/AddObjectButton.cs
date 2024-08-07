@@ -18,7 +18,7 @@ public class AddObjectButton : MonoBehaviour
     private int _count;
     public ItemType _itemType;
     private InteractableItem _item;
-    public TMP_Text text;
+    //public TMP_Text text;
     
 
     private Sprite _sprite;
@@ -32,9 +32,9 @@ public class AddObjectButton : MonoBehaviour
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
-        _itemType = pickable.itemType;
-        text = FindAnyObjectByType<TMP_Text>();
-        Instantiate(text, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
+        //_itemType = pickable.itemType;
+        //text = FindAnyObjectByType<TMP_Text>();
+        //Instantiate(text, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
         
         
         _sprite = pickable.sprite;

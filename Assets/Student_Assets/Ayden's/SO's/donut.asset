@@ -18,7 +18,7 @@ MonoBehaviour:
   gameObject: {fileID: 7270207630725818447, guid: a274056ebc137aa4da0257dc644d0139, type: 3}
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
   name: Donut
-  ObjectButton: {fileID: 0}
+  ObjectButton: {fileID: 3870422917331907831, guid: d96a8dfbea560da4ab98f37d4af9d25e, type: 3}
   sprite: {fileID: 21300000, guid: 43e75ff336d070546935093d41deff33, type: 3}
   <ItemDescription>k__BackingField: A donut duh
   itemType: 1

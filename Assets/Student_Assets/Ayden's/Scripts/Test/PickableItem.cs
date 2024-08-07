@@ -41,8 +41,7 @@ public class PickableItem : MonoBehaviour
         _Image = gameObject.AddComponent<Image>();
         theInventory = FindObjectOfType<TheInventory>();
         inventory2 = FindObjectOfType<Inventory2>();
-        //objectButton = gameObject.AddComponent<AddObjectButton>();
-        objectButton.pickable = pickableSo;
+        objectButton = pickableSo.ObjectButton;
         _Image.sprite = pickableSo.image.sprite;
         meshFilter.mesh = pickableSo.mesh;
         renderer.material = pickableSo.material;
