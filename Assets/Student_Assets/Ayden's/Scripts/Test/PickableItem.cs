@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,6 +27,10 @@ public class PickableItem : MonoBehaviour
     public Inventory2 inventory2;
 
     [SerializeField] private AddObjectButton objectButton;
+
+    [SerializeField]private TMP_Text _text;
+
+    public int count;
     
 
     private void Start()

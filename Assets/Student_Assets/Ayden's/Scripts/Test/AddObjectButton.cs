@@ -18,6 +18,7 @@ public class AddObjectButton : MonoBehaviour
     private int _count;
     public ItemType _itemType;
     private InteractableItem _item;
+    public TMP_Text text;
     
 
     private Sprite _sprite;
@@ -27,12 +28,13 @@ public class AddObjectButton : MonoBehaviour
     
     private void Start()
     {
-
         _image = gameObject.AddComponent<Image>();
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
         _itemType = pickable.itemType;
+        text = FindAnyObjectByType<TMP_Text>();
+        Instantiate(text, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
         
         
         _sprite = pickable.sprite;
@@ -40,8 +42,6 @@ public class AddObjectButton : MonoBehaviour
         description = pickable.ItemDescription;
         _gameobject = pickable.gameObject;
         button.onClick.AddListener(ItemSet);
-        //_count = 1;
-
     }
 
     public void GetSo(PickableItemSo pickableItemSo)
@@ -60,9 +60,7 @@ public class AddObjectButton : MonoBehaviour
     {
 
         _item = FindAnyObjectByType<InteractableItem>();
-        //bool exists = PlayerItems.TryAdd(_itemType, _gameObject);// use the dictionary to check if gameobject already exists
-        //if (exists) // does only once per item  
-        //{
+
             if (_item == null)
             {
                 Debug.Log("Instantiate");
@@ -70,8 +68,7 @@ public class AddObjectButton : MonoBehaviour
                 //_count--;
 
             }
-
-        //}
+            
         else
         {
             Debug.Log("PlayerItemExists");

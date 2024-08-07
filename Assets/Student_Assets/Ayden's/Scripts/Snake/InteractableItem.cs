@@ -34,7 +34,7 @@ public class InteractableItem : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if (_door != null)
+        if (_door != null && _itemType == ItemType.Key)
         {
             float distance = Vector3.Distance(_door.transform.position, this.transform.position);
             if (distance <= detectionRadius)
@@ -73,7 +73,10 @@ public class InteractableItem : MonoBehaviour
 
     public void UseKey()
     {
-        _door.Interact();
+        if (_itemType == ItemType.Key)
+        {
+            _door.Interact();
+        }
     }
     
     private void OnUseKey()
