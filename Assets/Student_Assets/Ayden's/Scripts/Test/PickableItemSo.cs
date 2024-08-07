@@ -19,6 +19,8 @@ public class PickableItemSo : ScriptableObject
     public string name;
 
     public AddObjectButton ObjectButton;
+
+    public Sprite sprite;
     
     [field: SerializeField, TextArea] public string ItemDescription { get; private set; }
     

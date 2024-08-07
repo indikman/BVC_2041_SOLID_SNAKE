@@ -13,9 +13,17 @@ public class InteractableItem : MonoBehaviour
     [SerializeField] private Door _door;
     [SerializeField] private float detectionRadius;
     private bool canOpen;
+    public Transform originalPosition;
     private void Start()
     {
         _door = FindObjectOfType<Door>();
+        originalPosition = FindObjectOfType<hands>().transform;
+        Vector3 currentPosition = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
+        currentPosition = originalPosition.position;
+        transform.position = originalPosition.position;
+        transform.rotation = originalPosition.rotation;
+        
+        
     }
 
     private void FixedUpdate()
@@ -74,4 +82,11 @@ public class InteractableItem : MonoBehaviour
         }
 
     }
+
+    public void Unequip()
+    {
+        Destroy(this.gameObject);
+    }
+    
+    
 }

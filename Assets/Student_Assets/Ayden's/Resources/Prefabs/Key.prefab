@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7270207630725818447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 47.605537, y: 1.3786898, z: 19.471529}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -102,6 +102,7 @@ MonoBehaviour:
   IsKey: 1
   _door: {fileID: 0}
   detectionRadius: 3
+  originalPosition: {fileID: 0}
 --- !u!64 &-3527000816238983289
 MeshCollider:
   m_ObjectHideFlags: 0

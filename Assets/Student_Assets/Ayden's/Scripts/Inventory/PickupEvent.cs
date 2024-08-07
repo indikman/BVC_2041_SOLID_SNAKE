@@ -45,7 +45,7 @@ public class PickupEvent : MonoBehaviour
 
     public void Awake()
     {
-        inventoryButton.onClick.AddListener(delegate { _itemHandle.ItemChange(_GameObject);});
+        //inventoryButton.onClick.AddListener(delegate { _itemHandle.ItemChange(_GameObject);});
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,7 +62,7 @@ public class PickupEvent : MonoBehaviour
     {
         _GameObject = item._gameObject;
         Debug.Log(item);
-        _itemHandle.ItemChange(_GameObject);
+        //_itemHandle.ItemChange(_GameObject);
     }
     
     
