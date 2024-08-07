@@ -16,7 +16,7 @@ public class AddObjectButton : MonoBehaviour
     public GameObject _gameobject;
     private Transform _transform;
     private int _count;
-    private ItemType _itemType;
+    public ItemType _itemType;
     private InteractableItem _item;
     
 

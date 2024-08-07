@@ -23,7 +23,10 @@ public class PickableItem : MonoBehaviour
 
     public TheInventory theInventory;
 
+    public Inventory2 inventory2;
+
     [SerializeField] private AddObjectButton objectButton;
+    
 
     private void Start()
     {
@@ -32,6 +35,7 @@ public class PickableItem : MonoBehaviour
         renderer = gameObject.AddComponent<MeshRenderer>();
         _Image = gameObject.AddComponent<Image>();
         theInventory = FindObjectOfType<TheInventory>();
+        inventory2 = FindObjectOfType<Inventory2>();
         //objectButton = gameObject.AddComponent<AddObjectButton>();
         objectButton.pickable = pickableSo;
         _Image.sprite = pickableSo.image.sprite;
@@ -41,8 +45,8 @@ public class PickableItem : MonoBehaviour
         gameObject.AddComponent<MeshCollider>();
         gameObject.GetComponent<MeshCollider>().convex = true;
         gameObject.GetComponent<MeshCollider>().isTrigger = true;
-        _pickableEvent.PickedEvent += CreateInventorySlot;
         _pickableEvent.PickedEvent += CreateSo;
+        _pickableEvent.PickedEvent += ButtonInstance;
 
     }
 
@@ -60,12 +64,12 @@ public class PickableItem : MonoBehaviour
         objectButton.GetSo(pickableSo);
     }
 
-    public void CreateInventorySlot()
+    public void ButtonInstance()
     {
-        Instantiate(objectButton,
-            new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,
-                gameObject.transform.position.z), Quaternion.identity, theInventory.transform);
+        inventory2.CreateInventorySlot(objectButton);
     }
+
+    
     
     
 }

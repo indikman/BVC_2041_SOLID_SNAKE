@@ -21,3 +21,4 @@ MonoBehaviour:
   ObjectButton: {fileID: 0}
   sprite: {fileID: 21300000, guid: 43e75ff336d070546935093d41deff33, type: 3}
   <ItemDescription>k__BackingField: A donut duh
+  itemType: 1
