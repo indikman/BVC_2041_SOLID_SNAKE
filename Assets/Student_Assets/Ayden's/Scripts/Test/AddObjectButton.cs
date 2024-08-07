@@ -60,9 +60,9 @@ public class AddObjectButton : MonoBehaviour
     {
 
         _item = FindAnyObjectByType<InteractableItem>();
-        bool exists = PlayerItems.TryAdd(_itemType, _gameObject);// use the dictionary to check if gameobject already exists
-        if (exists) // does only once per item  
-        {
+        //bool exists = PlayerItems.TryAdd(_itemType, _gameObject);// use the dictionary to check if gameobject already exists
+        //if (exists) // does only once per item  
+        //{
             if (_item == null)
             {
                 Debug.Log("Instantiate");
@@ -71,7 +71,7 @@ public class AddObjectButton : MonoBehaviour
 
             }
 
-        }
+        //}
         else
         {
             Debug.Log("PlayerItemExists");
@@ -89,17 +89,10 @@ public class AddObjectButton : MonoBehaviour
     }
 
     
-    public void Dequip()
+    public void Dequip(ItemType itemType)
     {
-        if (_itemType == ItemType.Key)
-        {
-            PlayerItems.Remove(ItemType.Key);
-        }
-
-        if (_itemType == ItemType.Donut)
-        {
-            PlayerItems.Remove(ItemType.Donut);
-        }
+        _itemType = itemType;
+        PlayerItems.Remove(_itemType);
         //_count--;
         Debug.Log("fuck");
     }

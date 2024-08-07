@@ -15,6 +15,7 @@ public class InteractableItem : MonoBehaviour
     private bool canOpen;
     public Transform originalPosition;
     private AddObjectButton _addObjectButton;
+    public ItemType _itemType;
     
     private void Start()
     {
@@ -91,7 +92,7 @@ public class InteractableItem : MonoBehaviour
 
     private void OnUnEquip()
     {
-        AddObjectButton.Dequip();
+        AddObjectButton.Dequip(_itemType);
         Destroy(this.gameObject);
     }
     

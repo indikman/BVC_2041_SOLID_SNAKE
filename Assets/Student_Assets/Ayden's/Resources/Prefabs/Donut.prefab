@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AddObjectButton: {fileID: 0}
-  IsKey: 0
   _door: {fileID: 0}
   detectionRadius: 3
   originalPosition: {fileID: 0}
+  _itemType: 1
 --- !u!64 &-3527000816238983289
 MeshCollider:
   m_ObjectHideFlags: 0
