@@ -12,11 +12,7 @@ public class Inventory2 : MonoBehaviour
 
     private AddObjectButton objectButton;
 
-    private ItemStats ItemStats;
-
     private TheInventory theInventory;
-
-    public int itemCount = 1;
     public void CreateInventorySlot(AddObjectButton _objectButton )
     {
         bool exists = PlayerItems.TryAdd(_objectButton, 1);
@@ -37,7 +33,6 @@ public class Inventory2 : MonoBehaviour
 
     public void AddItemStats(ItemStats itemStats)
     {
-        itemStats.IncreaseCount(itemCount);
         Debug.Log("increase");
 
         bool exists = PlayerStats.TryAdd(itemStats, 1);
@@ -47,6 +42,7 @@ public class Inventory2 : MonoBehaviour
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,
                     gameObject.transform.position.z), Quaternion.identity, theInventory.transform);
         }
+        itemStats.IncreaseCount();
 
     }
     

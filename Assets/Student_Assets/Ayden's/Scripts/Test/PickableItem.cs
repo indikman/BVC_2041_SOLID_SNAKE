@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ public delegate void PickUpEvent();
 
 public class PickableItem : MonoBehaviour
 {
-    private PickableEvent _pickableEvent = new PickableEvent();
+    private PickableEvent _pickableEvent;
     
     public MeshFilter meshFilter;
 
@@ -31,8 +32,7 @@ public class PickableItem : MonoBehaviour
     [SerializeField]private TMP_Text _text;
 
     public ItemStats itemStats;
-
-    public int count;
+    
     
 
     private void Start()
@@ -43,6 +43,7 @@ public class PickableItem : MonoBehaviour
         _Image = gameObject.AddComponent<Image>();
         theInventory = FindObjectOfType<TheInventory>();
         inventory2 = FindObjectOfType<Inventory2>();
+        _pickableEvent = gameObject.AddComponent<PickableEvent>();
         objectButton = pickableSo.ObjectButton;
         _Image.sprite = pickableSo.image.sprite;
         meshFilter.mesh = pickableSo.mesh;

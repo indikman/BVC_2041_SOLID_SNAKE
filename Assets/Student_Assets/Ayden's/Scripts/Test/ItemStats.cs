@@ -6,35 +6,46 @@ using UnityEngine;
 
 public class ItemStats : MonoBehaviour
 {
-    public PickableItemSo _itemSo;
-    public TMP_Text Text;
+    //public TMP_Text Text;
     public TMP_Text countText;
-    private int count;
-    public Aydens changeState;
+    [SerializeField] private int joe = 1;
     public bool enabled;
+    public string Fuck = "fuck-";
 
-    private void Start()
+    private void Awake()
     {
-        Text = GetComponent<TMP_Text>();
+        //Text = GetComponent<TMP_Text>();
         //countText = GetComponent<TMP_Text>();
         
-        Text.SetText(_itemSo.Description);
+        //Text.SetText(_itemSo.Description);
+        //countText.text = (joe.ToString());
+        //count = 1;
+        joe = 1;
+        if (joe != 1)
+        {
+          Debug.Log ("fucking scream and die");
+          joe = 1;
+        }
+    }
+    public void IncreaseCount()
+    {
+        Joe();
+        Debug.Log("Beginning of offfffffff IncreaseCount() is " + joe);
+        //count++;
+        //Debug.Log(count);
+        // countText.text = count.ToString();
+
+        Fuck = Fuck + Fuck;
+        Debug.Log("End of IncreaseCount() is " + joe);
     }
 
-    public void IncreaseCount(int _count)
+    void Joe()
     {
-        count = count + _count;
-        var number = count + _count;
-        var amount = number.ToString();
-        countText.SetText(amount);
+        joe++;
     }
 
     private void FixedUpdate()
     {
-        if (count != null)
-        {
-            
-        }
     }
 }
 

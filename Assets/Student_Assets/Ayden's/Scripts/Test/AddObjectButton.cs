@@ -57,14 +57,7 @@ public class AddObjectButton : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (itemStats.enabled)
-        {
-            this.gameObject.SetActive(false);
-        }
-        else if (!itemStats.enabled)
-        {
-            this.gameObject.SetActive(true);
-        }
+        
     }
 
 
