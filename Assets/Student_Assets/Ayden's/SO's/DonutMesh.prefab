@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3388910986189156680}
   - component: {fileID: 9094336006273272194}
   m_Layer: 0
-  m_Name: Donuts
+  m_Name: DonutMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,10 +99,10 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2581959828068298907, guid: cbba2cc8cbddb2b4e8d8b8cf070c64b0, type: 3}

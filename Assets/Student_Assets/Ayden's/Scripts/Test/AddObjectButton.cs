@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class AddObjectButton : MonoBehaviour
 {
+    
     public PickableItemSo pickable;
     public Image _image;
     public Button button;
@@ -15,22 +16,20 @@ public class AddObjectButton : MonoBehaviour
     public GameObject _gameobject;
     private Transform _transform;
     private int _count;
+    
 
     private Sprite _sprite;
     //private Text _text;
     
     public Dictionary<GameObject, int> PlayerItems = new Dictionary<GameObject, int>();
-
-
+    
     private void Start()
     {
+
         _image = gameObject.AddComponent<Image>();
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
-        
-        
-        
         
         
         _sprite = pickable.sprite;
@@ -80,9 +79,12 @@ public class AddObjectButton : MonoBehaviour
         ItemChange(_gameobject);
     }
 
+    
     public void Dequip()
     {
         //_count--;
+        Debug.Log("fuck");
+        PlayerItems.Remove(_gameobject);
     }
 
     public void OnEnable()

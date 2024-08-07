@@ -35,6 +35,15 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UnEquip"",
+                    ""type"": ""Button"",
+                    ""id"": ""e6f19e8d-0644-48c9-92f2-5bba1fd2df45"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -46,6 +55,17 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""useKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f33e6f0b-9f65-4a99-95e5-a1ee7becabe4"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UnEquip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -85,6 +105,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
         // Interact
         m_Interact = asset.FindActionMap("Interact", throwIfNotFound: true);
         m_Interact_useKey = m_Interact.FindAction("useKey", throwIfNotFound: true);
+        m_Interact_UnEquip = m_Interact.FindAction("UnEquip", throwIfNotFound: true);
         // Use
         m_Use = asset.FindActionMap("Use", throwIfNotFound: true);
         m_Use_Use = m_Use.FindAction("Use", throwIfNotFound: true);
@@ -150,11 +171,13 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Interact;
     private List<IInteractActions> m_InteractActionsCallbackInterfaces = new List<IInteractActions>();
     private readonly InputAction m_Interact_useKey;
+    private readonly InputAction m_Interact_UnEquip;
     public struct InteractActions
     {
         private @Aydens m_Wrapper;
         public InteractActions(@Aydens wrapper) { m_Wrapper = wrapper; }
         public InputAction @useKey => m_Wrapper.m_Interact_useKey;
+        public InputAction @UnEquip => m_Wrapper.m_Interact_UnEquip;
         public InputActionMap Get() { return m_Wrapper.m_Interact; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -167,6 +190,9 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
             @useKey.started += instance.OnUseKey;
             @useKey.performed += instance.OnUseKey;
             @useKey.canceled += instance.OnUseKey;
+            @UnEquip.started += instance.OnUnEquip;
+            @UnEquip.performed += instance.OnUnEquip;
+            @UnEquip.canceled += instance.OnUnEquip;
         }
 
         private void UnregisterCallbacks(IInteractActions instance)
@@ -174,6 +200,9 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
             @useKey.started -= instance.OnUseKey;
             @useKey.performed -= instance.OnUseKey;
             @useKey.canceled -= instance.OnUseKey;
+            @UnEquip.started -= instance.OnUnEquip;
+            @UnEquip.performed -= instance.OnUnEquip;
+            @UnEquip.canceled -= instance.OnUnEquip;
         }
 
         public void RemoveCallbacks(IInteractActions instance)
@@ -240,6 +269,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
     public interface IInteractActions
     {
         void OnUseKey(InputAction.CallbackContext context);
+        void OnUnEquip(InputAction.CallbackContext context);
     }
     public interface IUseActions
     {

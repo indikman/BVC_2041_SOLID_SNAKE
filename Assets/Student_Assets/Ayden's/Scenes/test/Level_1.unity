@@ -1190,6 +1190,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00817069, y: 0.020017026, z: 0.00964295}
   m_Center: {x: 0.00076281966, y: 0.0016535157, z: -0.0015657444}
+--- !u!1001 &399373884
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4281760467249537530, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_Name
+      value: DoorPivot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.26149
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.049037457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.915897
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186155792670564502, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e06cd48180ff9af47bec0a446c307e79, type: 3}
 --- !u!1 &402110791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,7 +3682,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1580607330}
   - component: {fileID: 1580607333}
-  - component: {fileID: 1580607332}
   - component: {fileID: 1580607331}
   - component: {fileID: 1580607334}
   m_Layer: 5
@@ -3666,36 +3722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c107a31064bcb46a422643708158a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1580607332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580607329}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1580607333
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4485,6 +4511,57 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2619086233303812490, guid: 529c8c2d4b2bd094383662ac3baf49bc, type: 3}
+--- !u!1 &2005018511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2005018513}
+  - component: {fileID: 2005018512}
+  m_Layer: 0
+  m_Name: Donut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2005018512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005018511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765dc3d089bd93e46b9f6bc99b549f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshFilter: {fileID: 0}
+  pickableSo: {fileID: 11400000, guid: 3dcd75abcdd66554ca8562135ccbbdea, type: 2}
+  renderer: {fileID: 0}
+  _Image: {fileID: 0}
+  _gameObject: {fileID: 0}
+  theInventory: {fileID: 0}
+  objectButton: {fileID: 3870422917331907831, guid: ab8c4fde4b47bce478f5e0f3a8c5cee5, type: 3}
+--- !u!4 &2005018513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005018511}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 45.957, y: 0, z: 19.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021012464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4533,11 +4610,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -4723,5 +4800,7 @@ SceneRoots:
   - {fileID: 151095472}
   - {fileID: 1934129189}
   - {fileID: 989165038}
+  - {fileID: 2005018513}
   - {fileID: 2021012468}
   - {fileID: 2116574781}
+  - {fileID: 399373884}
