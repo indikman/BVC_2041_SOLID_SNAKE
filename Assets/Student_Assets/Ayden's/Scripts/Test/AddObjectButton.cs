@@ -16,12 +16,14 @@ public class AddObjectButton : MonoBehaviour
     public GameObject _gameobject;
     private Transform _transform;
     private int _count;
+    private ItemType _itemType;
+    private InteractableItem _item;
     
 
     private Sprite _sprite;
     //private Text _text;
     
-    public Dictionary<GameObject, int> PlayerItems = new Dictionary<GameObject, int>();
+    public Dictionary<Enum, GameObject> PlayerItems = new Dictionary<Enum, GameObject>();
     
     private void Start()
     {
@@ -30,6 +32,7 @@ public class AddObjectButton : MonoBehaviour
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
+        _itemType = pickable.itemType;
         
         
         _sprite = pickable.sprite;
@@ -55,12 +58,18 @@ public class AddObjectButton : MonoBehaviour
 
     public void ItemChange(GameObject _gameObject)
     {
-        bool exists = PlayerItems.TryAdd(_gameObject, 1);// use the dictionary to check if gameobject already exists
-        if (exists) // does only once per item
+
+        _item = FindAnyObjectByType<InteractableItem>();
+        bool exists = PlayerItems.TryAdd(_itemType, _gameObject);// use the dictionary to check if gameobject already exists
+        if (exists) // does only once per item  
         {
-            Debug.Log("Instantiate");
-            Instantiate(_gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
-            //_count--;
+            if (_item == null)
+            {
+                Debug.Log("Instantiate");
+                Instantiate(_gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
+                //_count--;
+
+            }
 
         }
         else
@@ -82,9 +91,17 @@ public class AddObjectButton : MonoBehaviour
     
     public void Dequip()
     {
+        if (_itemType == ItemType.Key)
+        {
+            PlayerItems.Remove(ItemType.Key);
+        }
+
+        if (_itemType == ItemType.Donut)
+        {
+            PlayerItems.Remove(ItemType.Donut);
+        }
         //_count--;
         Debug.Log("fuck");
-        PlayerItems.Remove(_gameobject);
     }
 
     public void OnEnable()

@@ -23,5 +23,10 @@ public class PickableItemSo : ScriptableObject
     public Sprite sprite;
     
     [field: SerializeField, TextArea] public string ItemDescription { get; private set; }
-    
+
+    public ItemType itemType;
+}
+public enum ItemType
+{
+    Key, Donut
 }

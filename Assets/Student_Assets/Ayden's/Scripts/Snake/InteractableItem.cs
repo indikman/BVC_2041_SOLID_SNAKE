@@ -9,13 +9,13 @@ public class InteractableItem : MonoBehaviour
 {
     public AddObjectButton AddObjectButton;
     private ItemManager _itemManager = new ItemManager();
-    [SerializeField] private bool IsKey;
     public Aydens useKey;
     [SerializeField] private Door _door;
     [SerializeField] private float detectionRadius;
     private bool canOpen;
     public Transform originalPosition;
     private AddObjectButton _addObjectButton;
+    
     private void Start()
     {
         _door = FindObjectOfType<Door>();
