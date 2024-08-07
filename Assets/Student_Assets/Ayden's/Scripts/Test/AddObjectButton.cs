@@ -28,8 +28,12 @@ public class AddObjectButton : MonoBehaviour
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
+        
+        
+        
+        
+        
         _sprite = pickable.sprite;
-        _image = pickable.image;
         _image.sprite = _sprite;
         description = pickable.ItemDescription;
         _gameobject = pickable.gameObject;
@@ -47,7 +51,6 @@ public class AddObjectButton : MonoBehaviour
     {
         _gameobject = pickable.gameObject;
         ItemChange(_gameobject);
-        _image.sprite = pickable.sprite;
     }
 
 
@@ -82,5 +85,8 @@ public class AddObjectButton : MonoBehaviour
         //_count--;
     }
 
-
+    public void OnEnable()
+    {
+        
+    }
 }
