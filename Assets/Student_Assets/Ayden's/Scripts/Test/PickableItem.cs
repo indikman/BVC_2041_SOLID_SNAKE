@@ -30,6 +30,8 @@ public class PickableItem : MonoBehaviour
 
     [SerializeField]private TMP_Text _text;
 
+    public ItemStats itemStats;
+
     public int count;
     
 
@@ -45,11 +47,11 @@ public class PickableItem : MonoBehaviour
         _Image.sprite = pickableSo.image.sprite;
         meshFilter.mesh = pickableSo.mesh;
         renderer.material = pickableSo.material;
+        itemStats = pickableSo.ItemStats;
         _gameObject = pickableSo.gameObject;
         gameObject.AddComponent<MeshCollider>();
         gameObject.GetComponent<MeshCollider>().convex = true;
         gameObject.GetComponent<MeshCollider>().isTrigger = true;
-        _pickableEvent.PickedEvent += CreateSo;
         _pickableEvent.PickedEvent += ButtonInstance;
 
     }
@@ -63,14 +65,10 @@ public class PickableItem : MonoBehaviour
         }
     }
 
-    public void CreateSo()
-    {
-        objectButton.GetSo(pickableSo);
-    }
-
     public void ButtonInstance()
     {
         inventory2.CreateInventorySlot(objectButton);
+        inventory2.AddItemStats(itemStats);
     }
 
     

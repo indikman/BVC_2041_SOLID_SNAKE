@@ -20,5 +20,6 @@ MonoBehaviour:
   name: Key
   ObjectButton: {fileID: 3870422917331907831, guid: ab8c4fde4b47bce478f5e0f3a8c5cee5, type: 3}
   sprite: {fileID: 21300000, guid: 3bd0a40de5443fd4d97b63014989be66, type: 3}
-  <ItemDescription>k__BackingField: A key that opens things duh
+  Description: its a key duh
   itemType: 0
+  ItemStats: {fileID: 1222769377967338077, guid: f28ec24287f7d1049a8e851cffcd7a48, type: 3}

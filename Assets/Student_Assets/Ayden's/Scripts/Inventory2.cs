@@ -8,15 +8,15 @@ public class Inventory2 : MonoBehaviour
 {
     public Dictionary<AddObjectButton, int> PlayerItems = new Dictionary<AddObjectButton, int>();
 
-    public Dictionary<TMP_Text, int> TextDic = new Dictionary<TMP_Text, int>();
+    public Dictionary<ItemStats, int> PlayerStats = new Dictionary<ItemStats, int>();
 
     private AddObjectButton objectButton;
 
+    private ItemStats ItemStats;
+
     private TheInventory theInventory;
 
-    private TMP_Text text;
-
-    public int itemCount;
+    public int itemCount = 1;
     public void CreateInventorySlot(AddObjectButton _objectButton )
     {
         bool exists = PlayerItems.TryAdd(_objectButton, 1);
@@ -34,6 +34,21 @@ public class Inventory2 : MonoBehaviour
             return;
         }
     }
+
+    public void AddItemStats(ItemStats itemStats)
+    {
+        itemStats.IncreaseCount(itemCount);
+        Debug.Log("increase");
+
+        bool exists = PlayerStats.TryAdd(itemStats, 1);
+        if (exists)
+        {
+            Instantiate(itemStats,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,
+                    gameObject.transform.position.z), Quaternion.identity, theInventory.transform);
+        }
+
+    }
     
 
     private void Start()
@@ -41,4 +56,6 @@ public class Inventory2 : MonoBehaviour
         theInventory = FindObjectOfType<TheInventory>();
         
     }
+    
+    // change view of item on press, if key pressed disable item buttons and change to description and count, press again to renable.
 }

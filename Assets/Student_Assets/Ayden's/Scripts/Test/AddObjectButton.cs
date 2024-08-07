@@ -12,17 +12,16 @@ public class AddObjectButton : MonoBehaviour
     public PickableItemSo pickable;
     public Image _image;
     public Button button;
-    [SerializeField, TextArea] private string description;
+    private string description;
     public GameObject _gameobject;
     private Transform _transform;
     private int _count;
     public ItemType _itemType;
     private InteractableItem _item;
-    //public TMP_Text text;
+    public TMP_Text text;
+    public ItemStats itemStats;
     
-
     private Sprite _sprite;
-    //private Text _text;
     
     public Dictionary<Enum, GameObject> PlayerItems = new Dictionary<Enum, GameObject>();
     
@@ -32,6 +31,7 @@ public class AddObjectButton : MonoBehaviour
         button = gameObject.AddComponent<Button>();
         _transform = FindObjectOfType<hands>().transform;
         _sprite = GetComponent<Sprite>();
+        itemStats = FindObjectOfType<ItemStats>();
         //_itemType = pickable.itemType;
         //text = FindAnyObjectByType<TMP_Text>();
         //Instantiate(text, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, _transform);
@@ -39,7 +39,7 @@ public class AddObjectButton : MonoBehaviour
         
         _sprite = pickable.sprite;
         _image.sprite = _sprite;
-        description = pickable.ItemDescription;
+        description = pickable.Description;
         _gameobject = pickable.gameObject;
         button.onClick.AddListener(ItemSet);
     }
@@ -53,6 +53,18 @@ public class AddObjectButton : MonoBehaviour
     {
         _gameobject = pickable.gameObject;
         ItemChange(_gameobject);
+    }
+
+    private void FixedUpdate()
+    {
+        if (itemStats.enabled)
+        {
+            this.gameObject.SetActive(false);
+        }
+        else if (!itemStats.enabled)
+        {
+            this.gameObject.SetActive(true);
+        }
     }
 
 

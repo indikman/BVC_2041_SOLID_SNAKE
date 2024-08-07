@@ -1023,6 +1023,7 @@ MonoBehaviour:
   inventory2: {fileID: 0}
   objectButton: {fileID: 0}
   _text: {fileID: 0}
+  itemStats: {fileID: 0}
   count: 0
 --- !u!4 &294286911
 Transform:
@@ -2440,54 +2441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &897245127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 897245128}
-  - component: {fileID: 897245129}
-  m_Layer: 5
-  m_Name: InventoryObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &897245128
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897245127}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1217390359}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &897245129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897245127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ba5e19916eb49740bc3691423214e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &910623153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,6 +3085,61 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.022597652, y: 0.010788978, z: 0.011560578}
   m_Center: {x: 0.000000031199306, y: -6.984918e-10, z: 0.00066228624}
+--- !u!1 &1081434508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081434510}
+  - component: {fileID: 1081434509}
+  m_Layer: 0
+  m_Name: Key (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1081434509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081434508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765dc3d089bd93e46b9f6bc99b549f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshFilter: {fileID: 0}
+  pickableSo: {fileID: 11400000, guid: 4793e0d15d276c443a823568b418138c, type: 2}
+  renderer: {fileID: 0}
+  _Image: {fileID: 0}
+  _gameObject: {fileID: 0}
+  theInventory: {fileID: 0}
+  inventory2: {fileID: 0}
+  objectButton: {fileID: 0}
+  _text: {fileID: 0}
+  itemStats: {fileID: 0}
+  count: 0
+--- !u!4 &1081434510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081434508}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.916435, y: 0.258, z: 17.254}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155179858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3440,8 +3448,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 897245128}
+  m_Children: []
   m_Father: {fileID: 1347391848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4310,6 +4317,7 @@ MonoBehaviour:
   inventory2: {fileID: 0}
   objectButton: {fileID: 0}
   _text: {fileID: 0}
+  itemStats: {fileID: 0}
   count: 0
 --- !u!4 &1761531487
 Transform:
@@ -4668,6 +4676,61 @@ Transform:
   - {fileID: 1034662633}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023174985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023174987}
+  - component: {fileID: 2023174986}
+  m_Layer: 0
+  m_Name: Donut (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023174986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023174985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765dc3d089bd93e46b9f6bc99b549f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshFilter: {fileID: 0}
+  pickableSo: {fileID: 11400000, guid: 3dcd75abcdd66554ca8562135ccbbdea, type: 2}
+  renderer: {fileID: 0}
+  _Image: {fileID: 0}
+  _gameObject: {fileID: 0}
+  theInventory: {fileID: 0}
+  inventory2: {fileID: 0}
+  objectButton: {fileID: 0}
+  _text: {fileID: 0}
+  itemStats: {fileID: 0}
+  count: 0
+--- !u!4 &2023174987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023174985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 45.75, y: 0, z: 15.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047318562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7681916527749396076, guid: 7e231f6422b387a48a4560d01063f787, type: 3}
@@ -4866,4 +4929,6 @@ SceneRoots:
   - {fileID: 451647710}
   - {fileID: 2124683228695508306}
   - {fileID: 1761531487}
+  - {fileID: 2023174987}
   - {fileID: 294286911}
+  - {fileID: 1081434510}
