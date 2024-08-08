@@ -75,3 +75,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f29dc46a4a04f43b4e6f4c8a8c4e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _itemSo: {fileID: 0}
+  detectionRadius: 2

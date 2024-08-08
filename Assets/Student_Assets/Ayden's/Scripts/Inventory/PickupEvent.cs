@@ -32,7 +32,7 @@ public class PickupEvent : MonoBehaviour
         _mesh.mesh = item.mesh;
         _renderer.material = item._material;
         _image = item.itemSprite;
-        _GameObject = item._gameObject;
+        //_GameObject = item._gameObject;
 
         gameObject.AddComponent<MeshCollider>();
         gameObject.GetComponent<MeshCollider>().convex = true;
@@ -60,7 +60,7 @@ public class PickupEvent : MonoBehaviour
 
     public void PlayerReactionToItem()
     {
-        _GameObject = item._gameObject;
+        //_GameObject = item._gameObject;
         Debug.Log(item);
         //_itemHandle.ItemChange(_GameObject);
     }

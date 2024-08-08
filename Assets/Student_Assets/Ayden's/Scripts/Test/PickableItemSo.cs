@@ -28,7 +28,4 @@ public class PickableItemSo : ScriptableObject
 
     public ItemStats ItemStats;
 }
-public enum ItemType
-{
-    Key, Donut
-}
+

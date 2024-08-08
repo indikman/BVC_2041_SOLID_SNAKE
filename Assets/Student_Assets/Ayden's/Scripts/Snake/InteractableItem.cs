@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public delegate void Interact();
 public class InteractableItem : MonoBehaviour
 {
     public AddObjectButton AddObjectButton;

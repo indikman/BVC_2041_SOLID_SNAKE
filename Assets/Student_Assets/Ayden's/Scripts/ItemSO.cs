@@ -15,19 +15,20 @@ public class ItemSO : ScriptableObject
 
     public Material _material;
 
-    public GameObject _gameObject;
+    public EquipableItem equipableItem;
 
     public InventoryButton inventoryButton;
 
     public MeshCollider collider;
     
     [field: SerializeField] public string ItemName { get; private set; }
-    [field: SerializeField] public ItemEnum ItemType { get; private set; }
+    
+    public ItemType itemType;
     [field: SerializeField, TextArea] public string ItemDescription { get; private set; }
 
 }
 
-public enum ItemEnum
+public enum ItemType
 {
     Key, Weapon,Useless
 }
