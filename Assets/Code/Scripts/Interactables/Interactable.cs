@@ -9,14 +9,12 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public UnityEvent InteractBegan, InteractEnded;
-    // Start is called before the first frame update
     protected bool _playing = false;
     protected virtual void Awake()
     {
         GetComponent<BoxCollider>().isTrigger = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
