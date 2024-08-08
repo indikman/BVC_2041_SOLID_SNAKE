@@ -1,49 +1,22 @@
 using UnityEngine;
 
-public interface IInteractable
+public class InteractableObject : MonoBehaviour
 {
-    void Interact();
-}
-
-public class KeyInteraction : IInteractable
-{
-    private Door _door;
-
-    public KeyInteraction(Door door)
+    public InventoryItem InteractWith;
+    public virtual  void Interact()
     {
-        _door = door;
+        Debug.Log("Interacting");
+
     }
 
-    public void Interact()
+    public bool CanInteractWith(InventoryItem selectedItem)
     {
-        if (_door != null)
+        if (InteractWith == selectedItem)
         {
-            _door.ToggleDoor();
-            Debug.Log("Door toggled using key.");
+            Debug.Log("Can Interact");
+            return true;
         }
-    }
-}
 
-
-public class DetergentInteraction : IInteractable
-{
-    public void Interact()
-    {
-        Debug.Log("Detergent added to the washing machine.");
-    }
-}
-
-public class ItemInteraction : MonoBehaviour
-{
-    private IInteractable currentInteraction;
-
-    public void SetInteraction(IInteractable interaction)
-    {
-        currentInteraction = interaction;
-    }
-
-    public void PerformInteraction()
-    {
-        currentInteraction?.Interact();
+        return false;
     }
 }

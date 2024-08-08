@@ -1,12 +1,17 @@
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : InteractableObject
 {
     public float openAngle = 90f;  // Angle to open the door
     public float openSpeed = 2f;   // Speed of opening the door
     private Quaternion closedRotation;
     private Quaternion openRotation;
     private bool isOpen = false;
+
+    public override void Interact()
+    {
+        base.Interact();
+    }
 
     private void Start()
     {

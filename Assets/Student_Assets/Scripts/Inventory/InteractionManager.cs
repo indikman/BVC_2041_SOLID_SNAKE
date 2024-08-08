@@ -3,6 +3,7 @@ using UnityEngine;
 public class InteractionManager : MonoBehaviour
 {
     [SerializeField] private InventoryUI inventoryUI;
+    [SerializeField] private float interactionRange = 3f;
     private int _selectedSlotIndex = -1;
 
     private void Update()
@@ -10,27 +11,31 @@ public class InteractionManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SelectSlot(0);
+            InteractWithNearbyObject();
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SelectSlot(1);
+            InteractWithNearbyObject();
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SelectSlot(2);
+            InteractWithNearbyObject();
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             SelectSlot(3);
+            InteractWithNearbyObject();
+
         }
 
-        if (Input.GetKeyDown(KeyCode.E))  // Example interaction key
-        {
-            InteractWithSelectedItem();
-        }
     }
 
     private void SelectSlot(int slotIndex)
@@ -49,7 +54,7 @@ public class InteractionManager : MonoBehaviour
         }
     }
 
-    private void InteractWithSelectedItem()
+    private void InteractWithNearbyObject()
     {
         if (_selectedSlotIndex >= 0)
         {
@@ -58,8 +63,18 @@ public class InteractionManager : MonoBehaviour
 
             if (selectedItem != null)
             {
-                selectedItem.UseItem();
-                Debug.Log($"Interacted with item: {selectedItem.itemName}");
+                // Detect objects within range
+                Collider[] hitColliders = Physics.OverlapSphere(transform.position, interactionRange);
+
+                foreach (var hitCollider in hitColliders)
+                {
+                    InteractableObject interactable = hitCollider.GetComponent<InteractableObject>();
+                    if (interactable != null && interactable.CanInteractWith(selectedItem))
+                    {
+                        interactable.Interact();
+                        Debug.Log($"Interacted with item: {selectedItem.itemName} on {hitCollider.gameObject.name}");
+                    }
+                }
             }
         }
     }

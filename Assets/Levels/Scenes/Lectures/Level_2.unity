@@ -176,6 +176,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &44511126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5901308285911992481, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
+  m_PrefabInstance: {fileID: 757443054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &56138057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1041,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5901308285911992481, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1646806654}
   m_SourcePrefab: {fileID: 100100000, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
 --- !u!1 &763007359
 GameObject:
@@ -1876,6 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f137e62037147b468390a9c7a60ff19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractWith: {fileID: 0}
 --- !u!114 &1571521936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,12 +1898,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 855143849}
-  door: {fileID: 0}
+  interactionRange: 3
 --- !u!4 &1646806649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3582298610480460035, guid: 0b9dc7cba853fa743bac550e51746c82, type: 3}
   m_PrefabInstance: {fileID: 757443054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1646806654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44511126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eddae6a4bf47a0747946195e692c99db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 855143849}
+  interactionRange: 3
 --- !u!1 &1709131680
 GameObject:
   m_ObjectHideFlags: 0
@@ -7739,6 +7762,7 @@ GameObject:
   - component: {fileID: 8103695659800662514}
   - component: {fileID: 8918280151301497679}
   - component: {fileID: 431980586431688453}
+  - component: {fileID: 8918280151301497680}
   m_Layer: 0
   m_Name: FrontDoor
   m_TagString: Untagged
@@ -42424,6 +42448,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8918280151301497680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155298510542566270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafbe49b71b251548867a141bf75f0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractWith: {fileID: 11400000, guid: 5c049d73822d8ec4a90d134455bf0c7b, type: 2}
+  openAngle: 90
+  openSpeed: 2
 --- !u!33 &8919077072089445037
 MeshFilter:
   m_ObjectHideFlags: 0
