@@ -9,22 +9,12 @@ public class ItemInventory : MonoBehaviour
     private EventManager2 _eventManager2;
     private GameObject _inventoryButton;
     public ItemSO _itemSo;
-    public int _count;
     private Dictionary<GameObject, int> Buttons = new Dictionary<GameObject, int>();
 
     private void Start()
     {
-        _count = 0;
-        Reset();
         _eventManager2 = FindObjectOfType<EventManager2>();
-        _eventManager2._ManagedEvent += IncreaseCount;
         _eventManager2._ManagedEvent += AddItem;
-        Debug.Log(_count);
-    }
-
-    private void Reset()
-    {
-        _count = 0;
     }
 
     public void AddItem()
@@ -40,15 +30,6 @@ public class ItemInventory : MonoBehaviour
         {
             Debug.Log("allready exists");
         }
-
-
-    }
-
-    public void IncreaseCount()
-    {
-        Debug.Log(_count);
-        _count++;
-        Debug.Log(_count);
     }
     
 }
