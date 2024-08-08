@@ -53,6 +53,15 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""d7f31e62-f914-41fb-adf7-02a05a8b45ea"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -86,6 +95,17 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""ChangeState"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a6fa6f6c-6538-43dc-9cdc-e6643f9283dc"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -127,6 +147,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
         m_Interact_useKey = m_Interact.FindAction("useKey", throwIfNotFound: true);
         m_Interact_UnEquip = m_Interact.FindAction("UnEquip", throwIfNotFound: true);
         m_Interact_ChangeState = m_Interact.FindAction("ChangeState", throwIfNotFound: true);
+        m_Interact_Inventory = m_Interact.FindAction("Inventory", throwIfNotFound: true);
         // Use
         m_Use = asset.FindActionMap("Use", throwIfNotFound: true);
         m_Use_Use = m_Use.FindAction("Use", throwIfNotFound: true);
@@ -194,6 +215,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
     private readonly InputAction m_Interact_useKey;
     private readonly InputAction m_Interact_UnEquip;
     private readonly InputAction m_Interact_ChangeState;
+    private readonly InputAction m_Interact_Inventory;
     public struct InteractActions
     {
         private @Aydens m_Wrapper;
@@ -201,6 +223,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
         public InputAction @useKey => m_Wrapper.m_Interact_useKey;
         public InputAction @UnEquip => m_Wrapper.m_Interact_UnEquip;
         public InputAction @ChangeState => m_Wrapper.m_Interact_ChangeState;
+        public InputAction @Inventory => m_Wrapper.m_Interact_Inventory;
         public InputActionMap Get() { return m_Wrapper.m_Interact; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -219,6 +242,9 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
             @ChangeState.started += instance.OnChangeState;
             @ChangeState.performed += instance.OnChangeState;
             @ChangeState.canceled += instance.OnChangeState;
+            @Inventory.started += instance.OnInventory;
+            @Inventory.performed += instance.OnInventory;
+            @Inventory.canceled += instance.OnInventory;
         }
 
         private void UnregisterCallbacks(IInteractActions instance)
@@ -232,6 +258,9 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
             @ChangeState.started -= instance.OnChangeState;
             @ChangeState.performed -= instance.OnChangeState;
             @ChangeState.canceled -= instance.OnChangeState;
+            @Inventory.started -= instance.OnInventory;
+            @Inventory.performed -= instance.OnInventory;
+            @Inventory.canceled -= instance.OnInventory;
         }
 
         public void RemoveCallbacks(IInteractActions instance)
@@ -300,6 +329,7 @@ public partial class @Aydens: IInputActionCollection2, IDisposable
         void OnUseKey(InputAction.CallbackContext context);
         void OnUnEquip(InputAction.CallbackContext context);
         void OnChangeState(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
     }
     public interface IUseActions
     {
