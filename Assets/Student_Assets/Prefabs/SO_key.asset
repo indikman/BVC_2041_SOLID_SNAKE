@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940d026a4f76c984fbd854ad1db5bf1e, type: 3}
+  m_Name: SO_key
+  m_EditorClassIdentifier: 
+  itemName: Detergent
+  description: Detergent
+  icon: {fileID: 2123269246, guid: f2e99abbd72f2ad4a87273c953d3bbc9, type: 3}
+  itemPrefab: {fileID: 5186935295992774898, guid: b08ae5dcee1ebec408632ceb585a83ec, type: 3}
+  spawnRange: 2
