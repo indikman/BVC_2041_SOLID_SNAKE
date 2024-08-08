@@ -16,6 +16,8 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] private TMP_Text descriptionText;
     private EquipableItem _equipable;
     private EquipableItem _item;
+    private EventManager2 _eventManager2;
+    public int _count = 1;
 
     private void Awake()
     {
@@ -23,17 +25,19 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         image = GetComponent<Image>();
         _text = GetComponentInChildren<TMP_Text>();
         _transform = FindObjectOfType<hands>().transform;
+        _eventManager2 = FindObjectOfType<EventManager2>();
         image.sprite = _itemSo._sprite;
         _equipable = _itemSo.equipableItem;
         _text.text = _itemSo.ItemName;
         descriptionText.text = _itemSo.ItemDescription;
         descriptionText.enabled = false;
+        //_eventManager2._ManagedEvent += IncreaseCount;
     }
 
     private void Start()
     {
         _button.onClick.AddListener(ItemSet);
-        
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -44,6 +48,12 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerExit(PointerEventData eventData)
     {
         descriptionText.enabled = false;
+    }
+
+    public void IncreaseCount()
+    {
+        _count++;
+        Debug.Log(_count);
     }
     
     
