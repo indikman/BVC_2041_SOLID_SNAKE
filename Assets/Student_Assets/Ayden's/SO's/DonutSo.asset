@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f85e771a553909d429186b9bbd971c72, type: 3}
-  m_Name: Item
+  m_Name: DonutSo
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 7257682519830749427, guid: 6f5fb2f0067b894488dd8e128ea01c7e, type: 3}
   _sprite: {fileID: 21300000, guid: 43e75ff336d070546935093d41deff33, type: 3}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f85e771a553909d429186b9bbd971c72, type: 3}
-  m_Name: Item 2
+  m_Name: KeySo
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 1941931310602222404, guid: afbb041de00231147ba79d4806151778, type: 3}
   _sprite: {fileID: 21300000, guid: 3bd0a40de5443fd4d97b63014989be66, type: 3}

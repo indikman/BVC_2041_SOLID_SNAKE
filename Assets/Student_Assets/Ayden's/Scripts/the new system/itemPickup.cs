@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class itemPickup : MonoBehaviour
+public class ItemPickup : MonoBehaviour
 {
     private EventManager2 _eventManager2;
     public ItemSO itemSo;
