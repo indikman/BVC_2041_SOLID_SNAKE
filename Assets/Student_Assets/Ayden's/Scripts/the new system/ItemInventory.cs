@@ -8,6 +8,7 @@ public class ItemInventory : MonoBehaviour
 {
     private EventManager2 _eventManager2;
     private InventoryButton _inventoryButton;
+    private InventoryButton inventory;
     public ItemSO _itemSo;
     private Dictionary<InventoryButton, int> Buttons = new Dictionary<InventoryButton, int>();
 
@@ -24,7 +25,8 @@ public class ItemInventory : MonoBehaviour
         bool exists = Buttons.TryAdd(_inventoryButton, 1);
         if (exists)
         {
-            Instantiate(_inventoryButton, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, transform);
+            _inventoryButton.ResetCount();
+            inventory = Instantiate(_inventoryButton, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, transform);
         }
         else
         {

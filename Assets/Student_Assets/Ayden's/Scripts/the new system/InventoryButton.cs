@@ -37,9 +37,13 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private void Start()
     {
         _button.onClick.AddListener(ItemSet);
-
+        _count = 1;
     }
 
+    public void ResetCount()
+    {
+        _count = 1;
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         descriptionText.enabled = true;
