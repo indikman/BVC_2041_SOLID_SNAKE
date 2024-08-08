@@ -17,7 +17,7 @@ public class ItemSO : ScriptableObject
 
     public EquipableItem equipableItem;
 
-    public InventoryButton inventoryButton;
+    public GameObject inventoryButton;
 
     public MeshCollider collider;
     

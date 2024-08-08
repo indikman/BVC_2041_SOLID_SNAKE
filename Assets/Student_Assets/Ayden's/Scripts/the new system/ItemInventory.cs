@@ -7,34 +7,47 @@ using UnityEngine.UIElements;
 public class ItemInventory : MonoBehaviour
 {
     private EventManager2 _eventManager2;
-    private InventoryButton _inventoryButton;
-    private InventoryButton inventory;
+    private GameObject _inventoryButton;
     public ItemSO _itemSo;
-    private Dictionary<InventoryButton, int> Buttons = new Dictionary<InventoryButton, int>();
+    public int _count;
+    private Dictionary<GameObject, int> Buttons = new Dictionary<GameObject, int>();
 
     private void Start()
     {
+        _count = 0;
+        Reset();
         _eventManager2 = FindObjectOfType<EventManager2>();
+        _eventManager2._ManagedEvent += IncreaseCount;
         _eventManager2._ManagedEvent += AddItem;
+        Debug.Log(_count);
+    }
+
+    private void Reset()
+    {
+        _count = 0;
     }
 
     public void AddItem()
     {
         _inventoryButton = _itemSo.inventoryButton;
-        _inventoryButton._itemSo = _itemSo;
         bool exists = Buttons.TryAdd(_inventoryButton, 1);
         if (exists)
         {
-            _inventoryButton.ResetCount();
-            inventory = Instantiate(_inventoryButton, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, transform);
+            GameObject newInventory = Instantiate(_inventoryButton, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity, transform);
         }
         else
         {
             Debug.Log("allready exists");
-            _inventoryButton.IncreaseCount();
         }
 
 
+    }
+
+    public void IncreaseCount()
+    {
+        Debug.Log(_count);
+        _count++;
+        Debug.Log(_count);
     }
     
 }

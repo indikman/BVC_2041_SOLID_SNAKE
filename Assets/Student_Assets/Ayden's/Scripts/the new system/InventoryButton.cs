@@ -17,7 +17,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private EquipableItem _equipable;
     private EquipableItem _item;
     private EventManager2 _eventManager2;
-    public int _count = 1;
+    private int _count;
 
     private void Awake()
     {
@@ -31,19 +31,17 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         _text.text = _itemSo.ItemName;
         descriptionText.text = _itemSo.ItemDescription;
         descriptionText.enabled = false;
-        //_eventManager2._ManagedEvent += IncreaseCount;
+        _eventManager2._ManagedEvent += IncreaseCount;
     }
 
     private void Start()
     {
         _button.onClick.AddListener(ItemSet);
+        Debug.Log(_count);
         _count = 1;
+
     }
 
-    public void ResetCount()
-    {
-        _count = 1;
-    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         descriptionText.enabled = true;
@@ -54,13 +52,11 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         descriptionText.enabled = false;
     }
 
-    public void IncreaseCount()
+    private void IncreaseCount()
     {
         _count++;
         Debug.Log(_count);
     }
-    
-    
 
     private void ItemSet()
     {
@@ -68,12 +64,15 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
         _equipable._itemSo = _itemSo;
         _item = FindAnyObjectByType<EquipableItem>();
 
-        if (_item == null)
+        if (_item == null && _count >= 1)
         {
             Instantiate(_equipable, new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z), Quaternion.identity, _transform);
+            _count--;
+            Debug.Log(_count);
         }
         else
         {
+            Debug.Log("Not Enought of item or already have item equipped");
             return;
         }
         
