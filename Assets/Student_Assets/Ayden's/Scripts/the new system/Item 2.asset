@@ -17,7 +17,7 @@ MonoBehaviour:
   mesh: {fileID: -4727168680033861200, guid: 58abb753cf8fa094481aaf91bf61f5cc, type: 3}
   _material: {fileID: 2100000, guid: 47cb11a6e2e00004faf17bd5c6d72405, type: 2}
   equipableItem: {fileID: 4733346336975319998, guid: 8a6f6c2d249129645815036a029ec42b, type: 3}
-  inventoryButton: {fileID: 3670029746123947065, guid: 77f48628d3d2bb24181aed536273f38e, type: 3}
+  inventoryButton: {fileID: 1573361014234591385, guid: 77f48628d3d2bb24181aed536273f38e, type: 3}
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
   <ItemName>k__BackingField: key
   itemType: 0

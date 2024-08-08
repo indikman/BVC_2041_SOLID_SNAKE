@@ -17,7 +17,7 @@ MonoBehaviour:
   mesh: {fileID: 2581959828068298907, guid: 529ffcd6b9cdc224992a26d9637d135e, type: 3}
   _material: {fileID: 2100000, guid: 47cb11a6e2e00004faf17bd5c6d72405, type: 2}
   equipableItem: {fileID: 5359498904633765449, guid: 0081cad532d7ef543b6250c7a7bbc064, type: 3}
-  inventoryButton: {fileID: 3670029746123947065, guid: d6591003f8ed100489864cd72cf60172, type: 3}
+  inventoryButton: {fileID: 1573361014234591385, guid: d6591003f8ed100489864cd72cf60172, type: 3}
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
   <ItemName>k__BackingField: Donut
   itemType: 2

@@ -30,6 +30,7 @@ public class ItemInventory : MonoBehaviour
     public void AddItem()
     {
         _inventoryButton = _itemSo.inventoryButton;
+        Debug.Log(_itemSo);
         bool exists = Buttons.TryAdd(_inventoryButton, 1);
         if (exists)
         {
