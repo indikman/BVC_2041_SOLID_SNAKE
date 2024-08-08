@@ -8,7 +8,7 @@ public delegate void Interact();
 public class InteractableItem : MonoBehaviour
 {
     public AddObjectButton AddObjectButton;
-    private ItemManager _itemManager = new ItemManager();
+    private ItemManager _itemManager;
     public Aydens useKey;
     [SerializeField] private Door _door;
     [SerializeField] private float detectionRadius;
@@ -22,6 +22,7 @@ public class InteractableItem : MonoBehaviour
         _door = FindObjectOfType<Door>();
         _addObjectButton = FindObjectOfType<AddObjectButton>();
         originalPosition = FindObjectOfType<hands>().transform;
+        _itemManager = gameObject.AddComponent<ItemManager>();
         Vector3 currentPosition = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
         currentPosition = originalPosition.position;
         transform.position = originalPosition.position;
@@ -57,6 +58,7 @@ public class InteractableItem : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log(_itemType);
         useKey = new Aydens();
 
     }

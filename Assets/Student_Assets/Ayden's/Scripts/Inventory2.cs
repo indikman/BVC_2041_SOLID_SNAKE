@@ -16,21 +16,22 @@ public class Inventory2 : MonoBehaviour
 
     private TheInventory theInventory;
 
-    public int itemCount = 1;
+    public int itemCount = 0;
     public void CreateInventorySlot(AddObjectButton _objectButton )
-    {
+    {   
+        Debug.Log(_objectButton);
         bool exists = PlayerItems.TryAdd(_objectButton, 1);
         if (exists)
         {
             objectButton = _objectButton;
-            Debug.Log("Fucking doesn't exists");
+            //Debug.Log("Fucking doesn't exists");
             Instantiate(_objectButton,
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,
                     gameObject.transform.position.z), Quaternion.identity, theInventory.transform);
         }
         else
         {
-            Debug.Log("Fucking exists");
+            //Debug.Log("Fucking exists");
             return;
         }
     }
@@ -38,7 +39,8 @@ public class Inventory2 : MonoBehaviour
     public void AddItemStats(ItemStats itemStats)
     {
         itemStats.IncreaseCount(itemCount);
-        Debug.Log("increase");
+        Debug.Log(itemStats);
+        Debug.Log(itemCount);
 
         bool exists = PlayerStats.TryAdd(itemStats, 1);
         if (exists)

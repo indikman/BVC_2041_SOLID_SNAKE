@@ -17,6 +17,8 @@ public class ItemSO : ScriptableObject
 
     public GameObject _gameObject;
 
+    public InventoryButton inventoryButton;
+
     public MeshCollider collider;
     
     [field: SerializeField] public string ItemName { get; private set; }

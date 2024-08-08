@@ -10,7 +10,7 @@ public delegate void PickUpEvent();
 
 public class PickableItem : MonoBehaviour
 {
-    private PickableEvent _pickableEvent = new PickableEvent();
+    private PickableEvent _pickableEvent;
     
     public MeshFilter meshFilter;
 
@@ -31,8 +31,7 @@ public class PickableItem : MonoBehaviour
     [SerializeField]private TMP_Text _text;
 
     public ItemStats itemStats;
-
-    public int count;
+    
     
 
     private void Start()
@@ -43,6 +42,7 @@ public class PickableItem : MonoBehaviour
         _Image = gameObject.AddComponent<Image>();
         theInventory = FindObjectOfType<TheInventory>();
         inventory2 = FindObjectOfType<Inventory2>();
+        _pickableEvent = gameObject.AddComponent<PickableEvent>();
         objectButton = pickableSo.ObjectButton;
         _Image.sprite = pickableSo.image.sprite;
         meshFilter.mesh = pickableSo.mesh;
@@ -53,13 +53,15 @@ public class PickableItem : MonoBehaviour
         gameObject.GetComponent<MeshCollider>().convex = true;
         gameObject.GetComponent<MeshCollider>().isTrigger = true;
         _pickableEvent.PickedEvent += ButtonInstance;
+        Debug.Log(pickableSo);
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-        {
+        {   
+            Debug.Log("pickedUp");
             _pickableEvent.RunPickUp();
             Destroy(this.gameObject);
         }
@@ -68,7 +70,9 @@ public class PickableItem : MonoBehaviour
     public void ButtonInstance()
     {
         inventory2.CreateInventorySlot(objectButton);
+        Debug.Log(objectButton);
         inventory2.AddItemStats(itemStats);
+        Debug.Log(itemStats);
     }
 
     

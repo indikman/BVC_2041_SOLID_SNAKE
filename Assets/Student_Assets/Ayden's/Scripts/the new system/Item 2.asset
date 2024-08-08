@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85e771a553909d429186b9bbd971c72, type: 3}
+  m_Name: Item 2
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 7257682519830749427, guid: 6f5fb2f0067b894488dd8e128ea01c7e, type: 3}
+  _sprite: {fileID: 21300000, guid: 3bd0a40de5443fd4d97b63014989be66, type: 3}
+  mesh: {fileID: 2619086233303812490, guid: 0fe71043542cefb4096127b5b83c1f21, type: 3}
+  _material: {fileID: 2100000, guid: 47cb11a6e2e00004faf17bd5c6d72405, type: 2}
+  _gameObject: {fileID: 899092784521721004, guid: 0081cad532d7ef543b6250c7a7bbc064, type: 3}
+  inventoryButton: {fileID: 3670029746123947065, guid: 77f48628d3d2bb24181aed536273f38e, type: 3}
+  collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
+  <ItemName>k__BackingField: door
+  <ItemType>k__BackingField: 2
+  <ItemDescription>k__BackingField: door

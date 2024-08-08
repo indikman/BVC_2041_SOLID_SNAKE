@@ -9,8 +9,7 @@ public class ItemStats : MonoBehaviour
     public PickableItemSo _itemSo;
     public TMP_Text Text;
     public TMP_Text countText;
-    private int count;
-    public Aydens changeState;
+    [SerializeField]private int count;
     public bool enabled;
 
     private void Start()
@@ -21,20 +20,16 @@ public class ItemStats : MonoBehaviour
         Text.SetText(_itemSo.Description);
     }
 
+    private void Awake()
+    {
+        
+    }   
+
     public void IncreaseCount(int _count)
     {
-        count = count + _count;
-        var number = count + _count;
-        var amount = number.ToString();
-        countText.SetText(amount);
-    }
-
-    private void FixedUpdate()
-    {
-        if (count != null)
-        {
-            
-        }
+        Debug.Log(_count);
+        count = _count;
+        countText.SetText(count.ToString());
     }
 }
 
