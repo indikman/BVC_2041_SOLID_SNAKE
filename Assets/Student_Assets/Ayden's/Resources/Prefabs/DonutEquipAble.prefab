@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47.60554, y: 1.37869, z: 19.47153}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,3 +78,5 @@ MonoBehaviour:
   _itemSo: {fileID: 11400000, guid: 5cf500c28b45a8e46a25c7d5a1c0c67e, type: 2}
   detectionRadius: 4
   _micro: {fileID: 0}
+  _MeshFilter: {fileID: 0}
+  Renderer: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DonutSo
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 7257682519830749427, guid: 6f5fb2f0067b894488dd8e128ea01c7e, type: 3}
-  _sprite: {fileID: 21300000, guid: 43e75ff336d070546935093d41deff33, type: 3}
+  _sprite: {fileID: 21300000, guid: 548428c129445b949ac1e67414fc110b, type: 3}
   mesh: {fileID: 2581959828068298907, guid: 529ffcd6b9cdc224992a26d9637d135e, type: 3}
   _material: {fileID: 2100000, guid: 47cb11a6e2e00004faf17bd5c6d72405, type: 2}
   equipableItem: {fileID: 5359498904633765449, guid: 0081cad532d7ef543b6250c7a7bbc064, type: 3}
@@ -21,4 +21,5 @@ MonoBehaviour:
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
   <ItemName>k__BackingField: Donut
   itemType: 2
-  <ItemDescription>k__BackingField: maybe you could heat it up?
+  <ItemDescription>k__BackingField: maybe you could heat it up? *press K to use F
+    to delete*

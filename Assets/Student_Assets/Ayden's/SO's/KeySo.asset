@@ -21,4 +21,5 @@ MonoBehaviour:
   collider: {fileID: 9094336006273272194, guid: 949acce2e3ad688479ec1caf8fc6f8ce, type: 3}
   <ItemName>k__BackingField: key
   itemType: 0
-  <ItemDescription>k__BackingField: Key, it opens doors... duh
+  <ItemDescription>k__BackingField: Key, it opens doors... duh *press K to use F
+    to delete*

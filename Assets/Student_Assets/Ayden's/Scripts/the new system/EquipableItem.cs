@@ -24,6 +24,10 @@ public class EquipableItem : MonoBehaviour
     public Aydens useKey;
 
     public AudioInteractable _micro;
+
+    public MeshFilter _MeshFilter;
+
+    public MeshRenderer Renderer;
     
     
 
@@ -36,6 +40,10 @@ public class EquipableItem : MonoBehaviour
         _itemManager = gameObject.AddComponent<ItemManager>();
         _door = FindObjectOfType<Door>();
         _micro = FindObjectOfType<AudioInteractable>();
+        _MeshFilter = gameObject.AddComponent<MeshFilter>();
+        Renderer = gameObject.AddComponent<MeshRenderer>();
+        Renderer.material = _itemSo._material;
+        _MeshFilter.mesh = _itemSo.mesh;
 
 
     }
