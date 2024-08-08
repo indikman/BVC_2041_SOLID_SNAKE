@@ -22,6 +22,8 @@ public class EquipableItem : MonoBehaviour
     private bool canOpen;
     
     public Aydens useKey;
+
+    public AudioInteractable _micro;
     
     
 
@@ -33,6 +35,8 @@ public class EquipableItem : MonoBehaviour
         _itemType = _itemSo.itemType;
         _itemManager = gameObject.AddComponent<ItemManager>();
         _door = FindObjectOfType<Door>();
+        _micro = FindObjectOfType<AudioInteractable>();
+
 
     }
 
@@ -58,9 +62,19 @@ public class EquipableItem : MonoBehaviour
                 canOpen = false;
             }
         }
-        else
+        else if (_micro != null && _itemType == ItemType.Useless)
         {
-            return;
+            float distance = Vector3.Distance(_micro.transform.position, this.transform.position);
+            if (distance <= detectionRadius)
+            {
+                _itemManager.InteractEvent += MicroWave;
+                canOpen = true;
+            }
+            else
+            {
+                _itemManager.InteractEvent -= MicroWave;
+                canOpen = false;
+            }
         }
 
     }
@@ -72,6 +86,13 @@ public class EquipableItem : MonoBehaviour
             _door.Interact();
         }
     }
+
+    public void MicroWave()
+    {
+        _micro.Trigger();
+    }
+    
+    
     
     private void OnUseKey()
     {
@@ -85,6 +106,11 @@ public class EquipableItem : MonoBehaviour
             return;
         }
 
+    }
+    
+    private void OnUnEquip()
+    {
+        Destroy(this.gameObject);
     }
 
 }

@@ -15,6 +15,7 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private TMP_Text _text;
     [SerializeField] private TMP_Text descriptionText;
     private EquipableItem _equipable;
+    private EquipableItem _item;
 
     private void Awake()
     {
@@ -51,6 +52,16 @@ public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         Debug.Log(_equipable);
         _equipable._itemSo = _itemSo;
-        Instantiate(_equipable, new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z), Quaternion.identity, _transform);
+        _item = FindAnyObjectByType<EquipableItem>();
+
+        if (_item == null)
+        {
+            Instantiate(_equipable, new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z), Quaternion.identity, _transform);
+        }
+        else
+        {
+            return;
+        }
+        
     }
 }

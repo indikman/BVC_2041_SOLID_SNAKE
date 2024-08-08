@@ -76,4 +76,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemSo: {fileID: 0}
-  detectionRadius: 2
+  detectionRadius: 3
+  _micro: {fileID: 0}
