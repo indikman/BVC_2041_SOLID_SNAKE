@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance;
     public List<InSO> items = new List<InSO>();
-    public GameObject ItemUI;
+    public ItemUI ItemUI;
     public GameObject InventoryGrid;
 
     // Start is called before the first frame update
@@ -36,10 +36,10 @@ public class InventoryManager : MonoBehaviour
     }
    public void DisplayItem(InSO item)
     {
-     GameObject newItemUI =  Instantiate(ItemUI, InventoryGrid.transform);
-        newItemUI.transform.GetChild(1).GetComponent<Image>().sprite = item.icon;
-        newItemUI.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = item.itemName;
+        ItemUI newItemUI =  Instantiate(ItemUI, InventoryGrid.transform);
+        newItemUI.SetItems(item);
 
     }
+    
 
 }

@@ -4,50 +4,61 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public GameObject TheDoor;
-    private bool inRange= false;
-    private float speed = 5f;
+  
+    private bool inRange = false;
+    private float rotationSpeed = 10f;
+    private float rotationAngle = 90f;
     private Quaternion OrignalRotation;
-    private  Quaternion TargetRotation;
+    private Quaternion TargetRotation;
+
+    bool canOpen;
     // Start is called before the first frame update
     void Start()
     {
         OrignalRotation = transform.rotation;
+        TargetRotation = Quaternion.Euler(transform.eulerAngles + Vector3.up * rotationAngle);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && inRange) 
+        if (Input.GetKeyDown(KeyCode.E) && inRange)
         {
-            OpenDoor();
-            
+          
+            canOpen = true;
         }
+
+        if(canOpen) { OpenDoor(); }
     }
     private void OnTriggerEnter(Collider other)
     {
-        inRange = true;
+        if (other.CompareTag("Player"))
+        {
+            inRange = true;
+        }
+
     }
     private void OnTriggerExit(Collider other)
     {
-        inRange = false;   
+        if (other.CompareTag("Player"))
+        {
+            inRange = false;
+        }
     }
     private void OpenDoor()
     {
-        for (int i=0;i< InventoryManager.Instance.items.Count;i++ )
+        for (int i = 0; i < InventoryManager.Instance.items.Count; i++)
         {
             if (InventoryManager.Instance.items[i].itemName == "Key")
             {
                 Debug.Log("OpenDoor");
-                StartRotate();
-                
+                transform.rotation = Quaternion.Slerp(transform.rotation, TargetRotation, Time.deltaTime * rotationSpeed);
+
             }
         }
     }
-    private void StartRotate()
-    {
-        
-        TargetRotation = Quaternion.Euler(0, 90, 0)* OrignalRotation;
-        TheDoor.transform.rotation = Quaternion.Slerp(OrignalRotation,TargetRotation,Time.deltaTime * speed);
-    }
 }
+
+
+
+
