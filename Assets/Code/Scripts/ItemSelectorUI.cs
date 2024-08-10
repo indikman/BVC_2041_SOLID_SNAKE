@@ -10,7 +10,8 @@ public class ItemSelectorUI : MonoBehaviour
 
 
     [SerializeField] ItemButton itemButtonPrefab;
-    [SerializeField] Transform itemButtonPanel;
+    [SerializeField] public Transform itemButtonPanel;
+    [SerializeField] public GameObject itemButtonPanelGameObject;
     // Weapon Stats
     [Header("Item Info Box")]
     [SerializeField] TMP_Text txtName;
@@ -30,6 +31,7 @@ public class ItemSelectorUI : MonoBehaviour
     }
     private void PopulateItemButton(ItemSO itemData)
     {
+        
         var newButton = Instantiate(itemButtonPrefab, itemButtonPanel);
         newButton.SetButton(itemData);
 
