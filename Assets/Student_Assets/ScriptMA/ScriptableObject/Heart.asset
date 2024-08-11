@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c2b096511904fb48944b3977363f527, type: 3}
-  m_Name: Health
+  m_Name: Heart
   m_EditorClassIdentifier: 
   itemName: Heart
   description: Gives extra health
-  icon: {fileID: 21300000, guid: b532bec2397bec644b33638a13df0771, type: 3}
-  model: {fileID: 0}
+  icon: {fileID: 21300000, guid: 26f9bc6e6e7acfc4ba13556e66390d14, type: 3}

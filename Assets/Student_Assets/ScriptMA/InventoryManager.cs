@@ -11,7 +11,8 @@ public class InventoryManager : MonoBehaviour
     public ItemUI ItemUI;
     public GameObject InventoryGrid;
 
-    // Start is called before the first frame update
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -25,21 +26,31 @@ public class InventoryManager : MonoBehaviour
     }
     public void AddItem(InSO item)
     {
-        
+
         items.Add(item);
         DisplayItem(item);
 
     }
-    public void RemoveItem()
+    public void RemoveItem(InSO item)
     {
+        items.Remove(item);
+        foreach (Transform child in InventoryGrid.transform)
+        {
 
+            if (child.gameObject.GetComponent<ItemUI>().Name.text == item.name)
+            {
+                Debug.Log("Destroy");
+
+                Destroy(child.gameObject);
+            }
+        }
     }
-   public void DisplayItem(InSO item)
+    public void DisplayItem(InSO item)
     {
-        ItemUI newItemUI =  Instantiate(ItemUI, InventoryGrid.transform);
+        ItemUI newItemUI = Instantiate(ItemUI, InventoryGrid.transform);
         newItemUI.SetItems(item);
-
     }
+}
     
 
-}
+
