@@ -11,12 +11,12 @@ public class ItemUI : MonoBehaviour
     public TextMeshProUGUI Name;
 
 
-    public void SetItems(InSO item) 
+    public void SetItems(InSO item)
     {
-       Image.sprite = item.icon;
-      Name.text = item.itemName;
-
-
+        Image.sprite = item.icon;
+        Name.text = item.itemName;
     }
-
 }
+    
+
+

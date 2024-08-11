@@ -8,21 +8,18 @@ public class TaskManager : MonoBehaviour
     private bool inRange = false;
     public InSO keyItem;
     public string itemNeeded;
-   
-
     
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && inRange)
         {
-            if(CheckTask() != null)
+            if (CheckTask() != null)
             {
                 DoTask();
             }
         }
-
-        
     }
+        
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -50,7 +47,6 @@ public class TaskManager : MonoBehaviour
             Debug.Log(InventoryManager.Instance.items[i].itemName);
             if (InventoryManager.Instance.items[i].itemName == itemNeeded)
             {
-
                 keyItem = InventoryManager.Instance.items[i];
                 Debug.Log(keyItem.name);
                 return keyItem;

@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Key
   description: Unlocks the Door
   icon: {fileID: 21300000, guid: 8c44fa0503d03884ba7a74b9a452dd79, type: 3}
-  model: {fileID: 0}
+  Model: {fileID: 919132149155446097, guid: 46db35423c466114caafad4a95e846ad, type: 3}
