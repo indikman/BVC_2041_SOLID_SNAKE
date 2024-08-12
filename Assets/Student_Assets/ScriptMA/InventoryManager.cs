@@ -10,8 +10,7 @@ public class InventoryManager : MonoBehaviour
     public List<InSO> items = new List<InSO>();
     public ItemUI ItemUI;
     public GameObject InventoryGrid;
-
-
+    public IInteractable selectedItem;
 
     private void Awake()
     {
@@ -23,6 +22,11 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public void SelectItem(IInteractable item)
+    {
+        selectedItem = item;
+        Debug.Log(selectedItem.ItemName);
     }
     public void AddItem(InSO item)
     {

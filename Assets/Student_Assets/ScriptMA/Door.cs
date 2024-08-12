@@ -15,10 +15,12 @@ public class Door : TaskManager
         OrignalRotation = transform.rotation;
         TargetRotation = Quaternion.Euler(transform.eulerAngles + Vector3.up * rotationAngle);
     }
+
     public override void DoTask()
     {
         base.DoTask();
         DoorRotate();
+
     }
     public void DoorRotate()
     {

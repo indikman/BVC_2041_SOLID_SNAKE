@@ -10,6 +10,7 @@ public class LightManager :TaskManager
     {
         lightControl.enabled = false;
     }
+
     public override void DoTask()
     {
         base.DoTask();
