@@ -8,6 +8,7 @@ public class door : MonoBehaviour
     Quaternion doorRotation;
     Quaternion targetRotation;
     float rotateTime = 1.0f;
+    
 
     public void Awake()
     {

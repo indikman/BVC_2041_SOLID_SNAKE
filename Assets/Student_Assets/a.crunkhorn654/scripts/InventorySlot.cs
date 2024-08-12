@@ -53,6 +53,10 @@ public class InventorySlot : MonoBehaviour
             if (interactible.pickupSO == itemSO)
             {
                 interactible.Interacted.Invoke();
+                    if (interactible.consumesItem == true)
+                    {
+                        RemoveItem(interactible.pickupSO);
+                    }
                     Debug.Log("invoking");
             }
         }
