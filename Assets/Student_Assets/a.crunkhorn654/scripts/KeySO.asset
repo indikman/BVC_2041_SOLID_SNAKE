@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2055d65af3caf419707b45662da5e1, type: 3}
   m_Name: KeySO
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
-  itemName: 
-  itemIcon: {fileID: 0}
-  itemModel: {fileID: 0}
-  itemDescription: 
+  itemPrefab: {fileID: 8789779895066671730, guid: 2c8c9b7c6dea5ee40871b7601d8bf9b7, type: 3}
+  itemName: Key
+  itemIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  itemModel: {fileID: -4727168680033861200, guid: 58abb753cf8fa094481aaf91bf61f5cc, type: 3}
+  itemDescription: This looks like the key to the front door.
