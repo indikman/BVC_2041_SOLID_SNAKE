@@ -12,7 +12,7 @@ public class CodecView : MonoBehaviour, ICodecListener
     private CodecSO _codecInfo;
     private CodecSettingsSO _codecSettings;
     public UnityEvent CodecComplete;
-    #region Document references
+    #region Document references                                                                 
     
     private VisualElement _root, _mainDisplay, _leftSprite, _rightSprite, _radioWaves;
     private Label _radioNumberP1, _radioNumberP2, _dialogueText;
