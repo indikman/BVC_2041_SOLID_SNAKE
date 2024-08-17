@@ -3,33 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Sprites;
+using UnityEngine.Events;
+
+[Serializable]
+public class ItemClickedEvent : UnityEvent<InventoryDataSO> { }
 
 public class InventoryUI : MonoBehaviour
 {
     [SerializeField]
-    private GameObject itemSlot;
-
-    private List<GameObject> items;
-
+    private GameObject itemButton;
+    public List<InventoryDataSO> items;
     public InventoryManager inventoryManager;
 
-    public event Action<InventoryDataSO> OnItemsLoaded;
+    public ItemClickedEvent OnItemClicked;
 
     private void OnEnable()
     {
-        
+        inventoryManager.OnAddItem += AddItem;
     }
 
     private void OnDisable()
     {
-        
+        inventoryManager.OnAddItem -= AddItem;
     }
 
-    private void AddItem (InventoryDataSO data)
+    private void AddItem(InventoryDataSO itemData)
     {
-        GameObject item = Instantiate(itemSlot);
-        Button button = item.GetComponent<Button>();
-        
+        items.Add(itemData);
+        GameObject newItem = Instantiate(itemButton, transform);
+        InventoryUIDisplay icon = newItem.GetComponent<InventoryUIDisplay>();
+        icon.DisplayImage(itemData);
+
+        Button button = newItem.GetComponent<Button>();
+        button.onClick.AddListener(() => inventoryManager.ActivateItem(itemData));
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Door : Interactable
 {
     [SerializeField] private bool isOpen = false;
 
@@ -12,5 +12,10 @@ public class Door : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 90, 0), 1 * Time.deltaTime);
         }
+    }
+
+    public override void ItemTrigger()
+    {
+        isOpen = true;
     }
 }

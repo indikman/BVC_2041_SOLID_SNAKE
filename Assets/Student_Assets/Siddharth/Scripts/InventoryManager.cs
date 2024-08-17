@@ -5,26 +5,38 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public event Action<InventoryDataSO> OnInventoryLoaded;
-    public event Action<InventoryDataSO> OnItemSelected;
+    public event Action<InventoryDataSO> OnAddItem;
+    public event Action<InventoryDataSO> OnItemPicked;
 
     [SerializeField] private List<InventoryDataSO> items = new List<InventoryDataSO>();
 
-    private void LoadItems()
+    private void StartInventory()
     {
         foreach (InventoryDataSO item in items)
         {
-            OnInventoryLoaded?.Invoke(item);
+            OnAddItem?.Invoke(item);
         }
     }
 
     private void Start()
     {
-        LoadItems();
+        StartInventory();
     }
 
-    public void SelectItem(InventoryDataSO item)
+    public void AddItem(InventoryDataSO item)
     { 
-        OnItemSelected?.Invoke(item);
+        items.Add(item);
+        item.inventoryManager = this;
+        OnAddItem?.Invoke(item);
+    }
+
+    public void ActivateItem(InventoryDataSO item)
+    {
+        foreach (InventoryDataSO i in items)
+        {
+            i.isActive = false;
+        }
+        
+        item.isActive = true;
     }
 }

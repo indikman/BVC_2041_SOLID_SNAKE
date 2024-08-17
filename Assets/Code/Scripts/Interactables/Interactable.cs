@@ -24,7 +24,6 @@ public class Interactable : MonoBehaviour
     
     void CheckInteract(Transform playerTransform)
     {
-        
         float angle = Vector3.Dot(playerTransform.forward, (transform.position - playerTransform.position).normalized);
         if (angle > 0)
         {
@@ -50,6 +49,11 @@ public class Interactable : MonoBehaviour
 
     public virtual void Trigger()
     {
-        
+        InteractEnded?.Invoke();
+    }
+
+    public virtual void ItemTrigger()
+    { 
+    
     }
 }

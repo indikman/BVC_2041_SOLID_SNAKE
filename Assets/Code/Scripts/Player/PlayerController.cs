@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour, IPlayerControlListener
 
     public void Interact()
     {
+        Debug.Log("Interact");
         PlayerInteractions.Interact(transform);
     }
 

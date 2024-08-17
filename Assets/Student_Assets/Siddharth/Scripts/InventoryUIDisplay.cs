@@ -6,18 +6,11 @@ using UnityEngine.Sprites;
 
 public class InventoryUIDisplay : MonoBehaviour
 {
-    
+    public Image itemImage;
     public InventoryDataSO inventoryData;
-    
-
-    // Start is called before the first frame update
-    void Start()
+    public void DisplayImage(InventoryDataSO item)
     {
-        Debug.Log(inventoryData.itemDescription);
-        //inventoryData.icon = Sprite();
-
-        //Debug.Log(inventoryData.itemName);
+        inventoryData = item;
+        itemImage.sprite = item.icon;
     }
-
-    
 }
